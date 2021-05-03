@@ -8,8 +8,8 @@ wp-content/*
 !wp-content/plugins/
 !wp-content/themes/
 
-# ignore these plugins
-wp-content/plugins/hello.php
+# ignore config.php
+wp-config.php
 
 # ignore specific themes
 wp-content/themes/twenty*/
