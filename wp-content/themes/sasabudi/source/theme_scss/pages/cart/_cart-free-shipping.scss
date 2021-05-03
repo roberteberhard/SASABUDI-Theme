@@ -1,0 +1,27 @@
+
+.cart-shipping {
+  display: inline-block;
+  width: auto;
+  padding-bottom: 1px;
+
+  &__message,
+  &__prompt {
+    color: rgba(255,255,255, 0.95);
+    font-size: $size-small;
+    font-family: $family-primary;
+    font-weight: $weight-medium;
+    text-align: center;
+    text-transform: uppercase;
+
+    .amount {
+      color: $white;
+      font-family: $family-secondary;
+      font-weight: $weight-bold;
+      letter-spacing: 0.5px;
+    }
+
+    strong {
+      color: $white;
+    }
+  }
+}

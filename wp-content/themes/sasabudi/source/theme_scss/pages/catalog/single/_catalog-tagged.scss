@@ -1,0 +1,70 @@
+.tagged {
+  
+  @media #{$mobile} {
+    padding-bottom: 50px;
+  }
+  @media #{$tablet} {
+    padding-bottom: 60px;
+  }
+  @media #{$notebook}, #{$desktop} {
+    padding-bottom: 70px;
+  }
+  @media #{$wide} {
+    padding-bottom: 90px;
+  }
+
+  .is-wrapper {
+    overflow: hidden;
+    text-align: center;
+
+    a {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      width: auto;
+      margin: 3px 3px;
+      padding: 6px 8px 7px 7px;
+      // fonts
+      color: $white;
+      font-size: $size-normal;
+      font-family: $family-secondary;
+      font-weight: $weight-normal;
+      line-height: 1;
+      letter-spacing: 0px;
+      // background
+      border: none;
+      border-radius: 3px;
+      background-color: $primary;
+      // transition
+      transition: background-color $menu-transition ease-in-out 0ms;
+      &:before {
+        content: '';
+        position: relative;
+        top: 6px;
+        opacity: 1;
+        padding-right: 15px;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 10px 10px;
+        background-image: $icon__product-filter-tag_white; 
+      }
+      // ---------
+      // !! Hover :: Managed in no-touch section
+      // ---------
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .tagged {
+    .is-wrapper {
+      a:hover {
+        background-color: $button-hover-grey;
+      }
+    }
+  }
+}

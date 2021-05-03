@@ -1,0 +1,54 @@
+.related {
+  .is-extended {
+    overflow: hidden;
+    
+    @media #{$mobile}, #{$tablet} {
+      text-align: center;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      text-align: center;
+    }
+
+    h2.related-title {   
+      margin-bottom: 20px;
+      font-size: $size-subtitle;
+      letter-spacing: 0.5px;
+    }
+
+    .related-products {
+      overflow: hidden;
+
+      // Queries
+      @media #{$mobile} {
+        width: calc(100% + 12px);
+        margin: 0 -6px;
+        padding-bottom: 30px;
+      }
+      @media #{$tablet} {
+        width: calc(100% + 16px);
+        margin: 0 -8px;
+        padding-bottom: 30px;
+      }
+      @media #{$notebook}, #{$desktop} {
+        width: calc(100% + 16px);
+        margin: 0 -8px;
+        padding-bottom: 50px;
+      }
+      @media #{$wide} {
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+        padding-bottom: 70px;
+      }
+    }
+
+  }
+}
+
+
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+}

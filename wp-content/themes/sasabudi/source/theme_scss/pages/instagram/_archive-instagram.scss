@@ -1,0 +1,208 @@
+.promo-on {
+  .instagram {
+    border-top: none;
+  }
+}
+
+.instagram {
+  border-top: 1px solid $border;
+    
+  @media #{$mobile} {
+    padding: 40px 0 60px;
+  }
+  @media #{$tablet} {
+    padding: 50px 0 70px;
+  }
+  @media #{$notebook} {
+    padding: 60px 0 80px;
+  }
+  @media #{$desktop} {
+    padding: 60px 0 90px;
+  }
+  @media #{$wide} {
+    padding: 60px 0 100px;
+  }
+
+  .is-extended {
+    overflow: hidden;
+  
+    h1.instagram-title {   
+      margin-bottom: 12px;
+      color: $text;
+      font-size: $size-title;
+      letter-spacing: 1px;
+      line-height: 1;
+      text-align: center;
+    }
+
+    p.instagram-heading {
+      padding: 0 4%;
+      margin-bottom: 28px;
+      color: $text;
+      font-size: $size-medium;
+      line-height: 1.25;
+      text-align: center;
+    }
+
+    .instagram-posts {
+
+      @media #{$mobile} {
+        margin: 0 -6px; 
+        width: calc(100% + 12px);
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop} {
+        margin: 0 -8px; 
+        width: calc(100% + 16px); 
+      }
+      @media #{$wide} {
+        margin: 0 -10px; 
+        width: calc(100% + 20px);
+      }
+
+      .instagram-figure {
+        float: left;
+        overflow: hidden;
+        position: relative;
+        height: auto;
+        background-color: $white-light;
+
+        @media #{$mobile} {
+          margin: 6px;
+          width: calc(50% - 12px);
+        }
+        @media #{$tablet} {
+          margin: 8px;
+          width: calc(25% - 16px);
+          &:nth-of-type(7n + 1) {
+            width: calc(50% - 16px);
+          }
+          &:nth-of-type(14n + 8),
+          &:nth-of-type(14n + 9), 
+          &:nth-of-type(14n + 10), 
+          &:nth-of-type(14n + 11), 
+          &:nth-of-type(14n + 12), 
+          &:nth-of-type(14n + 13), 
+          &:nth-of-type(14n + 14) {
+            float: right;
+          }
+        }
+        @media #{$notebook}, #{$desktop} {
+          margin: 8px;
+          width: calc(20% - 16px);
+          &:nth-of-type(7n + 1) {
+            width: calc(40% - 16px);
+          }
+          &:nth-of-type(14n + 8),
+          &:nth-of-type(14n + 9), 
+          &:nth-of-type(14n + 10), 
+          &:nth-of-type(14n + 11), 
+          &:nth-of-type(14n + 12), 
+          &:nth-of-type(14n + 13), 
+          &:nth-of-type(14n + 14) {
+            float: right;
+          }
+        }
+        @media #{$wide} {
+          margin: 10px;
+          width: calc(20% - 20px);
+          &:nth-of-type(7n + 1) {
+            width: calc(40% - 20px);
+          }
+          &:nth-of-type(14n + 8),
+          &:nth-of-type(14n + 9), 
+          &:nth-of-type(14n + 10), 
+          &:nth-of-type(14n + 11), 
+          &:nth-of-type(14n + 12), 
+          &:nth-of-type(14n + 13), 
+          &:nth-of-type(14n + 14) {
+            float: right;
+          }
+        }
+
+        &__link {
+          display: block;
+
+          &--white {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(255,255,255,0);
+            transition: background-color $image-transition ease-in-out 0ms;
+          }
+
+          &--image {  
+            transform: scale(1);
+            transition: transform $image-transition ease-in-out 0ms;
+
+            img {
+              opacity: 0;
+              width: 100%;
+              width: 100%;
+              max-height: 100%;
+              background-color: $white-light;
+              transition: opacity $image-transition ease-in-out 0ms;
+
+              &.lazy-fade {
+                opacity: 1;
+              }
+            }
+          }
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }   
+      } 
+    }
+  }
+}
+
+// Next Button
+#ig-next {
+  overflow: hidden;
+  width: 100%;
+  height: 85px;
+  text-align: center;
+  transition: opacity $menu-transition ease-in-out 0ms;
+
+  &.fade-in {
+    opacity: 1;
+  }
+
+  &.fade-out {
+    opacity: 0;  
+  }
+
+  .icon-spinning {
+    padding-top: 50px;
+    display: inline-block;
+  }
+}
+
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .instagram {
+    .is-extended {
+      .instagram-posts {
+        .instagram-figure {
+          &__link {   
+            &:hover {
+              .instagram-figure__link--white {
+                background-color: $image-opacity;
+              }
+              .instagram-figure__link--image {
+                transform: $image-scale;
+              }
+            }
+          }   
+        } 
+      }
+    }
+  }
+}

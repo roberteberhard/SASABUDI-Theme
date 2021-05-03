@@ -1,0 +1,130 @@
+.account {
+  .woocommerce {
+
+    .account-address {
+      max-width: $max-mini;
+
+      @media #{$mobile}, #{$tablet} {
+        margin: 0 auto;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        margin: 0 0;
+      }
+      
+
+      // Adresses
+      .addresses {
+        display: flex;
+        justify-content: top;
+        margin-top: 30px;
+
+        @media #{$mobile} {
+          flex-direction: column;
+        }
+        @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+          flex-direction: row;
+        }
+
+        .address-column1,
+        .address-column2 {
+
+          @media #{$mobile} {
+            width: 100%;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            width: 50%;
+          }
+
+          h3 {
+            float: left;
+            margin-bottom: 18px; 
+            font-size: $size-larger;
+            line-height: 1;
+          }
+
+          .spacer {
+            float: left;
+            display: block;
+            padding: 0;
+            margin: 0 6px;
+            font-size: $size-large;
+            text-align: left;
+            line-height: 1.35;
+          }
+
+          a.edit {
+            float: left;
+            display: block;
+            padding: 0;
+            margin: 8px 0 0 0;
+            color: $link-primary;
+            text-align: left;
+            font-size: $size-normal;
+            font-weight: $weight-medium;
+            line-height: 1;
+            letter-spacing: 0px;
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+
+          address {
+            display: block;
+            width: 100%;
+            overflow: hidden;
+            padding-bottom: 25px;
+            font-size: $size-medium;
+            line-height: 1.35;
+          }     
+        }
+
+        .address-column1 {
+          @media #{$mobile} {
+            padding-top: 5px;
+          }
+        }
+        .address-column2 {
+          @media #{$mobile} {
+            padding-top: 10px;
+          }
+        }
+      }
+      
+      // Edit
+      .edit {
+
+        h3 {
+          margin-bottom: 25px; 
+          font-size: $size-larger;
+        }
+
+        .privacy-protection {
+          color: $grey;
+          font-size: $size-normal;
+          line-height: 1.25;
+        }
+
+        .button {
+          margin-top: 30px;
+        }
+      }
+    }
+  }
+}
+
+.account {
+  .woocommerce {
+    .account-address {
+      .addresses {
+        .address-column1,
+        .address-column2 {
+          a.edit {   
+            &:hover {
+              color: $link-hover-text;
+            }
+          }
+        }
+      }
+    }
+  }
+}

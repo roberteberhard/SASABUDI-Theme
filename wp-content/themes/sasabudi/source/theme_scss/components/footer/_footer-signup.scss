@@ -1,0 +1,205 @@
+.footer-top {
+
+  .newsletter {
+    overflow: hidden;
+    line-height: 1.15;
+
+    @media #{$mobile}, #{$tablet} {
+      margin: 50px auto 0 auto;
+      max-width: 480px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      float: right;
+      width: 33.3333337%;
+      height: auto;
+      margin: 9px 0 0 0;
+    }
+  
+    .newsletter-title {
+      margin-bottom: 19px;
+      color: $text;
+      font-size: $size-large;
+      letter-spacing: 1px;
+      line-height: 1.25;
+      text-transform: uppercase;
+
+      @media #{$mobile}, #{$tablet} {
+        text-align: center;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        text-align: left;
+      }
+    }
+
+    .signup-group {
+
+      @media #{$mobile}, #{$tablet} {
+        margin: 0 auto;
+        max-width: 560px;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        margin: 0;
+      }
+
+      &__prompt {
+        font-size: $size-medium;
+        font-weight: $weight-normal;
+        
+        @media #{$mobile}, #{$tablet} {
+          margin-bottom: 20px;
+          text-align: center;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          margin-bottom: 15px;
+          text-align: left;
+        }
+      }
+
+      .form-group {
+        display: block;
+        position: relative;
+        margin-bottom: 12px;
+
+        &.has-error {
+          input[type='email'],
+          input[type='text'] { 
+            color:  $color-alert;
+            border: 1px solid $color-alert;
+            box-shadow: 0 0 0 1px transparent;
+
+            &:focus {
+              color:  $color-alert;
+              border: 1px solid $color-alert;
+              box-shadow: 0 0 0 1px $color-alert;
+            }
+          }
+        }
+
+        &.submit-enabled {
+          margin-top: 18px;
+          margin-bottom: 18px;
+
+          input[type=submit] {
+            color: $white;
+            border-color: $button-black;
+            background-color: $button-black;
+            // ---------
+            // !! hover :: managed in no-touch section
+            // ---------
+          }
+
+          .submit-waiting {
+            display: none !important;
+          }
+        }
+
+        &.submit-disabled {
+          margin-top: 18px;
+          margin-bottom: 18px;
+
+          input[type=submit] {
+            pointer-events: none;
+            color: $button-hover-grey;
+            border-color: $button-hover-grey;
+            background-color: $button-hover-grey;
+          }
+
+          .submit-waiting {
+            display: block !important;
+          }
+        }
+
+        .submit-waiting {
+          display: none;
+          position: absolute;
+          left: 0;
+          top: 12px;
+          width: 100%;
+          height: 16px;
+          text-align: center;
+
+          span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            margin: 0 3px;
+            border-radius: 50%;
+            background-color: $white;
+            color: transparent;
+            font-size: 0;
+            // animation
+            animation-name: blink;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            animation-fill-mode: both;
+          }
+
+          span:nth-child(2) {
+            animation-delay: .2s;
+          }
+
+          span:nth-child(3) {
+            animation-delay: .4s;
+          }
+        }
+      }
+    }
+
+    label.label-for-checkbox {
+      span {  
+        overflow: hidden;
+        position: relative;
+        top: -2px;
+        left: 4px;
+        max-width: 480px;
+        color: $text;
+        font-size: $size-normal;
+        line-height: 1.25;
+        
+        @media #{$mobile}, #{$tablet} {
+          margin: 0 auto;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          margin: 0;
+        }
+      }
+    
+      &.has-error {
+        input[name=subscriber_gdpr] {
+          &:before {
+            border: 1px solid $color-alert;
+          }
+        }
+        input[name=subscriber_gdpr]:checked {
+          &:before {
+            border: 1px solid $color-alert;
+            box-shadow: 0 0 0 1px $color-alert;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .footer-top {
+    
+    .newsletter {
+      .signup-group {
+        .form-group {
+          &.submit-enabled {
+            input[type=submit] {
+              &:hover {
+                border-color: $button-hover-grey;
+                background-color: $button-hover-grey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

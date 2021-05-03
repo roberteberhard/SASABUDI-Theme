@@ -1,0 +1,450 @@
+.account {
+  .woocommerce {
+
+    .account-order {
+      width: 100%;
+      max-width: $max-small;
+
+      @media #{$mobile}, #{$tablet} {
+        margin: 0 auto;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        margin: 0;
+      }
+
+      h2.orders-title {
+        margin-bottom: 25px;
+        font-size: $size-larger;
+        line-height: 1;
+      }
+
+      p.orders-heading {
+        color: $text;
+        font-size: $size-medium;
+        line-height: 1.15;
+      }
+
+      p.order-states {
+        padding: 8px 12px 10px 12px;
+        margin-top: 20px;
+        color: $text;
+        font-size: $size-normal;
+        line-height: 1.15;
+        border-radius: 3px;
+
+        &.completed {
+          color: $text;
+          border: 1px dotted $text;
+        }
+        &.cancelled,
+        &.refunded,
+        &.failed,
+        &.pendingpayment {
+          color: #777;
+          border: 1px dotted #777;
+        }
+        &.processing {
+          color: #5b841b;
+          border: 1px dotted #5b841b;
+        }
+        &.onhold {
+          color: #94660c;
+          border: 1px dotted #94660c;
+        }
+      }
+
+      // Section updates
+      .woocommerce-order-updates {
+        overflow: hidden;
+        padding-top: 40px;
+
+        h2 {
+          font-size: $size-larger;
+        }
+
+        ol {
+          padding-left: 15px;
+          font-weight: $weight-medium;
+
+          li {
+            margin-top: 15px;
+            line-height: 1;
+
+            .meta {
+              display: inline-block;
+              margin-bottom: 6px;
+              color: $text;
+              font-size: $size-normal;
+              font-weight: $weight-medium;
+              background-color: $color-note;
+            }
+            .description {
+              padding: 2px 0 3px 8px;
+              border-left: 1px dotted $black;
+              color: $text;
+              font-size: $size-normal;
+              font-weight: $weight-normal;
+              a {
+                color: $link-primary;
+                position: relative;
+                background-repeat: no-repeat;
+                background-size: 100% 100%;
+                background-position: 100%;
+                background-image: linear-gradient(transparent calc(100% - 1px), lighten($link-primary, 10%) 1px);
+                transition: background-size ease $menu-transition;
+              }
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+        }
+      }
+
+      // Section customer details
+      .woocommerce-customer-details {
+        padding-top: 40px;
+        @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+          max-width: $max-mini;
+        }
+        
+        h2 {
+          font-size: $size-larger;
+          margin-bottom: 12px;
+        }
+
+        .customer-details {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          margin-bottom: 12px;
+          font-size: $size-medium;
+          &__name {
+            width: 64px;
+            margin-bottom: 3px;
+            font-weight: $weight-normal;
+          }
+          &__email,
+          &__phone {
+            width: calc( 100% - 64px);
+            margin-bottom: 3px;
+          }
+        }
+
+        .col2-set {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          width: 100%;
+          .col-1,
+          .col-2 {
+            width: 50%;
+            h3 {
+              font-size: $size-large;
+              margin-bottom: 12px;
+            }
+            address {
+              font-size: $size-medium;
+            }
+          }
+        }
+      }
+
+      // Section order details
+      .woocommerce-order-details {
+        display: inline-block;
+        width: 100%;
+        padding-top: 40px;
+
+        h2 {
+          font-size: $size-larger;
+          margin-bottom: 12px;
+        }
+
+        table.order_details {
+          width: 100%;
+          padding-bottom: 20px;
+          border-spacing: 0px;
+
+          thead {
+            tr {
+              th {
+                font-size: $size-medium;
+                font-weight: $weight-bold;
+                letter-spacing: 0.5px;
+                padding-bottom: 10px;
+              }
+            }
+          }
+          tbody {
+            tr {
+              &:nth-child(1) {
+                td.product-name,
+                td.product-total {
+                  border-top: 1px solid darken($border, 5%);
+                  .tax_label {
+                    position: relative;
+                    top: -1px;
+                    font-size: small;
+                  }
+                }
+              }
+              td.product-name  {
+                padding-top: 6px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid darken($border, 5%);
+                .details {
+                  display: flex;
+                  width: 100%;
+                  flex-direction: row;
+                  position: relative;
+                  align-items: center;
+                  .details-image   {
+                    width: 48px;
+                    height: 48px;
+                  }
+                  .details-name {
+                    width: calc(100% - 48px);
+                    padding-left: 8px;
+                    a {
+                      font-size: $size-medium;
+                      font-family: $family-secondary;
+                      font-weight: $weight-bold;
+                      letter-spacing: 0.5px;
+                      text-align: left;
+                      line-height: 1;   
+                    }
+                  }
+                  .details-quantity {
+                    position: absolute;
+                    overflow: hidden;
+                    z-index: 2;
+                    top: -2px;
+                    left: -6px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    padding-top: 2px;
+                    border: 1px solid $white;
+                    color: $white;
+                    font-size: 12px;
+                    font-weight: $weight-bold;
+                    text-align: center;
+                    line-height: 1;
+                    background-color: $primary;
+                    box-shadow: 0 1px 2px -1px rgba(0,0,0,.35);
+                  }
+                }
+              }
+              td.product-total {
+                padding-top: 6px;
+                padding-bottom: 6px;
+                border-bottom: 1px solid darken($border, 5%);
+                vertical-align: middle;
+                font-size: $size-medium;
+                font-weight: $weight-normal;
+                line-height: 1;
+              }
+            }
+          }
+          tfoot {
+            tr {
+              &:nth-child(1) {
+                th.product-name,
+                td.product-total {
+                  padding-top: 18px;
+                }
+              }
+              th.product-name {
+                font-size: $size-medium;
+                font-weight: $weight-normal;
+                padding-bottom: 5px;
+              }
+              td.product-total {
+                font-size: $size-medium;
+                font-weight: $weight-normal;
+                padding-bottom: 5px;
+                .tax_label {
+                  position: relative;
+                  top: -1px;
+                  font-size: small;
+                }
+              }
+            }
+          }
+        }
+
+        .order-details-note {
+          overflow: hidden;
+          width: 100%;
+          margin-top: 30px;
+
+          ul {
+            padding: 8px 12px 13px 12px;
+            border: 1px dotted $text;
+            border-radius: 3px;
+            li {
+              &.note--name {
+                margin-bottom: 5px;
+                font-size: $size-medium;
+                font-weight: $weight-bold;
+                letter-spacing: 0.5px;
+              }
+              &.note--desc {
+                color: $text;
+                font-size: $size-normal;
+                font-weight: $weight-normal;
+                line-height: 1.15;    
+              }
+            }
+          }
+        }
+
+        p.order-again {
+          float: left;
+          width: calc(50% - 6px);
+          margin-right: 12px;
+          padding-top: 30px;
+          padding-bottom: 50px;
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            max-width: 220px;
+          }
+          .button {
+            width: 100%;
+          }
+        }
+
+        p.woo_pdf_download_link {
+          float: left;
+          width: calc(50% - 6px);
+          padding-top: 30px !important;
+          padding-bottom: 50px !important;
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            max-width: 220px;
+          }
+          a {
+            cursor: pointer;
+            display: block;
+            height: 46px;
+            padding: 13px 20px 12px;
+            border-radius: 3px;
+            border: 2px solid $link-primary;
+            background-color: $link-primary;
+            color: $white !important;
+            font-size: $size-normal;
+            font-family: $family-secondary;
+            font-weight: $weight-bold;
+            text-align: center;
+            text-transform: uppercase;
+            white-space: nowrap;
+            letter-spacing: 2px;
+            line-height: 1;
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+
+            &:active {
+              transform: translateY(1px);
+            }
+
+            img {
+              display: none !important;
+            }
+            span {
+              padding: 0 !important;
+            }
+          }
+        }
+      }
+
+      // Tracking
+      h2 {
+        font-size: $size-larger;
+        margin-bottom: 12px;
+      }
+
+      table.my_account_tracking {
+        width: 100%;
+        border-spacing: 0px;
+        thead {
+          tr {
+            th {
+              font-size: $size-medium;
+              font-weight: $weight-bold;
+              letter-spacing: 0.5px;
+              padding-bottom: 10px;
+            }
+          }
+        }
+        tbody {
+          tr.tracking {
+            td {
+              vertical-align: middle;
+              padding-top: 4px;
+              padding-bottom: 4px;
+              font-size: $size-medium;
+              font-weight: $weight-normal;
+              line-height: 1;
+            }
+            td.tracking-provider,
+            td.tracking-number,
+            td.date-shipped {
+              width: 24%;
+            }
+ 
+            td.order-actions {
+              padding-top: 4px;
+              padding-bottom: 4px;
+              width: 28%;
+              .button {
+                width: 100%;
+                max-width: 220px;
+              }
+            }
+          }
+        }
+      }
+    }    
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .account {
+    .woocommerce {
+      .account-order {
+        .woocommerce-order-updates {
+          ol {
+            li {
+              .description {
+                a {
+                  &:hover {
+                    color: $link-primary;
+                    background-size: 0 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .woocommerce-order-details {
+          p.woo_pdf_download_link {
+            a {
+              transition: background-color $menu-transition ease-in-out 0ms, border-color $menu-transition ease-in-out 0ms, color $menu-transition ease-in-out 0ms;
+              &:hover,
+              &:focus,
+              &:active {
+                color: $white;
+                border: 2px solid $button-hover-grey;
+                background-color: $button-hover-grey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

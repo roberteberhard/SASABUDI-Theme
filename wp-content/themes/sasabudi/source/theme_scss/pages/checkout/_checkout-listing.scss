@@ -1,0 +1,88 @@
+.checkout-listing {
+
+  @media #{$mobile} {
+    width: 100%;
+  }
+  @media #{$tablet} {
+    width: 100%;
+    max-width: $max-mini;
+    margin: 0 auto;
+  }
+  @media #{$notebook} {
+    float: left;
+    text-align: left;
+    width: calc(100% - 410px);
+    margin-right: 30px;
+  }
+  @media #{$desktop}, #{$wide} {
+    float: left;
+    text-align: left;
+    width: calc(60% - 2%);
+    margin-right: 2%;
+  }
+
+  .col-1 {
+    overflow: hidden;
+    
+    // Billing
+    .woocommerce-billing-fields {
+      h3 {
+        margin-top: 17px;
+        margin-bottom: 15px;
+        font-size: $size-larger;
+      }
+      .woocommerce-billing-fields__field-wrapper {
+        overflow: hidden;
+        .validate-phone {
+          clear: left;
+          float: left;
+          width: calc(50% - 6px);
+        }
+        .validate-email {
+          float: right;
+          width: calc(50% - 6px);
+        }
+      }
+    }
+
+    // Account
+    .woocommerce-account-fields {
+      display: inline-block;
+      width: 100%;
+      padding-top: 2px;
+      .create-account {
+        .form-row {
+          padding-bottom: 20px;
+        }
+      }
+    }
+  }
+
+  .col-2 {
+    overflow: hidden;
+
+    // Shipping
+    .woocommerce-shipping-fields {
+      padding-top: 10px;
+      padding-bottom: 5px;
+      
+      .shipping_address {
+        h3 {
+          padding-top: 12px;
+          margin-bottom: 15px;
+          font-size: $size-larger;
+        }
+      }
+    }
+
+    // Shipping
+    .woocommerce-additional-fields {
+      h3 {
+        padding-top: 22px;
+        margin-bottom: 15px;
+        font-size: $size-larger;
+      }
+
+    }
+  }
+}

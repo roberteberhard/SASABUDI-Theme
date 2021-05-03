@@ -1,0 +1,48 @@
+.account {
+  .woocommerce {
+
+    // Settings
+    .account-settings {
+      
+      h3 {
+        font-size: $size-larger;
+        max-width: $max-mini;
+        
+        @media #{$mobile}, #{$tablet} {
+          margin: 0 auto 25px auto;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          margin: 0 0 25px 0;
+        }
+      }
+
+      form.edit-account {
+        max-width: $max-mini;
+
+        @media #{$mobile}, #{$tablet} {
+          margin: 0 auto 25px auto;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          margin: 0 0 25px 0;
+        }
+
+        h3 {
+          margin-top: 50px;
+        }
+
+        .small-txt {
+          display: block;
+          overflow: hidden;
+          padding-top: 8px;
+          color: $grey;
+          font-size: $size-small;
+          line-height: 1.1;
+        }
+
+        .button {
+          margin-top: 30px;
+        }
+      }
+    }   
+  }
+}

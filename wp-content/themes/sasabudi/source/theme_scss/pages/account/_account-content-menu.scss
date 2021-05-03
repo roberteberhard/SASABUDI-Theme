@@ -1,0 +1,363 @@
+.account {
+  border-top: 1px solid $border;
+  background-color: $white;
+
+  .woocommerce {
+    overflow: hidden;
+    position: relative;
+
+    @media #{$mobile} {
+      width: 100%;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media #{$tablet} {
+      width: 100%;
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      display: flex;
+      width: auto;
+      max-width: $max-large;
+      margin: 0 auto;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    // Account Menu
+    .account-menu {
+
+      @media #{$mobile} {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: calc(100% + 40px);
+        max-height: 600px;
+        margin-left: -20px;
+        margin-right: -20px;
+        border-bottom: 1px solid $border;
+      }
+      @media #{$tablet} {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: calc(100% + 50px);
+        max-height: 600px;
+        margin-left: -25px;
+        margin-right: -25px;
+        border-bottom: 1px solid $border;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 25%;
+        margin-top: 60px;
+        padding-top: 10px;
+        padding-bottom: 80px;
+        border-top: 1px solid $border;
+      }
+
+      // Injected by JavaScript
+      .account-toggle {
+        display: block;
+
+        a.account-toggle__button {
+          display: block;
+          cursor: pointer;
+          position: relative;
+          z-index: 2;
+          width: 100%;
+          color: $text;
+          font-size: $size-medium;
+          font-family: $family-secondary;
+          font-weight: $weight-bold;
+          text-align: left;
+          line-height: 48px;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+          background-color: $color-mobile;
+
+          @media #{$mobile} {
+            padding: 0 20px;
+          }
+          @media #{$tablet} {
+            padding: 0 25px;
+          }
+        }
+
+        &:before {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 23px;
+          width: 10px;
+          height: 2px;
+          border-radius: 4px;
+          background-color: $button-black;
+          transform: rotate(0deg);
+          transition: all $menu-transition ease-in-out;
+
+          @media #{$mobile} {
+            right: 25px;
+          }
+          @media #{$tablet} {
+            right: 30px;
+          }
+        }
+
+        &:after {
+          content: '';
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 23px;
+          width: 10px;
+          height: 2px;
+          border-radius: 4px;
+          background-color: $button-black;
+          transform: rotate(90deg);
+          transition: all $menu-transition ease-in-out;
+
+          @media #{$mobile} {
+            right: 25px;
+          }
+          @media #{$tablet} {
+            right: 30px;
+          }
+        }
+      }
+
+      h3 {
+        @media #{$mobile}, #{$tablet} {
+          display: none;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          display: block;
+          font-family: $family-secondary;
+          color: $grey-light;
+          font-size: $size-normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+      }
+
+      &__navigation {
+
+        //////////////////
+        // Device View
+        //////////////////
+        @media #{$mobile}, #{$tablet} {
+          overflow: hidden;
+          transition: height $menu-transition ease 0ms;
+
+          ul {
+            li {
+              a {
+                display: block;
+                height: 42px;
+                color: $text;
+                font-size: $size-medium;
+                font-weight: 400;
+                line-height: 40px;
+                letter-spacing: 0;
+                background-color: $color-mobile;
+
+                @media #{$mobile} {
+                  padding-left: 20px;
+                }
+                @media #{$tablet} {
+                  padding-left: 25px;
+                }
+
+                &:active {
+                  background-color: $white-light;
+                }
+              }
+            }
+          }
+
+          // Menu Off
+          &.menu--off {
+
+            .account-toggle {
+              &:before {
+                animation: turn_off_before $menu-transition forwards 1 ease;
+            }
+
+            &:after {
+                animation: turn_off_after $menu-transition forwards 1 ease;
+              }
+            }
+          }
+
+          // Menu On
+          &.menu--on {
+            .account-toggle {
+
+              &:before {
+                width: 14px;
+                background-color: $primary;
+                animation: turn_on_before $menu-transition forwards 1 ease;
+
+                @media #{$mobile} {
+                  right: 23px;
+                }
+                @media #{$tablet} {
+                  right: 28px;
+                }
+              }
+
+              &:after {
+                width: 14px;
+                background-color: $primary;
+                animation: turn_on_after $menu-transition forwards 1 ease;
+
+                @media #{$mobile} {
+                  right: 23px;
+                }
+                @media #{$tablet} {
+                  right: 28px;
+                }
+              }
+            }
+          }
+        }
+
+
+        //////////////////
+        // Desktop View
+        //////////////////
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          ul {
+            margin-top: 46px;
+
+            li {
+              margin-bottom: 8px;
+
+              &:nth-child(8) {
+                margin-top: 40px;
+
+                a {
+                  cursor: pointer;
+                  display: block;
+                  width: 100%;
+                  height: 46px;
+                  padding: 13px 20px 12px;
+                  border-radius: 3px;
+                  border: 2px solid $black;
+                  background-color: $black;
+                  color: $white;
+                  font-size: $size-normal;
+                  font-family: $family-secondary;
+                  font-weight: $weight-bold;
+                  text-align: center;
+                  text-transform: uppercase;
+                  white-space: nowrap;
+                  letter-spacing: 2px;
+                  line-height: 1;
+                  // ---------
+                  // !! Hover :: Managed in no-touch section
+                  // ---------
+                }
+              }
+
+              a {
+                color: $text;
+                font-size: $size-medium;
+                font-weight: 400;
+                // ---------
+                // !! Hover :: Managed in no-touch section
+                // ---------
+              }
+
+              &.is-active {
+                a {
+                  color: $text;
+                  font-size: $size-medium;
+                  font-family: $family-secondary;
+                  font-weight: $weight-bold;
+                  letter-spacing: 0.5px;
+                  margin-left: -2px;
+                }
+                &:before {
+                  content: "";
+                  position: relative;
+                  display: inline-block;
+                  top: 0px;
+                  left: -8px;
+                  width: 3px;
+                  height: 12px;
+                  background-color: $primary;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      // Assistance
+      &__assistance {
+        display: block;
+        margin-top: 70px;
+        padding-top: 10px;
+        font-size: $size-medium;
+        border-top: 1px solid $border;
+
+        @media #{$mobile},#{$tablet} {
+          display: none;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          display: block;
+        }
+
+        ul {
+          margin-top: 46px;
+
+          li {
+            margin-bottom: 12px;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .account {
+    .woocommerce {
+      .account-menu {
+        &__navigation {
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            ul {
+              li {
+                a {
+                  &:hover {
+                    color: $link-hover-text;
+                  }
+                }
+                &:nth-child(8) {
+                  a {
+                    transition: background-color $menu-transition ease-in-out 0ms, border-color $menu-transition ease-in-out 0ms, color $menu-transition ease-in-out 0ms;
+                    &:hover,
+                    &:focus,
+                    &:active {
+                      color: $white;
+                      border: 2px solid $button-hover-grey;
+                      background-color: $button-hover-grey;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

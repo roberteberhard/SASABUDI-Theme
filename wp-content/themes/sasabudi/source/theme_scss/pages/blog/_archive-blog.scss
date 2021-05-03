@@ -1,0 +1,536 @@
+.blog {
+  border: 1px dotted red;
+  background-color: $white;
+
+  @media #{$mobile} {
+    padding: 0 0 60px;
+  }
+  @media #{$tablet} {
+    padding: 0 0 70px;
+  }
+  @media #{$notebook} {
+    padding: 0 0 90px;
+  }
+  @media #{$desktop} {
+    padding: 0 0 100px;
+  }
+  @media #{$wide} {
+    padding: 0 0 110px;
+  }
+
+  &.is-random {
+    @media #{$mobile}, #{$tablet} {
+      padding-top: 30px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      padding-top: 60px;
+    } 
+    background-color: $white-light;
+  }
+
+  /**
+   * Hero Image
+   */ 
+  .blog-hero {
+    overflow: hidden;
+    background-color: $white-light;
+  
+    &__figure {
+      position: relative;
+      background-color: $white-light;
+      transition: height $menu-transition ease-in-out 0ms;
+      
+      @media #{$mobile} {
+        height: 340px;
+      }
+      @media #{$tablet} {
+        height: 380px;
+      }
+      @media #{$notebook} {
+        height: 420px;
+      }
+      @media #{$desktop} {
+        height: 460px;
+      }
+      @media #{$wide} {
+        height: 500px;
+      }
+
+      h2 {
+        position: absolute;
+        z-index: 3;
+        top: 50%; 
+        color: $white;
+        font-family: $family-secondary;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 1.25;
+        letter-spacing: 1px;
+        text-align: center;
+
+        @media #{$mobile} {
+          left: 60px;
+          transform: translate(-40px, -50%);
+          font-size: $size-larger;
+        }
+        @media #{$tablet} {
+          left: 16%;
+          transform: translate(-10%, -50%);
+          font-size: $size-title;
+        }
+        @media #{$notebook} {
+          left: 52%;
+          transform: translate(-54%, -50%);
+          font-size: $size-title;
+        }
+        @media #{$desktop}, #{$wide} {
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-size: $size-title;
+        }
+      }
+
+      h3 {
+        position: absolute;
+        z-index: 3;
+        left: 50%;
+        transform: translate(-50%, 0);
+        color: $white;
+        font-family: $family-secondary;
+        font-size: $size-medium;
+        font-weight: 400;
+        text-decoration: none;
+        line-height: 1;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+
+        @media #{$mobile} {
+          top: 17px;
+        }
+        @media #{$tablet} {
+          top: 27px;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          top: 37px;
+        }
+      }
+  
+      h4 {
+        overflow: hidden;
+        position: absolute;
+        z-index: 3;
+        color: $white;
+        font-family: $family-primary;
+        font-size: $size-small;
+        font-weight: $weight-medium;
+        text-align: center;
+        letter-spacing: 1px;
+        transform: rotate(-90deg);
+        transform-origin: 100% 0%;
+
+        @media #{$mobile} {
+          right: calc(20px + 16px);
+          width: 340px;
+        }
+        @media #{$tablet} {
+          right: calc(25px + 16px);
+          width: 380px;
+        }
+        @media #{$notebook} {
+          right: calc(4% + 16px);
+          width: 420px;
+        }
+        @media #{$desktop} {
+          right: calc(4% + 16px);
+          width: 460px;
+        }
+        @media #{$wide} {
+          right: calc(25px + 16px);
+          width: 500px;
+        }
+      }
+
+      a.read-more {
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, 0);
+        z-index: 3;
+        max-width: 180px;
+        padding: 11px 20px 12px;
+        color: $white;
+        text-transform: initial;
+        border: 2px solid $white;
+        background: transparent;
+
+        // ---------
+        // !! Hover :: Managed in no-touch section
+        // ---------
+
+        @media #{$mobile} {
+          bottom: 20px;
+        }
+        @media #{$tablet} {
+          bottom: 30px;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          bottom: 40px;
+        } 
+      }
+  
+      &--white {
+        position: absolute;
+        z-index: 2;
+        width: 100%;
+        height: 100%;
+        background-color: $white;
+      }
+
+      &--image {
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+  }
+
+  /**
+   * Hero Navigation
+   */   
+  .blog-header {
+    height: 75px;
+    width: 100%;
+    background-color: $white;
+
+    @media #{$mobile} {
+      display: none;
+    } 
+    @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+      display: block;
+    }
+
+    .is-wrapper {
+
+      // Navigation
+      .blog-header__menu {
+        display: flex;
+        flex-direction: column;
+	      align-items: center;
+        justify-content: center;
+        height: 75px;
+        
+        .nav ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+
+          li.menu-item {
+            display: inline-block;
+            position: relative;
+            margin: 0 10px;
+            box-sizing: border-box;
+            border: 2px solid transparent;
+            vertical-align: middle;
+
+            a {
+              color: $text-light;
+              font-family: $family-secondary;
+              font-size: $size-medium;
+              font-weight: 400;
+              text-decoration: none;
+              line-height: 1;
+              letter-spacing: 2px;
+              text-transform: uppercase;            
+            }
+
+            &.active {
+              a {
+                color: $text;
+              }
+            }
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+        }
+      }
+
+      // Search
+      .blog-header__search {
+        position: absolute;
+        top: calc(50% - 15px);
+        
+        @media #{$tablet} {
+          right: 25px;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          right: 4%;
+        }
+
+        .search-bar {
+          display:none;
+
+          &__input {
+            height: 42px;
+          }
+        }
+      }
+    }
+  }
+
+  /**
+   * Blog Articles
+   */
+  .blog-articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    max-width: 1120px;
+    margin: 0 auto;
+    
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      flex-direction: row;
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+
+    .article {
+
+      @media #{$mobile} {
+        flex: 0 0 calc(100% - 40px);
+        margin: 20px 20px 30px 20px;
+      }
+      @media #{$tablet} {
+        flex: 0 0 calc(100% - 50px);
+        margin: 20px 25px 30px 25px;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        flex: 0 0 calc(33.3333333% - 20px);
+        margin-top: 20px;
+        margin-bottom: 40px;
+
+        &.is-start {
+          margin-left: 0;
+          margin-right: 15px;
+        }
+        &.is-middle {
+          margin-left: 15px;
+          margin-right: 15px;
+        }
+        &.is-end {
+          margin-left: 15px;
+          margin-right: 0;
+        }
+
+        &.randomly { // grey part randomly positioned
+          margin-bottom: 0px;
+          a.article-thumbnail {
+            background-color: $white-dark;
+          }
+        }
+      }
+      
+      .article-thumbnail {
+        display: block;
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        background-color: $white-light;
+        
+        @media #{$mobile} {
+          height: 280px;
+          margin: 0 0 20px;
+        }
+        @media #{$tablet} {
+          height: 320px;
+          margin: 0 0 30px;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          height: 380px;
+          margin: 0 0 30px;
+        }
+
+        .article-thumbnail__white {
+          display: block;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-spacing: 0;
+          background-color: rgba(255,255,255,0);
+          transition: background-color $image-transition ease-in-out 0ms;
+        }
+
+        .article-thumbnail__image {
+          opacity: 0;
+          transform: scale(1);
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          backface-visibility: hidden;
+          transition: transform $image-transition ease-in-out, opacity $image-transition ease-in-out 0ms;
+
+          &.lazy-fade {
+            opacity: 1;
+          }
+
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+
+        }
+      }
+
+      ul.post-categories {
+        margin-bottom: 16px;
+        li {
+          a {
+            font-size: $size-small;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          }
+        }
+      }
+
+      h3.entry-title {
+        margin-bottom: 8px;
+
+        a {
+          font-size: $size-larger;
+          line-height: 1;
+        }
+      }
+      
+      p {
+        a.read_more {
+          margin-top: 12px;
+          font-size: $size-normal;
+          display: inline-block;
+        }
+        .post-date {
+          margin-left: 8px;
+          color: $grey-light;
+          font-size: $size-small;
+          letter-spacing: 1px;
+        }
+      }
+    }
+  }
+
+
+
+  /**
+   * Empty content
+   */ 
+  .is-empty {
+    border-top: 1px solid $border;
+
+    @media #{$mobile} {
+      padding-top: 60px;
+    } 
+    @media #{$tablet} {
+      padding-top: 80px;
+    }
+    @media #{$notebook} {
+      padding-top: 90px;
+    }
+    @media #{$desktop} {
+      padding-top: 100px;
+    }
+    @media #{$wide} {
+      padding-top: 120px;
+    }
+
+    h2 {
+      font-size: $size-title; 
+      margin-bottom: 24px; 
+      text-align: center; 
+    }
+
+    p {
+      margin-bottom: 25px;
+      font-size: $size-medium;
+      font-weight: $weight-normal;
+      text-align: center;
+      @media #{$tablet} {
+        padding: 0 10%;
+      }
+      @media #{$notebook} {
+        padding: 0 15%;
+      }
+      @media #{$desktop} {
+        padding: 0 20%;
+      }
+      @media #{$wide} {
+        padding: 0 25%;
+      }
+    }
+
+    .empty-back {
+      margin-top: 60px;
+      text-align: center;
+      .btn-short {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .blog { 
+    .blog-hero {
+      &__figure {
+        a.read-more {
+          &:hover {
+            color: $white;
+            border: 2px solid $button-hover-yellow;
+            background-color: $button-hover-yellow;
+          }
+        }
+      }
+    } 
+    .blog-header {
+      .is-wrapper {
+        .blog-header__menu {
+          .nav ul {
+            li.menu-item {
+              &:hover {
+                a {
+                  color: $text;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .blog-articles {
+      .article {
+        .article-thumbnail {
+          &:hover {
+            .article-thumbnail__white {
+              background-color: $image-opacity;
+            }
+            .article-thumbnail__image {
+              transform: $image-scale;
+            }
+          }
+        }
+      }
+    }
+  }
+}

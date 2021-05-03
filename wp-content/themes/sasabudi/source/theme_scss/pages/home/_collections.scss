@@ -1,0 +1,239 @@
+.collection {
+
+  &.is-home {
+    padding-bottom: 0px;
+
+    @media #{$mobile} {
+      background-color: $white-light;
+    }
+    @media #{$tablet}  {
+      margin-top: 40px;
+      padding-top: 25px;
+      background-color: $white-light;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      background-color: $white;
+    }
+
+    .collection-article {
+
+      &.is-extended {
+        overflow: hidden;
+
+        .collection-featured {
+
+          &.right {
+            @media #{$notebook}, #{$desktop}, #{$wide} {
+              float: right;
+              width: 50%;
+              box-shadow: 0 10px 10px -10px rgba(0,0,0,.2);
+            }
+          }
+
+          &.left {
+            @media #{$notebook}, #{$desktop}, #{$wide} {
+              float: left;
+              width: 50%;
+            }
+          }
+
+          &__desc {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            @media #{$mobile} {
+              padding: 35px 20px 40px;
+            }
+            @media #{$tablet} {
+              padding: 40px 30px 45px;
+            }
+            @media #{$notebook} {
+              height: 400px;
+              padding: 0 8% 10px 0;
+            }
+            @media #{$desktop} {
+              height: 420px;
+              padding: 0 12% 10px 12%;
+            }
+            @media #{$wide} {
+              height: 460px;
+              padding: 0 16% 10px 16%;
+            }
+
+            h4 {
+              text-align: left;
+              margin-bottom: 5px;
+              color: $grey;
+              font-family: $family-primary;
+              font-size: $size-small;
+              letter-spacing: 1px;
+              line-height: 1;
+              font-weight: 300;
+              text-transform: uppercase;
+            }
+
+            h2 {
+              margin-bottom: 10px;
+              font-size: $size-title;
+              a {
+                color: $text;
+                font-weight: $weight-bold;
+                // ---------
+                // !! hover :: managed in no-touch section
+                // ---------
+              }
+            }
+
+            p {
+              color: $text;
+              margin-bottom: 28px;
+            }
+
+            &--action {
+
+              a.button.btn-short {
+                float: left;
+
+                @media #{$mobile} {
+                  width: calc(50% - 6px);
+                  max-width: 50%;
+                  margin-right: 6px;
+                }
+                @media #{$tablet}, #{$notebook}, #{$desktop} {
+                  width: calc(50% - 8px);
+                  max-width: 200px;
+                  margin-right: 8px;
+                }
+                @media #{$wide} {
+                  width: calc(50% - 10px);
+                  max-width: 200px;
+                  margin-right: 10px;
+                }
+              }
+
+              a.button.btn-light {
+                float: left;
+
+                @media #{$mobile} {
+                  width: calc(50% - 6px);
+                  max-width: 50%;
+                  margin-left: 6px;
+                }
+                @media #{$tablet}, #{$notebook}, #{$desktop} {
+                  width: calc(50% - 8px);
+                  max-width: 200px;
+                  margin-left: 8px;
+                }
+                @media #{$wide} {
+                  width: calc(50% - 10px);
+                  max-width: 200px;
+                  margin-left: 10px;
+                }
+              }
+            }
+          }
+
+          &__figure {
+            overflow: hidden;
+            position: relative;
+            background-color: $white-light;
+
+            &--image {
+              opacity: 0;
+              background-repeat: no-repeat;
+              background-position: center center;
+              background-size: cover;
+              transition: height $menu-transition ease 0ms;
+
+              @media #{$mobile} {
+                height: 320px;
+              }
+              @media #{$tablet}, #{$notebook} {
+                height: 400px;
+              }
+              @media #{$desktop} {
+                height: 420px;
+              }
+              @media #{$wide} {
+                height: 460px;
+              }
+
+              transform: scale(1);
+              transition: transform $image-transition ease-in-out, opacity $image-transition ease-in-out 0ms;
+
+              &.lazy-fade {
+                opacity: 1;
+              }
+            }
+
+            &--link {
+              position: absolute;
+              display: block;
+              z-index: 1;
+              display: table !important;
+              top: 0;
+              left: 0;
+              width: 100%;
+              border-spacing: 0;
+              background-color: rgba(255,255,255,0);
+              transition: background-color $image-transition ease-in-out 0ms;
+
+              @media #{$mobile} {
+                height: 340px;
+              }
+              @media #{$tablet}, #{$notebook} {
+                height: 400px;
+              }
+              @media #{$desktop} {
+                height: 420px;;
+              }
+              @media #{$wide} {
+                height: 460px;
+              }
+            }
+            // ---------
+            // !! hover :: managed in no-touch section
+            // ---------
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .collection {
+    &.is-home {
+      .collection-article {
+        &.is-extended {
+          .collection-featured {
+            &__desc {
+              h2 {
+                a {
+                  transition: color $menu-transition ease;
+                  &:hover {
+                    color: $link-hover-text;
+                  }
+                }
+              }
+            }
+            &__figure {
+              &:hover {
+                .collection-featured__figure--image {
+                  transform: $image-scale;
+                }
+                .collection-featured__figure--link {
+                  background-color: $image-opacity;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

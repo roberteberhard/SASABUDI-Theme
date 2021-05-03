@@ -1,0 +1,183 @@
+.support {
+  .support-content {
+    .support-section {
+
+      // Support FAQ
+      .support-faq {
+        overflow: hidden;
+        padding-top: 10px;
+
+        .section-faq {
+          overflow: hidden;
+          margin-bottom: 8px;
+          border-radius: 4px;
+          background-color: $white-light;   
+
+          .section-faq-header {
+            
+            &__title {
+              cursor: pointer;
+              display: block;
+              position: relative;
+              width: 100%;
+              padding: 18px 32px 20px 20px;
+              color: $text;
+              font-family: $family-secondary;
+              font-size: $size-medium;
+              font-weight: $weight-bold;
+              letter-spacing: 0.5px;
+
+              &:before {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                width: 11px;
+                height: 2px;
+                border-radius: 3px;
+                background-color: $black-light;
+                transform: rotate(0deg);             
+              }
+
+              &:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 30px;
+                right: 20px;
+                width: 11px;
+                height: 2px;
+                border-radius: 4px;
+                background-color: $black-light;
+                transform: rotate(90deg);
+              }
+            }
+          }
+        
+          .section-faq-feature {
+            overflow: hidden;
+            
+            ol.section-faq-feature__notice {
+              max-height: 0px;
+              list-style-type: disc;
+              li {
+                font-size: $size-medium;
+                margin-left: 40px;
+              }   
+              li.ending {
+                margin-bottom: 15px;
+                padding-bottom: 30px;
+              }
+            }
+
+            div.section-faq-feature__notice {
+              max-height: 0px;
+              p {
+                font-size: $size-medium;
+                padding: 0 20px;
+                padding-bottom: 15px;
+
+                &.starting { 
+                  padding-top: 5px;
+                }                
+                &.ending {
+                  padding-bottom: 30px;
+                }
+              }
+
+              table.ending {
+                width: calc(100% - 40px);
+                margin: 15px 0 0 20px;
+                color: $grey-darker;
+                font-size: $size-normal;  
+
+                tr {
+                  td {
+                    &.title {
+                      padding: 9px 0 10px 10px;
+                      font-size: $size-normal;
+                      font-weight: $weight-bold;
+                      background-color: $white-dark;
+                    }
+                    &.firstrow {
+                      padding: 6px 0 8px 10px;
+                      border-bottom: 2px solid $white-dark;
+                      font-size: $size-normal;
+                      font-weight: $weight-bold;
+                      &.a,
+                      &.e {
+                        width: 26%;
+                      }
+                      &.b,
+                      &.c,
+                      &.d {
+                        width: 16%;
+                      }
+                    }
+                    &.lastrow {
+                      padding: 5px 0 30px 10px;
+                    }
+                  }
+                }
+              }
+
+              ol {
+                list-style-type: disc;
+                li {
+                  font-size: $size-medium;
+                  margin-left: 40px;
+                  &.ending {
+                    margin-bottom: 20px;
+                  }
+                }
+                &.ending {
+                  padding-bottom: 30px;
+                }
+              }
+            }
+          }
+
+          // open section
+          &.tab-open {
+            .section-faq-header {   
+              &__title {
+                color: $text;
+                &:after {
+                  background-color: transparent;
+                  transition: background-color $menu-transition ease 0ms;
+                }
+              }
+            }
+            .section-faq-feature {
+              ol.section-faq-feature__notice,
+              div.section-faq-feature__notice {
+                max-height: 1200px;
+                transition: all 1000ms ease 0ms;
+              }
+            }
+          }
+
+          // closed section
+          &.tab-closed {
+            .section-faq-header {
+              &__title {
+                &:after {
+                  background-color: $black;
+                  transition: background-color 500ms ease 250ms;
+                }
+              }
+            }
+            .section-faq-feature { 
+              ol.section-faq-feature__notice,
+              div.section-faq-feature__notice {
+                max-height: 0px;
+                transition: all 500ms ease 0ms
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

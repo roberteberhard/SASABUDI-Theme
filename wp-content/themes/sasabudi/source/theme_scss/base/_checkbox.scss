@@ -1,0 +1,77 @@
+.label-for-checkbox,
+.payment_method_stripe,
+.woocommerce-form__label-for-checkbox {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 2px 0 2px 30px;
+
+  input[name=terms],
+  input[name=rememberme],
+  input[name=createaccount],
+  input[name=ship_to_different_address],
+  input[name=message_terms],
+  input[name=privacy],
+  input[name=subscriber_gdpr],
+  input[name=wc-stripe-new-payment-method] {
+    width: 0;
+    height: 0;
+    border: none;
+    margin-left: -3px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:before {
+      cursor: pointer;
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 3;
+      width: 20px;
+      height: 20px;
+      top: 3px;
+      left: 1px;
+      border: 1px solid $black;
+      background: $white;
+      transition: box-shadow $menu-transition ease-in-out, transform $menu-transition ease-in-out, opacity $menu-transition ease-in-out, border-color $menu-transition ease-out;
+    }
+
+    &:after {
+      cursor: pointer;
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: 4;
+      width: 22px;
+      height: 22px;
+      top: 2px;
+      left: 1px;
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 22px 22px;
+      background-image: $icon__form-checkbox;
+      opacity: 0;
+      transform: scale(0);
+      transition: transform $menu-transition ease-out, opacity $menu-transition ease-out, border-color $menu-transition ease-in-out;
+    }
+  }
+  
+  input[name=terms]:checked,
+  input[name=rememberme]:checked,
+  input[name=message_terms]:checked,
+  input[name=createaccount]:checked,
+  input[name=ship_to_different_address]:checked,
+  input[name=privacy]:checked,
+  input[name=subscriber_gdpr]:checked,
+  input[name=wc-stripe-new-payment-method]:checked {
+    &:before {
+      border: 1px solid $black;
+      box-shadow: 0 0 0 1px $black;
+    }
+    &:after {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+} 

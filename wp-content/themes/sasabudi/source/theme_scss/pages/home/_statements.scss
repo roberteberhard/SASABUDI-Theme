@@ -1,0 +1,127 @@
+.statements {
+  background-color: $white;
+  overflow: hidden;
+
+  @media #{$mobile} {
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+  @media #{$tablet} {
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  @media #{$notebook} {
+    padding-top: 60px;
+    padding-bottom: 110px;
+  }
+  @media #{$desktop} {
+    padding-top: 60px;
+    padding-bottom: 110px;
+  }
+  @media #{$wide} {
+    padding-top: 80px;
+    padding-bottom: 130px;
+  }
+
+  .is-wrapper {
+
+    .glide {
+
+      &__slide {
+
+        &--artwork,
+        &--order,
+        &--shipping {
+          width: 64px;
+          height: 64px;
+          margin-left: calc(50% - 32px);
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: 64px 64px;
+        }
+
+        &--artwork {
+          background-image: $icon__authentic-artwork;
+        }
+
+        &--order {
+          background-image: $icon__made-to-order;
+        }
+
+        &--shipping {
+          background-image: $icon__worldwide-shipping;
+        }
+
+        h4 {
+          margin-top: 12px;
+          margin-bottom: 10px;
+          font-size: $size-large;
+          text-align: center;
+          letter-spacing: 0.5px;
+        }
+
+        p {
+          color: $text;
+          font-size: 1.0625rem;
+          text-align: center;
+          line-height: 1.25;
+
+          @media #{$mobile} {
+            padding: 0 20px;
+          }
+          @media #{$tablet} {
+            padding: 0 30px;
+          }         
+          @media #{$notebook}, #{$desktop} {
+            padding: 0 40px;
+          }
+          @media #{$wide} {
+            padding: 0 50px;
+          }
+        }
+      }
+
+      &__bullets {
+        bottom: -36px;
+
+        .glide__bullet {
+          width: 9px;
+          height: 9px;
+          border: none !important;
+          background-color: $grey-lighter;
+          box-shadow: none !important;
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+          &.glide__bullet--active {
+            border: none !important;
+            background-color: $primary !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .statements {
+    .is-wrapper {
+      .glide {
+        &__bullets {
+          .glide__bullet {
+            &:hover {
+              background-color: $grey-light;
+            }
+            &:focus {
+              border: none !important;
+              background-color: $grey-light;
+            }
+          }
+        }
+      }
+    }
+  } 
+}

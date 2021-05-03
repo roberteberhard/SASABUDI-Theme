@@ -1,0 +1,117 @@
+/* ON */
+.subscription-on {
+  .subscription {
+		opacity: 1;
+		width: 100%;
+		height: 100%;
+		transition: opacity 350ms ease 0ms;
+  }
+}
+
+/* OFF */
+.subscription-off {
+  .subscription {
+		opacity: 0;
+		width: 0;
+		height: 0;
+		transition: opacity 350ms ease 0ms, width 0ms ease 350ms, height 0ms ease 350ms;
+  }
+}
+
+.subscription {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+	align-items: center;
+	justify-content: center;
+  opacity: 0;
+  width: 0;
+  height: 0;
+  background-color: $modal-opacity;
+
+  .subscription-box {
+    position: relative;
+    max-width: 640px;
+    height: auto;
+    border-radius: 3px;
+    background-color: $white;
+    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.2);
+
+    @media #{$mobile} {
+      margin: 20px;
+      padding: 30px 20px;
+    }
+    @media #{$tablet} {
+      margin: 25px;
+      padding: 30px 30px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      padding: 30px 30px 40px;
+    }
+
+    h3 {
+      margin-bottom: 20px;
+      font-size: $size-subtitle;
+      text-align: center;
+      letter-spacing: 0.5px;
+    }
+
+    p {
+      text-align: center;
+      font-size: $size-medium;
+      line-height: 1.25;
+      margin-bottom: 10px;
+      color: $text;
+    }
+
+    &__close {
+      display: block;
+      cursor: pointer;
+      position: absolute;
+      z-index: 2;
+      right: 8px;
+      top: 8px;
+      width: 40px;
+      height: 40px;
+      color: transparent;
+      font-size: 0;
+      background-repeat: no-repeat;
+      background-position: 0px 0px;
+      background-size: 40px 40px;
+      background-image: $icon__menu-offset-close;
+      transition: opacity $menu-transition ease-in-out 0ms;
+      // ---------
+      // !! Hover :: Managed in no-touch section
+      // ---------
+    }
+
+    &__continue {
+      padding-top: 30px;
+      text-align: center;
+
+      .button.subscription-close {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .subscription {
+    .subscription-box {
+      &__close {
+        &:hover {
+          opacity: $menu-opacity;
+        }
+      }
+    }
+  }
+}

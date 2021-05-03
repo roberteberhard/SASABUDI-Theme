@@ -1,0 +1,90 @@
+.app {
+  min-height: 100vh;
+  width: 100%;
+  background-color: $white;
+}
+
+// hidden app modal
+.app {
+  &:after {
+    content: '';
+    overflow: hidden;
+    position: fixed;
+    z-index: 996;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 0;
+    background-color: $modal-opacity;
+  }
+}
+
+// modal-on added by javascript
+.app.modal-on {
+  &:after {
+		opacity: 1;
+		width: 100vw;
+		height: 100%;
+		// transition
+		transition: opacity $menu-transition ease-in-out 0ms;
+	}
+}
+
+// modal-off added by javascript
+.app.modal-off {
+	&:after {
+		opacity: 0;
+		width: 0;
+		height: 0;
+		// transition
+		transition: opacity $menu-transition ease-in-out 0ms, width 0ms ease $menu-transition, height 0ms ease $menu-transition;
+	}
+}
+
+.app {
+
+  .is-wrapper {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto ;
+    height: auto;
+    max-width: $max-large;
+
+    @media #{$mobile} {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    @media #{$tablet} {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
+
+  .is-extended {
+    flex-grow: 1;
+    margin: 0 auto;
+    position: relative;
+    width: auto ;
+    height: auto;
+    max-width: $max-large;
+
+    @media #{$mobile} { // fullscreen on mobile !!
+      padding-left: 0px;
+      padding-right: 0px;
+    }
+    @media #{$tablet} {
+      padding-left: 25px;
+      padding-right: 25px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      padding-left: 4%;
+      padding-right: 4%;
+    }
+  }
+}

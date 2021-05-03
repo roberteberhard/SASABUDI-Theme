@@ -1,0 +1,8 @@
+/* White color with alpha opacity */
+@function white($opacity) {
+  @return rgba(255,255,255,$opacity);
+}
+/* Black color with alpha opacity */
+@function black($opacity) {
+  @return rgba(0,0,0,$opacity);
+}

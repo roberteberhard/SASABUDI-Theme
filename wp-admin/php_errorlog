@@ -1,0 +1,79 @@
+[15-Dec-2020 16:06:26 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[15-Dec-2020 16:06:26 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[15-Dec-2020 16:08:06 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[15-Dec-2020 16:08:06 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[15-Dec-2020 16:16:53 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[15-Dec-2020 16:16:53 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:08:15 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:08:15 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:17:17 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:17:17 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:18:16 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:18:16 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:19:17 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:19:17 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:19:42 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:19:42 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:20:07 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 19:20:07 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 21:37:39 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 21:37:39 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 21:38:08 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 21:38:08 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:50:10 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:50:10 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:53:02 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:53:02 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:53:37 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:53:37 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:54:33 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:54:33 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:54:59 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:54:59 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:55:25 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[22-Dec-2020 22:55:25 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[23-Dec-2020 13:04:43 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[23-Dec-2020 13:04:43 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[23-Dec-2020 13:06:27 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[23-Dec-2020 13:06:27 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[23-Dec-2020 13:06:55 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[23-Dec-2020 13:06:55 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[21-Jan-2021 14:33:23 UTC] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/customer/www/sasabudi.com/public_html/wp-content/themes/sasabudi/functions/wordpress/sendy-form.php on line 82
+[21-Jan-2021 14:33:23 UTC] PHP Warning:  file_get_contents(https://sendy.delivery.ch/subscribe): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/customer/www/sasabudi.com/public_html/wp-content/themes/sasabudi/functions/wordpress/sendy-form.php on line 82
+[21-Jan-2021 14:33:43 UTC] PHP Warning:  file_get_contents(): php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/customer/www/sasabudi.com/public_html/wp-content/themes/sasabudi/functions/wordpress/sendy-form.php on line 82
+[21-Jan-2021 14:33:43 UTC] PHP Warning:  file_get_contents(https://sendy.delivery.ch/subscribe): failed to open stream: php_network_getaddresses: getaddrinfo failed: Name or service not known in /home/customer/www/sasabudi.com/public_html/wp-content/themes/sasabudi/functions/wordpress/sendy-form.php on line 82
+[28-Jan-2021 11:12:38 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[28-Jan-2021 11:12:38 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[31-Jan-2021 16:23:43 UTC] PHP Warning:  Creating default object from empty value in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/woocommerce/includes/admin/helper/class-wc-helper-updater.php on line 81
+[20-Mar-2021 09:38:25 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 101
+[20-Mar-2021 09:38:25 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 104
+[12-Apr-2021 10:24:51 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[12-Apr-2021 10:24:51 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[12-Apr-2021 10:31:50 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[12-Apr-2021 10:31:50 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[12-Apr-2021 10:53:22 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[12-Apr-2021 10:53:22 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[12-Apr-2021 11:00:48 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[12-Apr-2021 11:00:48 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[17-Apr-2021 10:12:05 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[17-Apr-2021 10:12:05 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[17-Apr-2021 11:06:24 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[17-Apr-2021 11:06:24 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[17-Apr-2021 11:11:16 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[17-Apr-2021 11:11:16 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[17-Apr-2021 11:15:30 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[17-Apr-2021 11:15:30 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[17-Apr-2021 11:50:37 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[17-Apr-2021 11:50:37 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[17-Apr-2021 11:54:10 UTC] PHP Warning:  Invalid argument supplied for foreach() in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 117
+[17-Apr-2021 11:54:10 UTC] PHP Warning:  implode(): Invalid arguments passed in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/complianz-gdpr-premium/callback-notices.php on line 120
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[24-Apr-2021 12:59:20 UTC] PHP Warning:  in_array() expects parameter 2 to be array, null given in /home/customer/www/sasabudi.com/public_html/wp-content/plugins/printful-shipping-for-woocommerce/includes/class-printful-admin-settings.php on line 306
+[26-Apr-2021 18:21:46 UTC] PHP Warning:  mysqli_query(): MySQL server has gone away in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056
+[26-Apr-2021 18:21:46 UTC] PHP Warning:  mysqli_query(): Error reading result set's header in /home/customer/www/sasabudi.com/public_html/wp-includes/wp-db.php on line 2056

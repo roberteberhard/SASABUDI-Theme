@@ -1,0 +1,229 @@
+.account {
+  .woocommerce {
+
+    // Orders
+    .account-orders {
+
+      table.account-orders-table {
+        width: 100%;
+        margin-top: -2px;
+        border-spacing: 0px !important;
+        thead {
+          tr {
+            th {
+              &.woocommerce-orders-table__header {
+                padding: 0 0 12px 6px;
+                font-size: $size-medium;
+                font-weight: $weight-bold;
+                letter-spacing: 0.5px;
+              }
+            }
+          }
+        }
+        tbody {
+          tr {
+            &:nth-child(odd) {
+              td {
+                background-color: $white-light;
+              }
+            }
+            td {
+              padding-left: 6px;
+              line-height: 1;
+              vertical-align: middle;
+
+              &.woocommerce-orders-table__cell-order-number {
+                
+                a {
+                  color: $link-primary;
+                  // ---------
+                  // !! Hover :: Managed in no-touch section
+                  // ---------
+                }
+              }
+              &.woocommerce-orders-table__cell-order-status {
+                .completed {
+                  color: $text;
+                }
+                .processing {
+                  color: #5b841b;
+                }
+                .onhold {
+                  color: #94660c;
+                }
+                .cancelled,
+                .refunded,
+                .failed,
+                .pendingpayment {
+                  color: #777;
+                }
+              }
+              &.woocommerce-orders-table__cell-order-actions {
+                padding-top: 12px;
+                padding-bottom: 6px;
+                a {
+                  &.pay ,
+                  &.view,
+                  &.cancel {
+                    display: inline-block;
+                    width: auto;
+                    padding: 9px 8px 9px 10px;
+                    margin-bottom: 6px;
+                    color: $white;
+                    font-size: $size-small;
+                    font-family: $family-secondary;
+                    font-weight: $weight-bold;
+                    letter-spacing: 2px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    border-radius: 2px;
+                    background-color: $button-black;
+                    // ---------
+                    // !! Hover :: Managed in no-touch section
+                    // ---------
+                  }
+                  &.pay {
+                    margin-right: 6px;
+                  }
+                  &.view {
+                    margin-right: 6px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .button {
+        margin-top: 40px;
+      }
+    } 
+    
+    // Pagination
+    .woocommerce-orders-pagination {
+      margin-top: 30px;
+      padding-top: 10px;
+      border-top: 1px solid $border;
+
+      a.orders-previous {
+        position: relative;
+        padding: 5px 5px 5px 14px;
+        float: left;
+        font-size: $size-normal;
+        font-family: $family-secondary;
+        font-weight: $weight-bold;
+        letter-spacing: 0.5px;
+
+        // ---------
+        // !! Hover :: Managed in no-touch section
+        // ---------
+
+        &:before {
+          content: "";
+          position: absolute;
+          display: block;
+          top: 12px;
+          left: 0;
+          width: 10px;
+          height: 10px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: $icon__arrow-select;
+          transform: rotate(90deg);
+          transition: opacity $menu-transition ease-in-out 0ms;
+        }
+      }
+
+      a.orders-next {
+        position: relative;
+        padding: 5px 14px 5px 5px;
+        float: right;
+        font-size: $size-normal;
+        font-family: $family-secondary;
+        font-weight: $weight-bold;
+        letter-spacing: 0.5px;
+
+        // ---------
+        // !! Hover :: Managed in no-touch section
+        // ---------
+
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          top: 12px;
+          right: 0;
+          width: 10px;
+          height: 10px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-image: $icon__arrow-select;
+          transform: rotate(-90deg);
+          transition: opacity $menu-transition ease-in-out 0ms;
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .account {
+    .woocommerce {
+      .account-orders {
+        .account-orders-table {
+          tbody {
+            tr {
+              td.woocommerce-orders-table__cell-order-number {
+                a {
+                  &:hover {
+                    color: $link-hover-text;
+                  }
+                }
+              }
+              td.woocommerce-orders-table__cell-order-actions {
+                a {
+                  transition: background-color $menu-transition ease-in-out 0ms;
+                  &.pay ,
+                  &.view,
+                  &.cancel {
+                    &:hover,
+                    &:focus,
+                    &:active {
+                      color: $white;
+                      background-color: $button-hover-grey;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      
+      // Pagination
+      .woocommerce-orders-pagination {
+        a.orders-previous {
+          &:hover {
+            &:before {
+              opacity: $menu-opacity;
+            }
+          }
+        }
+
+        a.orders-next {
+          &:hover {   
+            &:after {
+              opacity: $menu-opacity;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,139 @@
+.footer-bottom {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  border-top: 1px solid $border;
+  background-color: $white;
+
+  .is-wrapper {
+    overflow: hidden;
+
+    .footer-payment {
+        
+      @media #{$mobile}, #{$tablet} {
+        display: block;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: none;
+      }
+
+      &__prices {
+        margin: 12px 0 10px;
+        font-size: $size-normal;
+        text-align: center;
+      }
+      
+
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+        li {
+          width: 42px;
+          height: 27px;
+          margin: 2px 2px 0 2px;
+          font-size: 0;
+
+          div {
+            width: 42px;
+            height: 27px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 100% auto;
+            &.footer-payment__paypal {
+              background-image: url(#{$loader-url}payment-paypal.svg);
+            }
+            &.footer-payment__visa {
+              background-image: url(#{$loader-url}payment-visa.svg);
+            }
+            &.footer-payment__amexco {
+              background-image: url(#{$loader-url}payment-amex.svg);
+            }
+            &.footer-payment__mastercard {
+              background-image: url(#{$loader-url}payment-mastercard.svg);
+            }
+            &.footer-payment__discover {
+              background-image: url(#{$loader-url}payment-discover.svg);
+            }
+            &.footer-payment__jcb {
+              background-image: url(#{$loader-url}payment-jcb.svg);
+            }
+            &.footer-payment__diners {
+              background-image: url(#{$loader-url}payment-diners.svg);
+            }
+          }
+        }
+      }
+    }
+
+    .footer-disclaimer {
+      display: block;
+      overflow: hidden;
+
+      @media #{$mobile}, #{$tablet} {
+        padding: 22px 0 20px;
+        text-align: center;
+        line-height: 1.35;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        float: right;
+        text-align: right;
+        width: 60%;
+      }
+
+      &__privacy,
+      &__terms,
+      &__cookies,
+      &__notice {
+        color: $text;
+   
+        @media #{$mobile}, #{$tablet} {
+          font-size: $size-normal;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          font-size: 1.0625rem;
+        }
+
+        .spc {
+          position: relative;
+          top: -1px;
+          padding-left: 8px;
+          padding-right: 8px;
+          color: $primary;
+          font-size: $size-mini;
+        }
+      }  
+    }
+
+    .footer-credit {
+      display: block;
+      overflow: hidden;
+   
+      @media #{$mobile}, #{$tablet} {
+        text-align: center;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        float: left;
+        width: 40%;
+        margin-bottom: 0px;
+        text-align: left;
+      }
+
+      &__copy {
+        color: $text;
+        a {
+          font-weight: $weight-bold;
+          font-family: $family-secondary;
+          letter-spacing: 0.5px;
+        }
+  
+        @media #{$mobile}, #{$tablet} {
+          font-size: $size-normal;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          font-size: 1.0625rem;
+        }
+      }
+    }
+  }
+}

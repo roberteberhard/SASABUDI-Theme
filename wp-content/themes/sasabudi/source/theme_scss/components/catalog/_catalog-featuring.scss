@@ -1,0 +1,176 @@
+.featuring {
+  background-color: $white-light;
+  
+  @media #{$mobile} {
+    padding: 40px 0 60px;
+  } 
+  @media #{$tablet} {
+    padding: 50px 0 80px;
+  }
+  @media #{$notebook} {
+    padding: 60px 0 90px;
+  }
+  @media #{$desktop} {
+    padding: 60px 0 100px;
+  }
+  @media #{$wide} {
+    padding: 60px 0 110px;
+  }
+
+  .is-extended {
+    overflow: hidden;
+
+    .featuring-title {
+      margin-bottom: 20px; 
+      font-size: $size-title;
+      text-align: center; 
+    }
+
+    .featuring-products {
+      overflow: hidden;
+
+      @media #{$mobile} {
+        width: calc(100% + 12px);
+        margin: 0 -6px;
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop} {
+        width: calc(100% + 16px);
+        margin: 0 -8px;
+      }
+      @media #{$wide} {
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+      }
+      
+      // Change product list style
+      .product-featuring {
+        .product {
+          background-color: $white-light;
+          
+          .product-article {
+            padding-bottom: 0px;
+            
+            .product-title {
+              padding: 0px 10px 8px 10px !important;
+              background-color: $white-light !important;
+            }
+          }
+        }
+      }
+    }
+
+    .featuring-next {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      text-align: center;
+
+      @media #{$mobile} {
+        margin-top: 40px;
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+        margin-top: 60px;
+      }
+
+      &.is-end {
+        margin-top: 0px;
+      }
+
+      &__button {
+        cursor: pointer;
+        display: inline-block;
+        outline: none;
+        width: 200px;
+        height: 46px;
+        border-radius: 2px;
+        border: 2px solid $button-black;
+        background-color: $button-black;
+        // fonts
+        color: $white;
+        font-size: $size-normal;
+        font-family: $family-secondary;
+        font-weight: $weight-bold;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        letter-spacing: 2px;
+        line-height: 41px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        transition: background-color $menu_transition ease 0ms, border-color $menu_transition ease 0ms, color $menu_transition ease 0ms;
+        // ---------
+        // !! Hover :: Managed in no-touch section
+        // ---------
+      }
+
+      .icon-waiting {
+        position: absolute;
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+        top: 13px;
+        right: calc(50% - 10px);
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 20px 20px;
+        background-image: $icon__footer-loading;
+        transition: opacity $menu_transition ease 0ms;
+      }
+      
+      &.show-loader {
+
+        .featuring-next__button {
+          cursor: not-allowed;
+          width: 46px;
+          height: 46px;
+          font-size: 0;
+          color: transparent;
+          transition: all 75ms ease 0ms;
+          border-radius: 50%;
+          border-color: $button-hover-grey;
+          background-color: $button-hover-grey;
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+
+        .icon-waiting {
+          z-index: 1;
+          opacity: 1;
+          animation: infinite-spinning 0.9s infinite linear;
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .featuring {
+    .is-extended {
+      .featuring-next {
+        &__button {    
+          &:hover {
+            outline: none;
+            color: $white;
+            text-decoration: none;
+            border-color: $button-hover-grey;
+            background-color: $button-hover-grey;
+          }
+        }
+        &.show-loader {
+          .featuring-next__button {    
+            &:hover {
+              border-color: $button-hover-grey;
+              background-color: $button-hover-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}

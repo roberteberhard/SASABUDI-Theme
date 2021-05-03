@@ -1,0 +1,76 @@
+.header-promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  padding-top: 8px;
+  padding-bottom: 9px;
+
+  &.default-style {
+    border-top: 1px solid $border;
+    background-color: $white;
+    .header-promo__prompt {
+      color: $text;
+    }
+  }
+  &.dark-style {
+    background-color: $black-dark;
+  }
+  &.alert-style {
+    background-color: $color-alert;
+  }
+  &.promotion-style {
+    background-color: $color-info;
+  }
+  &.rainbow-style-a {
+    background-image: linear-gradient(90deg, #f7c626 15%, #f68c2f 40%, #e5127d 85%);
+  }
+  &.rainbow-style-b {
+    background-image: linear-gradient(90deg, rgb(100, 91, 83) 0%, rgb(235, 82, 82) 18.23%, rgb(247, 143, 47) 34.37%, rgb(244, 193, 81) 48.96%, rgb(82, 187, 118) 66.15%, rgb(38, 165, 215) 82.29%, rgb(224, 105, 183) 100%);
+  }
+  &.rainbow-style-c {
+    background-image: linear-gradient(90deg, #f7c626 15%, #f68c2f 40%, #e5127d 85%);
+  }
+
+  &__prompt {
+    font-family: $family-primary;
+    color: $white;
+    text-align: center;
+    font-size: $size-normal;
+    font-weight: $weight-normal;
+    line-height: 1.25;
+    letter-spacing: 0;
+    b,
+    strong {
+      font-weight: $weight-bold;
+    }
+    a {
+      color: $white;
+      text-decoration: none;
+      font-weight: $weight-medium;
+      color: white(0.75);
+      transition: color $menu-transition ease-in-out 0ms;
+      // ---------
+      // !! hover :: managed in no-touch section
+      // ---------
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .header-promo {
+    &__prompt {
+      a {
+        &:hover {
+          color: white(1);
+        }
+      }
+    }
+  } 
+}

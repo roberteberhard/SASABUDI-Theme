@@ -1,0 +1,448 @@
+.cart-listing {
+
+  @media #{$mobile} {
+    width: 100%;
+  }
+  @media #{$tablet} {
+    width: 100%;
+    max-width: $max-mini;
+    margin: 0 auto;
+  }
+  @media #{$notebook} {
+    float: left;
+    text-align: left;
+    width: calc(100% - 410px);
+    margin-right: 30px;
+  }
+  @media #{$desktop}, #{$wide} {
+    float: left;
+    text-align: left;
+    width: calc(60% - 2%);
+    margin-right: 2%;
+  }
+
+  table.woocommerce-cart-form__contents {
+    width: 100%;
+    height: auto;
+    @media #{$mobile} {
+      margin-top: 40px;
+    }
+    @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+      margin-top: 60px;
+    }
+
+    thead tr th {
+      .cart-listing__title {
+        @media #{$mobile}, #{$tablet} {
+          font-size: $size-larger;
+          text-align: left;
+          margin-bottom: 22px;
+          letter-spacing: 0.5px;
+          line-height: 1;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          font-size: $size-larger;
+          text-align: left;
+          margin-bottom: 22px;
+          letter-spacing: 0.5px;
+          line-height: 1;
+        }
+      }
+    }
+
+    tbody {
+      tr.cart_item {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        padding: 15px 0;
+        border-bottom: 1px solid $border;
+        &:first-child {
+            border-top: 1px solid $border;
+        }
+
+        // Thumbnail
+        td.product-thumbnail {
+          float: left;
+          position: relative;
+
+          .product-sale {
+            display: block;
+            position: absolute;
+            z-index: 1;
+            color: $white;
+            font-size: $size-small;
+            font-weight: $weight-normal;
+            line-height: 1;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            padding: 2px 3px 3px 6px;
+            background-color: $color-sale;
+            transform: rotate(-90deg) translate(0, -100%);
+            transform-origin: 100% 0;
+          }
+
+          @media #{$mobile} {
+            width: 80px;
+            height: 68px;
+            img {
+              max-width: 68px;
+              background-color: $white-light;
+            }
+            .product-sale {
+              top: 2px;
+              right: 11px;
+            }
+          }
+          @media #{$tablet} {
+            width: 110px;
+            height: 90px;
+            img {
+              max-width: 90px;
+              background-color: $white-light;
+            }
+            .product-sale {
+              top: 6px;
+              right: 23px;
+            }
+          }
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            width: 120px;
+            height: 100px;
+            img {
+              max-width: 100px;
+              background-color: $white-light;
+            }
+            .product-sale {
+              top: 8px;
+              right: 26px;
+            }
+          }
+        }
+
+        // Name
+        td.product-name {
+          float: left;
+          min-height: 20px;
+
+          @media #{$mobile} {
+            width: calc(100% - 110px);
+            padding-top: 6px;
+            padding-bottom: 10px;
+          }
+          @media #{$tablet} {
+            width: calc(100% - 140px);
+            padding-top: 15px;
+            padding-bottom: 13px;
+          }
+          @media #{$notebook} {
+            width: calc(100% - 150px);
+            padding-top: 15px;
+            padding-bottom: 13px;
+          }
+          @media #{$desktop}, #{$wide} {
+            width: calc(100% - 160px);
+            padding-top: 20px;
+            padding-bottom: 13px;
+          }
+
+          a {
+            display: block;
+            color: $text;
+            font-size: $size-medium;
+            font-family: $family-secondary;
+            font-weight: $weight-bold;
+            text-align: left;
+            line-height: 1.15;
+            letter-spacing: 0.5px;
+            transition: color $menu-transition ease 0ms;
+            // ---------
+            // !! hover :: managed in no-touch section
+            // ---------
+          }
+
+          .product-name__sale {
+            color: $color-sale;
+            text-transform: uppercase;
+            transition: color $menu-transition ease 0ms;
+            // ---------
+            // !! hover :: managed in no-touch section
+            // ---------
+          }
+        }
+
+        // Remove
+        td.product-remove {
+          position: absolute;
+          right: -12px;
+          top: -2px;
+          width: 44px;
+          height: 44px;
+          a.remove {
+            display: block;
+            width: 44px;
+            height: 44px;
+            font-size: 0;
+            color: transparent;
+            border-radius: 50%;
+            background-position: 8px 8px;
+            background-repeat: no-repeat;
+            background-size: 28px 28px;
+            background-color: $color-mobile;
+            background-image: $icon__menu-offset-close;
+            transition: opacity $menu-transition ease-in-out 0ms;
+            // ---------
+            // !! hover :: managed in no-touch section
+            // ---------
+          }
+        }
+
+        // Price
+        td.product-price {
+          float: left;
+          color: $text;
+          font-size: $size-medium;
+          font-weight: $weight-normal;
+          text-align: left;
+          line-height: 1.15;
+          @media #{$mobile} {
+            width: calc(50% - 86px);
+          }
+          @media #{$tablet} {
+            width: calc(50% - 102px);
+          }
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            width: calc(50% - 107px);
+          }
+          del {
+            color: $grey;
+            font-size: $size-medium;
+            font-weight: $weight-normal;
+            text-align: left;
+            line-height: 1.15;
+            span.amount {
+              color: $grey;
+            }
+          }
+          ins {
+            color: $text;
+            font-size: $size-medium;
+            font-weight: $weight-normal;
+            text-align: left;
+            line-height: 1.15;
+            text-decoration: none;
+            background-color: transparent;
+            span.amount {
+              color: $text;
+              font-size: $size-medium;
+              font-weight: $weight-bold;
+              text-align: left;
+              line-height: 1.15;
+              letter-spacing: 0.5px;
+            }
+          }
+        }
+
+        // Quantity
+        .product-quantity {
+          float: left;
+          width: 92px;
+          margin-top: -6px;
+          .quantity {
+            &.hidden {
+              display: none;
+            }
+            // + - Buttons
+            span.cart-minus__btn,
+            span.cart-plus__btn {
+              cursor: pointer;
+              float: left;
+              height: 30px;
+              width: 30px;
+              outline: none;
+              border: none;
+              border-radius: 0;
+              font-size: 0;
+              &:before {
+                position: absolute;
+                z-index: 1;
+                content: " ";
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: 60px 30px;
+                background-image: $icon__cart-plus-minus;
+                transition: background-color $menu-transition ease-in-out 0ms, border-color $menu-transition ease-in-out 0ms;
+              }
+            }
+            // + Buttons
+            span.cart-plus__btn:before {
+              background-position: 0 0;
+              background-color: $white-dark;
+            }
+            // ---------
+            // !! hover :: managed in no-touch section
+            // ---------
+
+            // - Buttons
+            span.cart-minus__btn:before {
+              background-position: -30px 0;
+              background-color: $white-dark;
+            }
+            // ---------
+            // !! hover :: managed in no-touch section
+            // ---------
+
+            input.custom-qty {
+              float: left;
+              height: 30px;
+              width: 30px;
+              margin: 0;
+              padding: 0;
+              border: 0;
+              background-color: transparent;
+              color: $text;
+              font-size: $size-medium;
+              text-align: center;
+              font-weight: 400;
+              line-height: 1.15;
+              -webkit-appearance: none;
+              -moz-appearance: none;
+              pointer-events: none;
+              &:focus {
+                outline: none;
+              }
+            }
+          }
+        }
+
+        // Subtotal
+        td.product-subtotal {
+          float: left;
+          color: $text;
+          font-size: $size-medium;
+          font-weight: $weight-medium;
+          text-align: right;
+          line-height: 1.15;
+          letter-spacing: 0;
+          @media #{$mobile} {
+            width: calc(50% - 86px);
+          }
+          @media #{$tablet} {
+            width: calc(50% - 102px);
+          }
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            width: calc(50% - 107px);
+          }
+
+          .tax_label {
+            padding-top: 4px;
+            color: $grey;
+            font-size: $size-small;
+            font-weight: $weight-normal;
+            line-height: 1;
+            letter-spacing: 0px;
+          }
+        }
+      }
+
+      tr {
+        td.actions {
+          .coupon {
+            @media #{$mobile}, #{$tablet} {
+              margin-top: 36px;
+            }
+            @media #{$notebook}, #{$desktop}, #{$wide} {
+              margin-top: 46px;
+            }
+            &__code {
+              line-height: 1;
+              font-size: $size-normal;
+              font-weight: $weight-medium;
+              margin-bottom: 15px;
+            }
+            &__group {
+              float: left;
+              position: relative;
+              height: auto;
+              margin-right: 10px;
+              @media #{$mobile} {
+                width: calc( 100% - 140px );
+              }
+              @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+                width: calc( 100% - 280px );
+              }
+            }
+            &__button {
+              float: left;
+              width: 130px;
+              padding-left: 0;
+              padding-right: 0;
+            }
+            &__update {
+              float: left;
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+              text-align: center !important;
+              border-color: $link-primary;
+              background-color: $link-primary;
+
+              @media #{$mobile}  {
+                margin-top: 10px;
+              }
+              @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+                width: 130px;
+                margin-left: 10px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .cart-listing {
+    table.woocommerce-cart-form__contents {
+      tbody {
+        tr.cart_item {
+          td.product-name {
+            a {
+              &:hover {
+                color: $link-hover-text;
+                .product-name__sale {
+                  color: $link-hover-text;
+                }
+              }
+            }
+          }
+          td.product-remove {
+            a.remove {
+              &:hover {
+                opacity: $menu-opacity;
+              }
+            }
+          }
+          .product-quantity {
+            .quantity {
+              span.cart-plus__btn:hover:before {
+                background-position: 0 0;
+                background-color: $button-hover-grey;
+              }
+              span.cart-minus__btn:hover:before {
+                background-position: -30px 0;
+                background-color: $button-hover-grey;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

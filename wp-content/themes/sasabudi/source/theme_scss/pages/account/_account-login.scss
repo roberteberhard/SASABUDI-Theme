@@ -1,0 +1,157 @@
+// Manage Statements
+.account {
+  .statements {
+    border-top: 1px solid $border;
+
+    @media #{$mobile} {
+      padding-top: 40px;
+    }
+    @media #{$tablet} {
+      padding-top: 50px;
+    }
+    @media #{$notebook} {
+      padding-top: 80px;
+    }
+    @media #{$desktop} {
+      padding-top: 80px;
+    }
+    @media #{$wide} {
+      padding-top: 90px;
+    }
+  }
+}
+
+.account {
+  .woocommerce {
+
+    // Woocommerce Login
+    .woocommerce-login {
+      display: block;
+      width: 100%;
+      max-width: 480px;
+
+      &.is-larger {
+        max-width: 640px;
+      }
+
+      @media #{$mobile}, #{$tablet} {
+        margin: 0 auto;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        margin: 0;
+      }
+
+      h2 {
+        margin: 0 0 25px 0;
+        font-size: $size-subtitle;
+      }
+
+      p.register {
+        margin-top: 35px;
+      }
+    }
+       
+    form.woocommerce-form {
+      margin: 30px 0 0 0;
+
+      &.login,
+      &.register,
+      &.lost,
+      &.reset,
+      &.edit-account,
+      &.edit-adresses {
+        width: 100%;
+
+        .form-row {
+          &.remember {
+            float: left;
+            width: 50%;
+          }
+          &.password {
+            float: left;
+            width: 50%;
+            text-align: right;
+            font-size: $size-normal;
+          }
+          &.submit {
+            float: none;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+
+            @media #{$mobile} {
+              padding-bottom: 40px;
+            }
+            @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+              padding-bottom: 60px;
+            }
+          }
+
+          &.signup,
+          &.lost,
+          &.reset,
+          &.save,
+          &.save-address {
+            float: none;
+            display: block;
+            overflow: hidden;
+            width: 100%;
+          }
+          &.signup,
+          &.save-address {
+            padding-top: 30px;
+          }
+          &.lost,
+          &.reset,
+          &.save {
+            padding-top: 15px;
+          }
+        }
+
+        .woocommerce-privacy-policy-text {
+
+          p {
+            color: $text;
+            font-size: $size-normal;
+            line-height: 1.25;
+            
+            a {
+              color: $primary;
+              font-weight: $weight-normal;
+              color: $link-primary;
+              position: relative;
+              background-repeat: no-repeat;
+              background-size: 100% 100%;
+              background-position: 100%;
+              background-image: linear-gradient(transparent calc(100% - 1px), lighten($link-primary, 10%) 1px);
+              transition: background-size ease $menu-transition;
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .account {
+    .woocommerce {
+      form.woocommerce-form {
+        .woocommerce-privacy-policy-text {
+          p {
+            a:hover {
+              color: $link-primary;
+              background-size: 0 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}

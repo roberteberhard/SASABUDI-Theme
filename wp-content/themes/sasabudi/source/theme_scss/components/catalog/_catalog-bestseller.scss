@@ -1,0 +1,175 @@
+.bestseller {
+  background-color: $white-light;
+  
+  @media #{$mobile} {
+    padding: 40px 0 60px;
+  } 
+  @media #{$tablet} {
+    padding: 50px 0 80px;
+  }
+  @media #{$notebook} {
+    padding: 60px 0 90px;
+  }
+  @media #{$desktop} {
+    padding: 60px 0 100px;
+  }
+  @media #{$wide} {
+    padding: 60px 0 110px;
+  }
+
+  .is-extended {
+    overflow: hidden;
+
+    .bestseller-title {
+      margin-bottom: 20px; 
+      font-size: $size-title;
+      text-align: center; 
+    }
+
+    .bestseller-products {
+      overflow: hidden;
+
+      @media #{$mobile} {
+        width: calc(100% + 12px);
+        margin: 0 -6px;
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop} {
+        width: calc(100% + 16px);
+        margin: 0 -8px;
+      }
+      @media #{$wide} {
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+      }
+      
+      // Change product list style
+      .product-bestseller {
+        .product {
+          background-color: $white-light;
+          
+          .product-article {
+            padding-bottom: 0px;
+            
+            .product-title {
+              padding: 0px 10px 8px 10px !important;
+              background-color: $white-light !important;
+            }
+          }
+        }
+      }
+    }
+
+    .bestseller-next {
+      display: flex;
+	    justify-content: center;
+      position: relative;
+
+      @media #{$mobile} {
+        margin-top: 40px;
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+        margin-top: 60px;
+      }
+
+      &.is-end {
+        margin-top: 0px;
+      }
+
+      &__button {
+        cursor: pointer;
+        display: inline-block;
+        outline: none;
+        width: 220px;
+        height: 46px;
+        padding: 10px 0 9px;
+        border-radius: 3px;
+        border: 2px solid $button-black;
+        background-color: $button-black;
+        // font
+        color: $white;
+        font-size: $size-normal;
+        font-family: $family-secondary;
+        font-weight: $weight-bold;
+        text-align: center;
+        text-transform: uppercase;
+        white-space: nowrap;
+        letter-spacing: 2px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        transition: background-color $menu_transition ease 0ms, border-color $menu_transition ease 0ms, color $menu_transition ease 0ms;
+        // ---------
+        // !! Hover :: Managed in no-touch section
+        // ---------
+      }
+
+      .icon-waiting {
+        position: absolute;
+        z-index: -1;
+        width: 20px;
+        height: 20px;
+        top: 13px;
+        right: calc(50% - 10px);
+        opacity: 0;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 20px 20px;
+        background-image: $icon__footer-loading;
+        transition: opacity $menu_transition ease 0ms;
+      }
+      
+      &.show-loader {
+
+        .bestseller-next__button {
+          cursor: not-allowed;
+          width: 46px;
+          height: 46px;
+          color: transparent;
+          font-size: 0;
+          transition: all 75ms ease 0ms;
+          border-radius: 50%;
+          border-color: $button-hover-grey;
+          background-color: $button-hover-grey;
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+
+        .icon-waiting {
+          z-index: 1;
+          opacity: 1;
+          animation: infinite-spinning 0.9s infinite linear;
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .bestseller {
+    .is-extended {
+      .bestseller-next {
+        &__button {    
+          &:hover {
+            outline: none;
+            color: $white;
+            text-decoration: none;
+            border-color: $button-hover-grey;
+            background-color: $button-hover-grey;
+          }
+        }
+        &.show-loader {
+          .bestseller-next__button {    
+            &:hover {
+              border-color: $button-hover-grey;
+              background-color: $button-hover-grey;
+            }
+          }
+        }
+      }
+    }
+  }
+}

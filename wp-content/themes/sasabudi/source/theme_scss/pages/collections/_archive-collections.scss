@@ -1,0 +1,332 @@
+.promo-on {
+  .collections {
+    border-top: none;
+  }
+}
+
+.collections {
+  border-top: 1px solid $border;
+
+  @media #{$mobile} {
+    padding: 0 0 60px;
+  }
+  @media #{$tablet} {
+    padding: 0 0 80px;
+  }
+  @media #{$notebook} {
+    padding: 0 0 90px;
+  }
+  @media #{$desktop} {
+    padding: 0 0 100px;
+  }
+  @media #{$wide} {
+    padding: 0 0 110px;
+  }
+
+  .is-extended {
+  overflow: hidden;
+
+    .collections-posts {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+
+      @media #{$mobile} {
+        width: 100%;
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop} {
+        width: calc(100% + 16px);
+        margin: 0 -8px; 
+      }
+      @media #{$wide} {
+        width: calc(100% + 20px);
+        margin: 0 -10px; 
+      }
+    
+      .collections-post {
+        background-color: $white-light;
+        
+        @media #{$mobile} {
+          &.extended,
+          &.large,
+          &.medium {
+            flex: 0 0 100%;
+            margin: 40px 0 0;
+            .collections-post__figure {
+              height: 280px;
+            }
+            .collections-post__desc {
+              padding: 30px 20px;
+            }       
+          }
+        }
+
+        @media #{$tablet} {
+          &.extended {
+            flex: 0 0 calc(100% - 16px);
+            margin: 40px 8px 0 8px;
+            .collections-post__figure {
+              height: 320px;
+            }
+            .collections-post__desc {
+              padding: 30px 20px;
+            }
+          }
+          &.large,
+          &.medium {
+            flex: 0 0 calc(50% - 16px);
+            margin: 40px 8px 0 8px;
+            .collections-post__figure {
+              height: 240px;
+            }
+            .collections-post__desc {
+              padding: 30px 20px;
+            }       
+          }
+        }
+
+        @media #{$notebook}, #{$desktop} {
+          &.extended {
+            flex: 0 0 calc(100% - 16px);
+            margin: 40px 8px 0 8px;
+            .collections-post__figure {
+              float: left;
+              height: 360px;
+              width: 66.666666%;
+            }
+            .collections-post__desc {
+              float: left;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              height: 360px;
+              width: 33.3333333%;
+              padding: 0 30px;
+              h2 {
+                text-align: center;     
+              }
+              p {
+                text-align: center;
+              }
+            } 
+          }
+
+          &.large {
+            flex: 0 0 calc(50% - 16px);
+            margin: 40px 8px 0 8px;
+            .collections-post__figure {
+              height: 280px;
+            }
+            .collections-post__desc {
+              padding: 30px 20px;
+            } 
+          }
+
+          &.medium {
+            flex: 0 0 calc(33% - 16px);
+            margin: 40px 8px 0 8px;
+            .collections-post__figure {
+              height: 240px;
+            }
+            .collections-post__desc {
+              padding: 30px 20px;
+            } 
+          }    
+        }
+
+        @media #{$wide} {
+          &.extended {
+            flex: 0 0 calc(100% - 20px);
+            margin: 50px 10px 0 10px;
+            .collections-post__figure {
+              float: left;
+              height: 480px;
+              width: 66.666666%;
+            }
+            .collections-post__desc {
+              float: left;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              height: 480px;
+              width: 33.3333333%;
+              padding: 0 50px;
+              p {
+                text-align: center;
+              }
+            } 
+          }
+
+          &.large {
+            flex: 0 0 calc(50% - 20px);
+            margin: 50px 10px 0 10px;
+            .collections-post__figure {
+              height: 360px;
+            }
+            .collections-post__desc {
+              padding: 40px 30px;
+            } 
+          }
+
+          &.medium {
+            flex: 0 0 calc(33% - 20px);
+            margin: 50px 10px 0 10px;
+            .collections-post__figure {
+              height: 280px;
+            }
+            .collections-post__desc {
+              padding: 40px 30px;
+            } 
+          } 
+        }
+
+        &__figure {
+          overflow: hidden;
+          position: relative;
+          width: 100%;
+
+          &--image {
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+            backface-visibility: hidden;
+            -webkit-backface-visibility: hidden;
+            transform: scale(1);
+            transition: transform $image-transition ease-in-out, opacity $image-transition ease-in-out 0ms;
+
+            &.lazy-fade {
+              opacity: 1;
+            }
+          }
+
+          &--link {
+            display: block;
+            position: absolute;
+            overflow: hidden;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-spacing: 0;
+            background-color: rgba(255,255,255,0);
+            transition: background-color $image-transition ease-in-out 0ms;
+          }
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+
+        &__desc {
+          h4 {
+            text-align: left;
+            margin-bottom: 10px;
+            color: $grey;
+            font-family: $family-primary;
+            font-size: $size-small;
+            letter-spacing: 1px;
+            line-height: 1;
+            font-weight: 300;
+            text-transform: uppercase;
+          }
+          h2 {   
+            margin-bottom: 15px;
+            font-size: $size-title;
+            line-height: 1;
+            a {
+              color: $text;
+              font-weight: $weight-bold;
+              transition: color $menu-transition ease;
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+
+          p {
+            color: $text;
+            margin-bottom: 28px;
+            a {
+              color: $text;
+              padding-bottom: 2px;
+              border-bottom: 1px solid $text;
+              transition: color $menu-transition ease-in-out, border-color $menu-transition ease-in-out;
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+        }
+      }
+    }
+  }
+
+  // Colletion Next
+  #collections-next {
+    overflow: hidden;
+    width: 100%;
+    height: 85px;
+    text-align: center;
+    transition: opacity $menu-transition ease-in-out 0ms;
+
+    &.fade-in {
+      opacity: 1;
+    }
+
+    &.fade-out {
+      opacity: 0;  
+    }
+    
+    .icon-spinning {
+      padding-top: 50px;
+      display: inline-block;
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .collections {
+    .is-extended {
+      .collections-posts {
+        .collections-post {
+          &__figure {
+            &:hover {
+              .collections-post__figure--image {
+                transform: $image-scale;
+              }
+              .collections-post__figure--link {
+                background-color: $image-opacity;
+              }
+            }
+          }
+          &__desc {
+            h2 {
+              a {
+                &:hover {
+                  color: $link-hover-text;
+                }
+              }
+            }
+            p {
+              a {
+                &:hover {
+                  color: $text; 
+                  border-color: $text;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,310 @@
+// Handle checkout mode
+.woocommerce-checkout {
+  .header-device {
+    @media #{$mobile}, #{$tablet} {
+      position: relative !important;
+    }
+  }
+}
+
+
+// Handle default mode
+.header-device {
+  
+  @media #{$mobile}, #{$tablet} {
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 995;
+    box-shadow: inset 0 -1px 0 $border;
+    background-color: $white;
+  }
+  @media #{$notebook}, #{$desktop}, #{$wide} {
+    display: none;
+  }
+
+  &__wrapper {
+    @media #{$mobile} {
+      height: 56px;
+    }
+    @media #{$tablet} {
+      height: 64px;
+    }
+  }
+
+  &__toggle {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 48px;
+    height: 48px;
+
+    @media #{$mobile} {
+      top: 4px;
+      left: 4px;
+    }
+    @media #{$tablet} {
+      top: 8px;
+      left: 9px;
+    }
+    // ---------
+    // !! hover :: managed in no-touch section
+    // --------- 
+    &--button {
+      display: block;
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: 4px 4px;
+      background-size: 40px 40px;
+      background-image: $icon__header-device-burger;
+      transition: opacity $menu-transition ease-in-out 0ms;  
+      background-color: $color-mobile;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    top: 0px;
+
+    @media #{$mobile} {
+      left: calc(50% - 28px);
+      width: 56px;
+      height: 56px;
+    }
+    @media #{$tablet} {
+      left: calc(50% - 32px);
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  &__title {
+    font-size: 0;
+    color: transparent;
+
+    @media #{$mobile} {
+      width: 56px;
+      height: 56px;
+    }
+    @media #{$tablet} {
+      width: 64px;
+      height: 64px;
+    }
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-image: $icon__header-device-logo;
+      background-color: $color-mobile;
+    } 
+  } 
+
+  &__search {
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    @media #{$mobile} {
+      top: 6px;
+      right: 98px;
+    }
+    @media #{$tablet} {
+      top: 10px;
+      right: 104px;
+    }
+    // ---------
+    // !! hover :: managed in no-touch section
+    // ---------
+
+    &--button {
+      display: block;
+      width: 44px;
+      height: 44px;
+      overflow: hidden;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: 2px 2px;
+      background-size: 40px 40px;
+      background-image: $icon__header-device-search;
+      transition: opacity $menu-transition ease 0ms;
+      background-color: $color-mobile;
+    }
+  }
+
+  &__wishlist {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+
+    @media #{$mobile} {
+      top: 6px;
+      right: 54px;
+    }
+    @media #{$tablet} {
+      top: 10px;
+      right: 60px;
+    }
+    // ---------
+    // !! hover :: managed in no-touch section
+    // ---------
+
+    &--button {
+      display: block;
+      width: 44px;
+      height: 44px;
+      overflow: hidden;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: 2px 2px;
+      background-size: 40px 40px;
+      background-image: $icon__header-device-heart-off;
+      transition: opacity $menu-transition ease 0ms;
+      background-color: $color-mobile;
+    }
+
+    &--flag {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      opacity: 0;
+      transform: scale(0);
+      top: 5px;
+      left: 24px;
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;;
+      border: 2px solid $white;
+      background-color: $primary;
+    }
+    
+    .icon-on {
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 500ms ease 0ms, opacity 500ms ease 0ms;
+    }
+
+    .icon-off {
+      opacity: 0;
+      transform: scale(0);
+      transition: transform 500ms ease 0ms, opacity 500ms ease 0ms;
+    }
+  }
+
+  &__cart {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    @media #{$mobile} {
+      top: 6px;
+      right: 10px;
+    }
+    @media #{$tablet} {
+      top: 10px;
+      right: 16px;
+    }
+    // ---------
+    // !! hover :: managed in no-touch section
+    // --------- 
+    &--btn,
+    &--button {
+      overflow: hidden;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background-repeat: no-repeat;
+      background-position: 2px 2px;
+      background-size: 40px 40px;
+      background-image: $icon__header-device-cart;
+      transition: opacity $menu-transition ease-in-out 0ms;
+      background-color: $color-mobile;            
+    }
+    
+    &--count,
+    &--amount {
+      position: absolute;
+      top: -3px;
+      right: -4px;
+      width: 24px;
+      height: 24px;
+      padding-top: 4px;
+      border-radius: 50%;
+      border: 2px solid $white;
+      // fonts
+      color: $white;
+      font-size: 12px;
+      font-weight: $weight-medium;
+      text-align: center;
+      line-height: 11px;
+      background-color: $primary;
+    } 
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .header-device {
+    // Toggle
+    &__toggle {
+      a {
+        &:hover {
+          .header-device__toggle--button {
+            opacity: $menu-opacity;
+          }
+        }
+      }
+    }
+    // Search
+    &__search {
+      a {
+        &:hover {
+          .header-device__search--button {
+            opacity: $menu-opacity;
+          }
+        }
+      }
+    }
+    // Wishlist
+    &__wishlist {
+      a {
+        &:hover {
+          .header-device__wishlist--button {
+            opacity: $menu-opacity;
+          }
+        }
+      }
+    }
+    // Cart
+    &__cart {
+      a {
+        &:hover {
+          .header-device__cart--btn,
+          .header-device__cart--button {
+            opacity: $menu-opacity;
+          }
+        }
+      }
+    }
+  }
+}

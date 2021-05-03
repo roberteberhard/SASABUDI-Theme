@@ -1,0 +1,65 @@
+input[type=radio] + label[for=payment_method_bacs],
+input[type=radio] + label[for=payment_method_cheque],
+input[type=radio] + label[for=payment_method_cod],
+input[type=radio] + label[for=payment_method_paypal],
+input[type=radio] + label[for=payment_method_ppec_paypal],
+input[type=radio] + label[for=payment_method_stripe] {
+  cursor: pointer;
+  position: absolute;
+  display: inline-block;
+  left: 0;
+  top: 0px;
+  width: 100%;
+  height: auto;
+  padding: 4px 20px 4px 35px;
+  color: $text;
+  font-size: $size-normal;
+  font-weight: $weight-bold;
+  letter-spacing: 0.5px;
+
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 3;
+    width: 22px;
+    height: 22px;
+    top: 2px;
+    left: 0px;
+    border: 1px solid $grey-light;
+    border-radius: 50%;
+    background-color: $white-light;
+    transition: transform $menu_transition ease-out, opacity $menu_transition ease-out, border-color $menu_transition ease-out;
+  }
+ 
+  &:after {
+    content: '';
+    display: block;
+    opacity: 0;
+    position: absolute;
+    z-index: 4;
+    width: 14px;
+    height: 14px;
+    top: 6px;
+    left: 4px;
+    border-radius: 50%;
+    background-color: $primary;
+    transform: scale(0);
+    transition: transform $menu_transition ease-out, opacity $menu_transition ease-out, border-color $menu_transition ease-out;
+  }
+}
+
+input[type=radio]:checked + label[for=payment_method_bacs],
+input[type=radio]:checked + label[for=payment_method_cheque],
+input[type=radio]:checked + label[for=payment_method_cod],
+input[type=radio]:checked + label[for=payment_method_paypal],
+input[type=radio]:checked + label[for=payment_method_ppec_paypal],
+input[type=radio]:checked + label[for=payment_method_stripe] {
+  &:before {
+    border: 1px solid $black;
+  }
+  &:after {
+    opacity: 1;
+    transform: scale(1);
+  }
+}

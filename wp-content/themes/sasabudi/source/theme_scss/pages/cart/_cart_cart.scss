@@ -1,0 +1,118 @@
+// Manage Border
+.promo-on {
+  .cart-progress {
+    border-top: none;
+  }
+}
+
+// Cart Progress
+.cart-progress {
+  overflow: hidden;
+  border-top: 1px solid $border;
+
+  // Queries
+  @media #{$mobile} {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  @media #{$tablet} {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  @media #{$notebook}, #{$desktop}, #{$wide} {
+    display: flex;
+    width: auto;
+    max-width: $max-large;
+    margin: 0 auto;
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+
+  // Breadcrumb
+  &__breadcrumb {
+    overflow: hidden;
+    width: 100%;
+    padding-top: 18px;
+
+    // Queries
+    @media #{$mobile}, #{$tablet} {
+      text-align: center;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      text-align: left;
+    }
+
+    ul {
+      display: inline-block;
+      li {
+        float: left;
+        color: $text;
+        font-size: $size-normal;
+        line-height: 20px;
+        letter-spacing: 0;
+        span.spacer {
+          padding: 0 6px 0 6px;
+          font-size: 15px;
+          font-weight: 500;
+        }
+        a {
+          color: $text;
+          font-size: $size-normal;
+          font-weight: 700;
+          letter-spacing: 0.5px;
+          // transition
+          transition: color $menu-transition ease-in-out 0ms;
+          // ---------
+          // !! hover :: managed in no-touch section
+          // ---------
+        }
+      }
+    }
+  }
+}
+
+// Cart Content
+.cart-content {
+  overflow: hidden;
+  display: block;
+  width: auto;
+  max-width: $max-large;
+
+  // Queries
+  @media #{$mobile} {
+    padding: calc(70px - 10px) 20px 70px;
+  }
+  @media #{$tablet} {
+    padding: (80px - 10px) 25px 80px;
+  }
+  @media #{$notebook} {
+    padding: (90px - 10px) 4% 90px;
+  }
+  @media #{$desktop} {
+    margin: 0 auto;
+    padding: (100px - 10px) 4% 100px;
+  }
+  @media #{$wide} {
+    margin: 0 auto;
+    padding: (110px - 10px) 4% 110px;
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .cart-progress {
+    &__breadcrumb {
+      ul {
+        li {
+          a {
+            &:hover {
+              color: $link-hover-text;
+            }
+          }
+        }
+      }
+    }
+  }
+}

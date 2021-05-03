@@ -1,0 +1,9 @@
+.footer {
+  padding-top: 32px;
+  background-color: $white;
+
+  // supplement color styles
+  &.is-darker {
+    background-color: $white-light; 
+  }
+}

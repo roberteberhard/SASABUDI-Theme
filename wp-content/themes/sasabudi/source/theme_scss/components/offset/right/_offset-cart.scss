@@ -1,0 +1,495 @@
+.offset-right__cart {
+  height: 100%;
+  overflow: hidden;
+
+  .widget_shopping_cart_content {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    @media #{$mobile} {
+      width: 360px;
+      padding-top: 56px;
+    }
+    @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+      padding-top: 64px;
+      width: 420px;
+    }
+
+    .mini-cart {
+      overflow-x: hidden;
+      overflow-y: visible;
+      top: 0;
+      left: 0;
+      list-style: none;
+      width: 100%;
+      height: calc(100% - 176px);
+
+      &::-webkit-scrollbar {
+        width: 6px;
+      }
+      &::-webkit-scrollbar-thumb {
+        background: $primary;
+      }
+      &::-webkit-scrollbar-thumb:hover {
+        background: $primary;
+      }
+      &::-webkit-scrollbar-track {
+        background: $grey-lighter;
+      }
+
+      &__header {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 100%;
+        border-bottom: 1px solid $border;
+        background-color: $white;
+        // fonts
+        color: $text;
+        font-family: $family-secondary;
+        font-size: $size-medium;
+        font-weight: $weight-bold;
+        text-align: center;
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+
+        @media #{$mobile} {
+          height: 56px;
+          padding: 15px 40px 0 0;
+        }
+        @media #{$tablet} {
+          height: 64px;
+          padding: 19px 40px 0 0;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          height: 65px;
+          padding: 20px 40px 0 0;
+        }
+
+        &--button {
+          display: block;
+          position: absolute;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          font-size: 0;
+          color: transparent;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 40px 40px;
+          background-color: $color-mobile;
+          background-image: $icon__menu-offset-close;
+          transition: opacity $menu-transition ease-in-out 0ms;
+
+          @media #{$mobile} {
+            top: 7px;
+            right: 48px;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            top: 11px;
+            right: 48px;
+          }
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+      }
+
+      &__shipping {
+        width: 100%;
+        padding: 15px 15px 12px 15px;
+        background-color: $white-light;
+
+        &--message {
+          color: $text;
+          font-family: $family-primary;
+          font-size: $size-small;
+          text-align: center;
+          font-weight: $weight-medium;
+          text-transform: uppercase;
+
+          @media #{$mobile} {
+            letter-spacing: 0px;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            letter-spacing: 0.5px;
+          }
+
+          .amount {
+            color: $primary;
+            font-family: $family-secondary;
+            font-weight: $weight-bold;
+          }
+
+          strong {
+            color: $primary-dark;
+          }
+        }
+      }
+
+      &__progressbar {
+        position: relative;
+        width: calc(100% - 68px);
+        height: 6px;
+        margin: 8px 34px 4px 34px;
+        border-radius: 3px;
+        background: darken($white-dark, 5%);
+
+        &--progress {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          max-width: 100%;
+          border-radius: 3px;
+          background-color: $primary;
+          animation: progress-bar 0.5s linear;
+        }
+      }
+
+      &__options {
+        display: inline-block;
+        width: 100%;
+        color: $grey;
+        font-size: $size-small;
+        font-weight: $weight-normal;
+        word-break: break-all; // Important
+        text-align: center;
+        line-height: 1.15;
+        strong {
+          font-weight: normal;
+        }  
+      }
+      
+      &__item {
+        overflow: hidden;
+        position: relative;
+        border-top: 1px solid $border;
+
+        @media #{$mobile} {
+          width: 360px;
+        }
+        @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+          width: 420px;
+        }
+
+        a.remove_from_cart_button {
+          display: block;
+          position: absolute;
+          z-index: 3;
+          top: 3px;
+          right: 8px;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          font-size: 0;
+          color: transparent;
+          background-position: 6px 6px;
+          background-repeat: no-repeat;
+          background-size: 28px 28px;
+          background-color: $color-mobile;
+          background-image: $icon__menu-offset-close;
+          transition: opacity $menu-transition ease-in-out 0ms;
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+
+        &--left {
+          float: left;
+          position: relative;
+
+          @media #{$mobile}{
+            width: 78px;
+            margin: 16px 16px;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            width: 88px;
+            margin: 16px 16px;
+          }
+
+          a {
+            display: block;
+            margin: 0 0 -4px 0 !important;
+
+            img {
+              width: 100%;
+              background-color: $white-light;
+            }
+          
+            .sale {
+              position: absolute;
+              z-index: 1;
+              top: 0;
+              right: 0;
+              color: $white;
+              font-size: $size-small;
+              font-weight: $weight-normal;
+              line-height: 1;
+              letter-spacing: 2px;
+              text-transform: uppercase;
+              padding: 3px 4px 3px 6px;
+              background-color: $color-sale;
+              transform: rotate(-90deg) translate(0, -100%);
+              transform-origin: 100% 0;
+              background-color: $color-sale;
+            }
+          }
+        }
+
+        &--right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+
+          @media #{$mobile} {
+            width: calc(100% - 155px);
+            min-height: 110px;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            width: calc(100% - 165px);
+            min-height: 120px;
+          }
+
+          a {
+            margin-bottom: 4px;
+            color: $text;
+            font-size: $size-medium;
+            font-family: $family-secondary;
+            font-weight: $weight-bold;
+            text-align: left;
+            line-height: 1.15;
+            letter-spacing: 0.5px; 
+            transition: color $menu-transition ease-in-out 0ms;
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+
+          .quantity {
+            color: $text;
+            font-family: $family-primary !important;
+            font-size: $size-normal;
+            font-weight: $weight-medium;
+            text-align: left;
+            line-height: 1.15;
+
+            del {
+              color: $grey;
+              font-size: $size-normal;
+              font-weight: $weight-normal;
+              span.amount {
+                color: $grey;
+                font-size: $size-normal;
+                font-weight: $weight-normal;
+              }
+            }
+            
+            ins {
+              color: $text;
+              font-size: $size-normal;
+              font-weight: $weight-medium;
+              text-decoration: none;
+              background-color: transparent;
+              span.amount {
+                color: $text;
+                font-size: $size-normal;
+                font-weight: $weight-medium;
+              }
+            }
+          }
+        }
+      }
+
+      /* not used */
+      &__crossell {
+        overflow: hidden;
+        position: relative;
+        border-top: 1px solid $border;
+        background-color: $white-light;
+        @media #{$mobile} {
+          width: 360px;
+        }
+        @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+          width: 420px;
+        }
+        &--left {
+          float: left;
+          @media #{$mobile}{
+            width: 78px;
+            margin: 16px 16px;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            width: 88px;
+            margin: 16px 16px;
+          }
+          a {
+            display: block;
+            margin: 0 0 -4px 0 !important;
+            img {
+              width: 100%;
+              background-color: $white-light;
+            }
+          }
+        }
+        &--right {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          @media #{$mobile} {
+            width: calc(100% - 155px);
+            min-height: 110px;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            width: calc(100% - 165px);
+            min-height: 120px;
+          }
+        }
+      }
+
+      &__empty {
+        overflow: hidden;
+        text-align: center;
+
+        @media #{$mobile} {
+          padding: 60px 20px 0 20px;
+        }
+        @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+          padding: 90px 20px 0 20px;
+        }
+
+        &--title {
+          margin-bottom: 20px;
+          color: $text;
+          font-family: $family-secondary;
+          font-size: $size-large;
+          font-weight: $weight-bold;
+          letter-spacing: 0.5px;
+        }
+
+        &--desc {
+          color: $text;
+          font-size: $size-medium;
+          font-weight: $weight-normal;
+        }
+      }
+
+      &__shopping {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 30px;
+        padding: 40px;
+        width: 100%;
+      }
+    }
+
+    .mini-total {
+      position: fixed;
+      left: 0;
+      bottom: 130px;
+      height: 50px;
+      padding-top: 12px;
+      border-top: 1px solid $border;
+      background-color: $white;
+      font-family: $family-primary;
+      text-align: center;
+      //text-transform: uppercase;
+      letter-spacing: 0px;
+      font-weight: 400;
+
+      @media #{$mobile} {
+        width: 360px;
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+        width: 420px;
+      }
+
+      &__subtotal {
+        padding-right: 6px;
+      }
+    }
+
+    .mini-buttons {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 130px;
+      padding: 0 16px;
+
+      @media #{$mobile} {
+        width: 360px;
+      }
+      @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+        width: 420px;
+      }
+
+      .btn-checkout {
+        border-color: $button-black;
+        background-color: $button-black;
+      }
+      .btn-cart {
+        margin-top: 10px;
+        color: $button-black;
+        border-color: $button-black;
+        background-color: $white;
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .offset-right__cart {
+    .widget_shopping_cart_content {
+      
+      .mini-cart {
+        &__header {
+          &--button {
+            &:hover {
+              opacity: $menu-opacity;
+            }
+          }
+        }
+
+        &__item {
+          a.remove_from_cart_button {
+            &:hover {
+              opacity: $menu-opacity;
+            }
+          }
+          &--right {
+            a {
+              &:hover {
+                color: $link-hover-text ;
+              }
+            }
+          }
+        }
+      }
+
+      .mini-buttons {
+        .btn-checkout {
+          &:hover {
+            border-color: $button-hover-grey;
+            background-color: $button-hover-grey;
+          }
+        }
+        .btn-cart {
+          &:hover {
+            color: $white;
+            border-color: $button-hover-grey;
+            background-color: $button-hover-grey;
+          }
+        }
+      }
+    }
+  }
+}

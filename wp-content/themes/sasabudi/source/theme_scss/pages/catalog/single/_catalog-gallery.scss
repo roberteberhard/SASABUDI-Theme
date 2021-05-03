@@ -1,0 +1,344 @@
+.product-summary {
+
+  .is-extended {
+
+    .woocommerce-product-gallery.images {
+      display: block;
+      position: relative;
+
+      @media #{$mobile}, #{$tablet} {
+        margin: 0 auto;
+        width: 100%;
+        text-align: center;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        float: left;
+        width: calc(66.6666666% - 20px);
+        margin-top: 5px; // kind of a hack.
+        margin-right: 20px;
+      }
+
+      a.woocommerce-product-gallery__trigger {
+        cursor: pointer;
+        position: absolute;
+        z-index: 50;
+        font-size: 0;
+        color: transparent;
+        background-position: 0 0;
+        background-repeat: no-repeat;
+        background-size: 140px 70px;
+        background-color: transparent;
+        background-image: $icon__product-zoom-plus;
+
+        @media #{$mobile} {
+          top: 20px;
+          left: 20px;
+          width: 70px;
+          height: 70px;
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+        @media #{$tablet} {
+          top: 0px;
+          left: 0px;
+          width: 80px;
+          height: 80px;
+          background-size: 160px 80px;
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          top: 0px;
+          left: 85px;
+          width: 80px;
+          height: 80px;
+          background-size: 160px 80px;
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+      }
+
+      .flex-viewport {
+        width: 100%;
+        min-height: 400px;
+
+        @media #{$mobile}, #{$tablet} {
+          width: 100%;
+          height: 100%;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          float: right;
+          width: calc(100% - 85px);
+          height: 100%;
+        }
+
+        figure.woocommerce-product-gallery__wrapper {
+          transition: all ease-in-out $image-transition;
+          .zoomImg {
+            background-color: $white-light !important;
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+        }
+      }
+
+      .flex-control-thumbs {
+        list-style: none;
+
+        @media #{$mobile} {
+          position: absolute;
+          bottom: 40px;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+        @media #{$tablet} {
+          position: absolute;
+          bottom: 20px;
+          left: 50%;
+          transform: translate(-50%, 0);
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          float: left;
+          width: 85px;
+          height: 100%;
+        }
+
+        li {
+
+          @media #{$mobile}, #{$tablet} {
+            float: left;
+            width: 12px;
+            height: 12px;
+            margin-left: 3px;
+            margin-right: 3px;
+          }
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            margin: 0 0 12px 0;
+            width: 65px;
+            height: 65px;
+          }
+
+          img {
+
+            cursor: pointer;
+            display: block;
+            transition: background-color $menu-transition ease-in-out 0ms, border-color $menu-transition ease-in-out 0ms, box-shadow $menu-transition ease-in-out 0s;
+
+            @media #{$mobile}, #{$tablet} {
+              border-radius: 50%;
+              border: 6px solid $grey-lighter;
+              background-color: $grey-lighter;
+            }
+            @media #{$notebook}, #{$desktop}, #{$wide} {
+              border-radius: 3px;
+              border: 1px solid $black;
+              box-shadow: $white-light 0px 0px 0px 1px;
+              
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+
+            &.flex-active {
+
+              @media #{$mobile}, #{$tablet} {
+                border: 6px solid $primary;
+              }
+              @media #{$notebook}, #{$desktop}, #{$wide} {
+                border-radius: 3px;
+                border: 1px solid $primary;
+                box-shadow: $primary 0px 0px 0px 1px;
+                background-color: $white;
+              }
+            }
+          }
+        }
+      }
+
+      .flex-direction-nav {
+        position: relative;
+        z-index: 0;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        height: 42px;
+        list-style: none;
+        transform: translate(0, -50%);
+
+        @media #{$mobile}, #{$tablet} {
+          position: absolute;
+
+          .flex-nav-prev {
+            overflow: hidden;
+            position: absolute;
+            top: 0px;
+            border-radius: 50%;
+            background-color: $white;
+
+            @media #{$mobile} {
+              left: 20px;
+              width: 42px;
+              height: 42px;
+            }
+            @media #{$tablet} {
+              left: 0px;
+              width: 48px;
+              height: 48px;
+            }
+
+            a.flex-prev {
+              cursor: pointer;
+              display: block;
+              opacity: 1;
+              color: transparent;
+              font-size: 0;
+
+              @media #{$mobile} {
+                width: 42px;
+                height: 42px;
+                background-position: 1px 1px;
+              }
+              @media #{$tablet} {
+                width: 48px;
+                height: 48px;
+                background-position: 4px 4px;
+              }
+              border: none;
+              outline: none;
+              border-radius: 50%;
+              background-repeat: no-repeat;
+              background-size: 80px 40px;
+              background-color: $white;
+              background-image: $icon__product-prev-next;
+              transition: opacity $menu-transition ease-in-out 0ms;
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+
+          .flex-nav-next {
+            overflow: hidden;
+            position: absolute;
+            top: 0px;
+            border-radius: 50%;
+            background-color: $white;
+
+            @media #{$mobile} {
+              right: 20px;
+              width: 42px;
+              height: 42px;
+            }
+            @media #{$tablet} {
+              right: 0px;
+              width: 48px;
+              height: 48px;
+            }
+
+            a.flex-next {
+              cursor: pointer;
+              display: block;
+              opacity: 1;
+              color: transparent;
+              font-size: 0;
+
+              @media #{$mobile} {
+                width: 42px;
+                height: 42px;
+                background-position: -39px 1px;
+              }
+              @media #{$tablet} {
+                width: 48px;
+                height: 48px;
+                background-position: -36px 4px;
+              }
+
+              border: none;
+              outline: none;
+              border-radius: 50%;
+              background-repeat: no-repeat;
+              background-size: 80px 40px;
+              background-color: $white;
+              background-image: $icon__product-prev-next;
+              transition: opacity $menu-transition ease-in-out 0ms;
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .product-summary {
+    .is-extended {
+      .woocommerce-product-gallery.images {
+        a.woocommerce-product-gallery__trigger {
+          @media #{$mobile} {
+            &:hover {
+              background-position: -70px 0;
+            }
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            &:hover {
+              background-position: -80px 0;
+            }
+          }
+        }
+      }
+
+      .flex-viewport {
+        figure.woocommerce-product-gallery__wrapper {
+          .zoomImg {
+            cursor: url(../images/sasabudi-cursor-zoom.png) 16 16, zoom-in;
+          }
+        }
+      }
+      
+      .flex-control-thumbs {
+        li {
+          img {
+            @media #{$notebook}, #{$desktop}, #{$wide} {
+              &:hover {
+                border: 1px solid hsla(0, 0%, 4%, 0.20);
+              }
+            }
+          }
+        }
+      }
+      .flex-direction-nav {
+        @media #{$mobile}, #{$tablet} {
+          .flex-nav-prev {
+            a.flex-prev {
+              &:hover {
+                opacity: $menu-opacity;
+              }
+            }
+          }
+          .flex-nav-next {
+            a.flex-next {
+              &:hover {
+                opacity: $menu-opacity;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

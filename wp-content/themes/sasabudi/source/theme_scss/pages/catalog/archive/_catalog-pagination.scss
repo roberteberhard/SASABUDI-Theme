@@ -1,0 +1,183 @@
+.catalog {
+  .catalog-archive {
+
+    .catalog-pagination {
+      display: block;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+      padding-top: 4px;
+      margin-top: 30px;
+      
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        &.indend-left {
+          padding-left: calc(40px + 34px);
+        }
+        &.indend-right {
+          padding-right: calc(40px + 34px);
+        }
+      }
+
+      ul.page-numbers {
+        display: inline-block;
+        list-style: none;
+        padding-top: 4px;
+
+        li {
+          float: left;
+          height: 46px;
+          margin: 0 2px;
+
+          .page-numbers {
+            display: block;
+            width: 40px;
+            height: 40px;
+            padding-top: 11px;
+            border-radius: 50%;
+            color: $text;
+            font-size: $size-normal;
+            font-family: $family-primary;
+            font-weight: $weight-medium;
+            text-align: center;
+            letter-spacing: 0;
+            line-height: 1;
+            background-color: $white-light;
+            transition: background-color $menu_transition ease-in-out 0ms, color $menu_transition ease-out 0ms;
+
+            &.current {
+              display: block;
+              width: 40px;
+              height: 40px;
+              color: $white;
+              background-color: $primary;
+            }
+
+            &.dots {
+              display: block;
+              width: 28px;
+              height: 40px;
+              padding-top: 11px;
+              background-color: transparent;
+            }
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+
+          a.prev,
+          a.next {
+            display: block;
+            position: relative;
+            top: -2px;
+            width: 44px;
+            height: 44px;
+            padding-top: 2px;
+            font-size: 0;
+            color: transparent;
+            background-color: $color-mobile;
+            transition: opacity $menu_transition ease-in-out 0ms;
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+
+          a.prev {
+            @media #{$mobile} {
+              position: absolute;
+              left: 12px;
+            }
+            @media #{$tablet} {
+              position: absolute;
+              left: 14px;
+            }
+            @media #{$notebook}, #{$desktop}, #{$wide} {
+              margin-right: 24px;
+            }
+
+            &:before {
+              content: "";
+              display: inline-block;
+              position: relative;
+              top: 0;
+              left: 0;
+              width: 40px;
+              height: 40px;
+              background-repeat: no-repeat;
+              background-size: 120px 60px;
+              background-position: -10px -10px;
+              background-color: transparent;
+              background-image: $icon__arrow-prev-next;
+            }
+          }
+
+          a.next {
+            @media #{$mobile} {
+              position: absolute;
+              right: 12px;
+            }
+            @media #{$tablet} {
+              position: absolute;
+              right: 14px;
+            }
+            @media #{$notebook}, #{$desktop}, #{$wide} {
+              margin-left: 24px;
+            }
+
+            &:after {
+              content: '';
+              display: block;
+              position: relative;
+              top: 0px;
+              left: 0px;
+              width: 40px;
+              height: 40px;
+              border-radius: 50%;
+              background-repeat: no-repeat;
+              background-size: 120px 60px;
+              background-position: -70px -10px;
+              background-image: $icon__arrow-prev-next;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .catalog {
+    .catalog-archive {
+      .catalog-pagination {
+        ul.page-numbers {
+          li {
+            .page-numbers {
+              &:hover {
+                color: $white;
+                background-color: $button-hover-grey;
+                &.current {
+                  color: $white;
+                  background-color: $primary;
+                }
+                &.dots {
+                  background-color: transparent;
+                }
+              }
+            }
+            // Prev / Next
+            a.prev,
+            a.next {
+              &:hover {
+                opacity: $menu-opacity;
+                background-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

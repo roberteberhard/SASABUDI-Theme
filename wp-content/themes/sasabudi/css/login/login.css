@@ -1,0 +1,160 @@
+body.login {
+  background-color: #ff5b2e !important;
+}
+
+body.login form {
+  color: #0a0a0a;
+  padding-bottom: 34px;
+}
+
+body.login form .forgetmenot {
+  float: none;
+}
+
+body.login label {
+  font-size: 15px;
+  margin-bottom: 6px;
+}
+
+body.login h1 a {
+  background-image: url('./sasabudi-logo.svg');
+  background-size: 80px !important;
+  height: 80px !important;
+  width: 80px !important;
+  box-shadow: none !important;
+}
+
+#loginform {
+  border-radius: 3px;
+  box-shadow: none;
+  border: 0;
+}
+
+body.login input[type=checkbox],
+body.login input[type=color],
+body.login input[type=date],
+body.login input[type=datetime-local],
+body.login input[type=datetime],
+body.login input[type=email],
+body.login input[type=month],
+body.login input[type=number],
+body.login input[type=password],
+body.login input[type=radio],
+body.login input[type=search],
+body.login input[type=tel],
+body.login input[type=text],
+body.login input[type=time],
+body.login input[type=url],
+body.login input[type=week],
+body.login select,
+body.login textarea {
+  color: #0a0a0a;
+  font-size: 20px;
+  border-color: #0a0a0a;
+}
+
+body.login input[type=checkbox]:focus,
+body.login input[type=color]:focus,
+body.login input[type=date]:focus,
+body.login input[type=datetime-local]:focus,
+body.login input[type=datetime]:focus,
+body.login input[type=email]:focus,
+body.login input[type=month]:focus,
+body.login input[type=number]:focus,
+body.login input[type=password]:focus,
+body.login input[type=radio]:focus,
+body.login input[type=search]:focus,
+body.login input[type=tel]:focus,
+body.login input[type=text]:focus,
+body.login input[type=time]:focus,
+body.login input[type=url]:focus,
+body.login input[type=week]:focus,
+body.login select:focus, 
+body.login textarea:focus {
+  color: #0a0a0a;
+  font-size: 20px;
+  border-color: #0a0a0a;
+  box-shadow: 0 0 0 1px #0a0a0a;
+}
+
+
+.wp-core-ui .button-primary {
+  width: 100%;
+  padding: 4px 15px !important;
+  margin-top: 20px;
+  color: #0a0a0a;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #fff !important;
+  border: 2px solid #212529 !important;
+  background: #212529 !important;
+
+}
+.wp-core-ui .button-primary:focus,
+.wp-core-ui .button-primary:hover {
+  color: #fff !important;
+  border: 2px solid #d1d1d1 !important;
+  background: #d1d1d1 !important;
+}
+.wp-core-ui .button-primary.active,
+.wp-core-ui .button-primary.active:focus,
+.wp-core-ui .button-primary.active:hover,
+.wp-core-ui .button-primary:active {
+  color: #fff !important;
+  border: 2px solid #d1d1d1 !important;
+  background: #d1d1d1 !important;
+}
+.wp-core-ui .button-primary.focus,
+.wp-core-ui .button-primary:focus {
+  box-shadow: 0 0 0 0 #fff, 0 0 0 0 #fff;
+}
+
+.wp-core-ui .button,
+.wp-core-ui .button-secondary {
+  color: #0a0a0a;
+}
+.wp-core-ui .button-secondary:hover,
+.wp-core-ui .button.hover,
+.wp-core-ui .button:hover {
+  background: #ffffff;
+  border-color: transparent;
+  color: #0a0a0a;
+}
+body.login .button.wp-hide-pw:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 0 transparent;
+  outline: 2px solid transparent;
+}
+
+body.login form .input,
+body.login form input[type=checkbox],
+body.login input[type=text] {
+  color: #0a0a0a;
+  background: #ffffff;
+}
+.login form input[type=checkbox]:checked::before {
+  color: #0a0a0a;
+  content: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgaWQ9IkViZW5lXzEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4IiB2aWV3Qm94PSIwIDAgMjAgMjAiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDIwIDIwOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PHN0eWxlIHR5cGU9InRleHQvY3NzIj4uc3Qwe2ZpbGw6IzBBMEEwQTt9PC9zdHlsZT48cGF0aCBjbGFzcz0ic3QwIiBkPSJNMTQuOCw0LjlsMS4zLDAuOWwtNS44LDguNEg5TDUuOCw5LjdsMS4zLTEuMmwyLjYsMi40TDE0LjgsNC45eiIvPjwvc3ZnPg==);
+}
+
+body.login a {
+  color: rgba(255,255,255,0.8);
+  text-decoration: none;
+  box-shadow: none !important;
+}
+body.login a:hover {
+  color: rgba(255,255,255,1);
+  text-decoration: underline;
+  box-shadow: none !important;
+}
+ 
+#nav a {
+  display: none;
+} 
+
+#backtoblog a {
+  display: none;
+}
+

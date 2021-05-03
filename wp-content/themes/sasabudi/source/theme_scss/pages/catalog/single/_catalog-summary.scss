@@ -1,0 +1,195 @@
+.is-statement {
+  .statements {
+    border-top: 1px solid $border;
+
+    @media #{$mobile} {
+      padding-top: 40px;
+    }
+    @media #{$tablet} {
+      padding-top: 50px;
+    }
+    @media #{$notebook} {
+      padding-top: 80px;
+    }
+    @media #{$desktop} {
+      padding-top: 80px;
+    }
+    @media #{$wide} {
+      padding-top: 90px;
+    }
+  }
+}
+
+.product-summary {
+  background-color: $white-light;
+  
+  @media #{$mobile} {
+    padding-top: 20px;
+  } 
+  @media #{$tablet} {
+    padding-top: 20px;
+  }
+  @media #{$notebook} {
+    padding-top: 25px;
+  }
+  @media #{$desktop} {
+    padding-top: 25px;
+  }
+  @media #{$wide} {
+    padding-top: 25px;
+  }
+
+  .is-extended {
+    overflow: hidden;
+
+    .summary-breadcrumb {
+
+      @media #{$mobile}, #{$tablet} {
+        text-align: center;
+      } 
+      @media #{$notebook} {
+        padding: 0 0 30px 0;
+        width: 33.333333%;
+        float: right;
+      }
+      @media #{$desktop}, #{$wide} {
+        padding: 0 0 30px 10px;
+        width: 33.333333%;
+        float: right;
+      }
+
+      ul {
+        display: inline-block;
+
+        li {
+          float: left;
+          color: $text;
+          font-size: $size-normal;
+          line-height: 20px;
+          letter-spacing: 0;
+          
+          a.product-link {
+            color: $text;
+            font-size: $size-between;
+            font-family: $family-secondary;
+            font-weight: $weight-bold;
+            letter-spacing: 0.5px;
+            transition: color $menu_transition ease-in-out 0ms;
+
+            &.active {
+              color: $text;
+            }
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+
+          a.edit-item {
+            color: $primary;
+            font-size: $size-small; 
+          }
+
+          span.spacer {
+            padding: 0 6px;
+            font-size: 15px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+
+    .summary-highlights {
+      padding: 21px 30px 0 30px;
+
+      @media #{$mobile}, #{$tablet} {
+        width: 100%;
+        max-width: 560px;
+        margin: 0 auto;
+        text-align: center;
+
+        .product-title {
+          font-size: $size-subtitle;
+          line-height: 1.15;
+          
+          span.item-sale {
+            color: $color-sale;
+            text-transform: uppercase;
+          }
+        }
+      
+        .price {
+          padding-top: 10px;
+          padding-bottom: 20px;
+          color: $text;
+          font-family: $family-secondary;
+          font-size: $size-large;
+          font-weight: $weight-bold;
+          letter-spacing: 0.5px;
+
+          .product-price__from {
+            font-family: $family-primary;
+            font-size: $size-normal;
+            font-weight: 400;
+            letter-spacing: 0px;
+          }
+      
+          del {
+            color: $grey;
+            font-size: $size-large;
+            font-weight: $weight-normal;
+            span.amount {
+              color: $grey;
+              font-size: $size-large;
+              font-weight: $weight-normal;
+            }
+          }
+
+          ins {
+            color: $text;
+            font-size: $size-large;
+            font-weight: $weight-normal;
+            text-decoration: none;
+            background-color: transparent;
+            span.amount {
+              color: $text;
+              font-size: $size-large;
+              font-weight: $weight-bold;
+            }
+          }
+        }
+      }
+
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: none;
+      }
+    }
+  }
+}
+
+/* Stripe Button */
+#wc-stripe-payment-request-button-separator {
+  font-size: $size-normal;
+  margin-top: 11px !important;
+  margin-bottom: 12px !important;
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .product-summary {
+    .is-extended {
+      .summary-breadcrumb {
+        ul {
+          li {
+            a.product-link {
+              &:hover {
+                color: $link-hover-text;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

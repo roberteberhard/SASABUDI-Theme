@@ -1,0 +1,51 @@
+.promo-on {
+  .pagenotfound {
+    border-top: none;
+  }
+}
+
+.pagenotfound {
+  border-top: 1px solid $border;
+
+  @media #{$mobile} {
+    padding: 60px 0 70px;
+  } 
+  @media #{$tablet} {
+    padding: 80px 10% 90px;
+  }
+  @media #{$notebook} {
+    padding: 90px 15% 100px;
+  }
+  @media #{$desktop} {
+    padding: 100px 20% 110px;
+  }
+  @media #{$wide} {
+    padding: 120px 25% 130px;
+  }
+  
+  .is-wrapper {
+    overflow: hidden;
+    
+    .pagenotfound-title {
+      font-size: $size-title; 
+      margin-bottom: 24px; 
+      text-align: center; 
+    }
+
+    .pagenotfound-desc {
+      margin-bottom: 25px;
+      font-size: $size-medium;
+      font-weight: $weight-normal;
+      text-align: center; 
+    }
+
+    .pagenotfound-back {
+      margin-top: 60px;
+      text-align: center;
+      
+      .btn-short {
+        display: inline-block;
+      }
+    }
+  }
+}

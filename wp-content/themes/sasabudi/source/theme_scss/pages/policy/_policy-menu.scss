@@ -1,0 +1,290 @@
+.policy {
+
+  // Policy Menu
+  .policy-menu {
+
+    @media #{$mobile} {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: calc(100% + 40px);
+      max-height: 600px;
+      margin-left: -20px;
+      margin-right: -20px;
+      border-bottom: 1px solid $border;
+    }
+    @media #{$tablet} {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: calc(100% + 50px);
+      max-height: 600px;
+      margin-left: -25px;
+      margin-right: -25px;
+      border-bottom: 1px solid $border;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 25%;
+      margin-top: 60px;
+      padding-top: 10px;
+      padding-bottom: 80px;
+      border-top: 1px solid $border;
+    }
+   
+    // Injected by JavaScript
+    .policy-toggle {
+      display: block;
+
+      a.policy-toggle__button {
+        display: block;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        width: 100%;
+        color: $text;
+        font-size: $size-medium;
+        font-family: $family-secondary;
+        font-weight: $weight-bold;
+        text-align: left;
+        line-height: 48px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        background-color: $color-mobile;
+
+        @media #{$mobile} {
+          padding: 0 20px;
+        }
+        @media #{$tablet} {
+          padding: 0 25px;
+        }
+      }
+
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 23px;
+        width: 10px;
+        height: 2px;
+        border-radius: 4px;
+        background-color: $black;
+        transform: rotate(0deg);
+        transition: all $menu-transition ease-in-out;
+
+        @media #{$mobile} {
+          right: 25px;
+        }
+        @media #{$tablet} {
+          right: 30px;
+        }
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 23px;
+        width: 10px;
+        height: 2px;
+        border-radius: 4px;
+        background-color: $black;
+        transform: rotate(90deg);
+        transition: all $menu-transition ease-in-out;
+
+        @media #{$mobile} {
+          right: 25px;
+        }
+        @media #{$tablet} {
+          right: 30px;
+        }  
+      }
+    }
+
+    h3 {
+      @media #{$mobile}, #{$tablet} {
+        display: none;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: block;
+        font-family: $family-secondary;
+        color: $text-light;
+        font-size: $size-normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+      }
+    }
+    
+    &__navigation {
+
+      //////////////////
+      // Device View
+      //////////////////
+      @media #{$mobile}, #{$tablet} {
+        overflow: hidden;
+        transition: height $menu-transition ease 0ms;
+
+        ul {
+          li {
+            a {
+              display: block;
+              height: 42px; 
+              color: $text;
+              font-size: $size-medium;
+              font-weight: 400;
+              line-height: 40px;
+              letter-spacing: 0;
+              background-color: $color-mobile;
+
+              @media #{$mobile} {
+                padding-left: 20px;
+              }
+              @media #{$tablet} {
+                padding-left: 25px;
+              }
+
+              &:active {
+                background-color: $white-dark;
+              }
+            }
+          }
+        }
+
+        &.menu--off {
+          .policy-toggle {
+            &:before {
+              animation: turn_off_before $menu-transition forwards 1 ease;
+            }
+            &:after {
+              animation: turn_off_after $menu-transition forwards 1 ease;
+            }
+          }
+        }
+
+        &.menu--on {
+          .policy-toggle {
+
+            &:before {  
+              width: 14px;
+              background-color: $primary;
+              animation: turn_on_before $menu-transition forwards 1 ease;
+
+              @media #{$mobile} {
+                right: 23px;
+              }
+              @media #{$tablet} {
+                right: 28px;
+              } 
+            }
+            
+            &:after {
+              width: 14px;
+              background-color: $primary;
+              animation: turn_on_after $menu-transition forwards 1 ease;
+
+              @media #{$mobile} {
+                right: 23px;
+              }
+              @media #{$tablet} {
+                right: 28px;
+              } 
+            }
+          }
+        }
+      }
+
+      //////////////////
+      // Desktop View
+      //////////////////
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        ul {
+          margin-top: 46px;
+
+          li {
+            margin-bottom: 8px;
+
+            a {
+              color: $text;
+              font-size: $size-medium;
+              font-weight: 400;
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+
+            &.is-active {
+              a {
+                color: $text;
+                font-size: $size-medium;
+                font-family: $family-secondary;
+                font-weight: $weight-bold;
+                letter-spacing: 0.5px;
+                margin-left: -2px;
+              }
+              &:before {
+                content: "";
+                position: relative;
+                display: inline-block;
+                top: 0px;
+                left: -8px;
+                width: 3px;
+                height: 12px;
+                background-color: $primary;
+              }
+            }                  
+          }
+        }
+      }
+    }
+
+    &__assistance {
+      display: block;
+      margin-top: 70px;
+      padding-top: 10px;
+      font-size: $size-medium;
+      border-top: 1px solid $border;
+
+      @media #{$mobile},#{$tablet} {
+        display: none;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: block;
+      }
+
+      ul {
+        margin-top: 46px;
+
+        li {
+          margin-bottom: 12px;
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+ .no-touch {
+  .policy {
+    .policy-menu {
+      &__navigation {
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          ul {
+            li {
+              a {
+                &:hover {
+                  color: $link-hover-text;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

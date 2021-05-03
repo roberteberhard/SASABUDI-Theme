@@ -1,0 +1,265 @@
+.recently {
+  .is-extended {
+    overflow: hidden;
+    text-align: center;
+
+    @media #{$mobile} {
+      padding-bottom: 10px;
+    }
+    @media #{$tablet} {
+      padding-bottom: 0px;
+    }
+    @media #{$notebook}, #{$desktop} {
+      padding-bottom: 20px;
+    }
+    @media #{$wide} {
+      padding-bottom: 20px;
+    }
+
+    h2.recently-title {   
+      margin-bottom: 30px;
+      font-size: $size-subtitle;
+      letter-spacing: 0.5px;
+    }
+
+    .recently-products {
+      overflow: hidden;
+
+      @media #{$mobile} {
+        width: calc(100% + 12px);
+        margin: 0 -6px;
+        padding-bottom: 30px;
+      }
+      @media #{$tablet} {
+        width: calc(100% + 16px);
+        margin: 0 -8px;
+        padding-bottom: 50px;
+      }
+      @media #{$notebook}, #{$desktop} {
+        width: calc(100% + 16px);
+        margin: 0 -8px;
+        padding-bottom: 50px;
+      }
+      @media #{$wide} {
+        width: calc(100% + 20px);
+        margin: 0 -10px;
+        padding-bottom: 70px;
+      }
+
+      ul.products {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        min-height: 100%;
+
+        // Recently viewed
+        li.recently-viewed {
+
+          @media #{$mobile} {
+            flex-basis: calc(33.333333% - 12px);
+            margin: 0 6px 12px 6px;
+          }
+          @media #{$tablet} {
+            flex-basis: calc(33.333333% - 16px);
+            margin: 0 8px 16px 8px;
+          }
+          @media #{$notebook}, #{$desktop} {
+            flex-basis: calc(16.666666666666667% - 16px);
+            margin: 0 8px 16px 8px;
+          }
+          @media #{$wide} {
+            flex-basis: calc(16.666666666666667% - 20px);
+            margin: 0 10px 20px 10px;
+          }
+
+          .recently-article {
+            overflow: hidden;
+            position: relative;
+
+            a {
+              display: block;
+              overflow: hidden;
+
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+             
+              // Figure
+              .recently-article__figure {
+                background-color: $white-light;
+
+                &--primary {
+                  opacity: 0;
+                  overflow: hidden;
+                  background-color: $white-light;
+                  transition: opacity $image-transition ease-in-out 0ms;
+
+                  &.lazy-fade {
+                    opacity: 1;
+                  }
+                }
+
+                &--secondary {
+                  opacity: 0;
+                  overflow: hidden;
+                  position: absolute;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  background-color: $white-light;
+                  transition: opacity $image-transition ease-in-out 0ms;
+                }
+              }
+
+              .recently-article__desc {
+
+                @media #{$mobile}, #{$tablet} {
+                  display: none;;
+                }
+                @media #{$notebook}, #{$desktop}, #{$wide} {
+                  opacity: 0;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  right: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  z-index: 2;
+                  transition: opacity $image-transition ease-in-out 0ms;
+                  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), 70%, rgba(242, 242, 242, 1));
+                }
+
+                .article-item {
+                  position: absolute;
+                  left: 0;
+                  bottom: 0;
+                  z-index: 3;
+                  width: 100%;
+                  height: auto;
+
+                  @media #{$notebook}, #{$desktop} {
+                    padding: 0 12px 12px 12px;
+                  }
+                  @media #{$wide} {
+                    padding: 0 15px 15px 15px;
+                  }
+
+                  &__model {
+                    overflow: hidden;
+                    padding: 12px 0 4px 0;
+
+                    &--title {
+                      font-family: $family-secondary;
+                      color: $text;
+                      font-size: $size-medium;
+                      line-height: 1;
+                      letter-spacing: 0.5px;
+                      text-align: left;
+                      text-transform: initial;
+                    }
+
+                    &--sale {
+                      color: $color-sale;
+                      text-transform: uppercase;
+                    }
+                  }
+                  
+                  &__price {
+                    overflow: hidden;
+                    font-family: $family-primary;
+                    color: $text;
+                    font-size: $size-medium;
+                    font-weight: $weight-medium;
+                    text-align: left;
+                    line-height: 1;
+                    letter-spacing: 0px;
+
+                    .product-price__from {
+                      font-size: $size-small;
+                      font-weight: $weight-normal;
+                    }
+
+                    del {
+                      color: $grey;
+                      font-size: $size-medium;
+                      font-weight: $weight-normal;
+
+                      span.amount {
+                        color: $grey;
+                        font-size: $size-medium;
+                        font-weight: $weight-normal;
+                      }
+                    }
+                    ins {
+                      color: $text;
+                      font-size: $size-medium;
+                      font-weight: $weight-medium;
+                      text-decoration: none;
+                      background-color: transparent;
+                      span.amount {
+                        color: $text;
+                        font-size: $size-medium;
+                        font-weight: $weight-medium;
+                      }
+                    }
+                  }
+                }
+              }
+
+              // Sale
+              .recently-article__sale {
+                display: block;
+                position: absolute;
+                z-index: 5;
+                top: 12px;
+                right: 12px;
+                color: $white;
+                font-size: $size-normal;
+                font-weight: $weight-normal;
+                line-height: 1;
+                letter-spacing: 3px;
+                text-transform: uppercase;
+                padding: 4px 6px 5px 9px;
+                background-color: $color-sale;
+                // transform
+                transform: rotate(-90deg) translate(0, -100%);
+                transform-origin: 100% 0;
+              }
+            }         
+          }
+        }
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .recently {
+    .is-extended {
+      .recently-products {
+        ul.products {
+          li.recently-viewed {
+            .recently-article {
+              a:hover {
+                .recently-article__figure {
+                  .recently-article__figure--secondary {
+                    opacity: 1;
+                  }
+                }
+                .recently-article__desc {
+                  @media #{$notebook}, #{$desktop}, #{$wide} {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,293 @@
+.checkout-collateral {
+
+  // Payment
+  .woocommerce-checkout-payment {
+    margin-top: 20px;
+
+    ul.wc_payment_methods {
+      width: 100%;
+      color: $text;
+      font-size: $size-normal;
+      font-weight: $weight-normal;
+      line-height: 1.15;
+      border-radius: 3px;
+      background-color: $white-light;
+
+      @media #{$mobile}, #{$tablet} {
+        padding: 17px 20px 11px 17px;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        padding: 19px 19px 11px 19px;
+      }
+
+      li {
+        &.payment__method {
+          padding-bottom: 22px;
+          h3 {
+            font-size: $size-large;
+          }
+        }
+
+        /**
+         * Cash on Delivery
+         */
+        &.payment_method_cod {
+          position: relative;
+          width: 100%;
+          padding: 5px 0;
+          margin-bottom: 14px;
+
+          // labels are managed in the radio.scss
+      
+          .payment_box {
+            display: inline-block;
+            width: 100%;
+            p {
+              padding: 10px 0 6px 35px;
+              font-size: $size-normal;
+            }
+          }
+        }
+        
+        /**
+         * Paypal
+         */
+        &.payment_method_paypal {
+          position: relative;
+          width: 100%;
+          padding: 5px 0;
+          margin-bottom: 14px;
+
+          // labels are managed in the radio.scss
+
+          label[for=payment_method_paypal] {
+            font-weight: $weight-bold;
+            font-size: $size-medium;
+            font-family: $family-secondary;
+            letter-spacing: 0.5px;
+            line-height: 1;
+            
+            img {
+              position: absolute;
+              top: 3px;
+              right: 0;
+              width: 80px;
+              height: auto;
+            }
+          }
+
+          .payment_box {
+            display: inline-block;
+            width: 100%;
+            p {
+              padding: 10px 0 6px 35px;
+              font-size: $size-normal;
+            }
+          }
+        }
+
+        /**
+         * Stripe Payments
+         */
+        &.payment_method_stripe {
+          position: relative;
+          width: 100%;
+          padding: 5px 0;
+          margin-bottom: 14px;
+
+          // labels are managed in the radio.scss
+
+          label[for=payment_method_stripe] {
+            vertical-align: top !important;
+            font-weight: $weight-bold;
+            font-size: $size-medium;
+            font-family: $family-secondary;
+            letter-spacing: 0.5px;
+            line-height: 1;
+
+            img.stripe-icon {
+              position: absolute;
+              top: 3px;
+              width: auto;
+              height: 20px;
+              &.stripe-visa-icon {
+                right: 169px;
+              }
+              &.stripe-mastercard-icon {
+                right: 135px;
+              }
+              &.stripe-amex-icon {
+                right: 101px;
+              }
+              &.stripe-discover-icon {
+                right: 68px;
+              }
+              &.stripe-diners-icon {
+                right: 34px;
+              }
+              &.stripe-jcb-icon {
+                right: 0;
+              }
+            }
+          }
+          .payment_box {
+            display: inline-block;
+            width: 100%;
+            padding-left: 33px;
+            p {
+              padding: 10px 0 6px 2px;
+              font-size: $size-normal;
+            }
+          }
+
+          fieldset.wc-payment-form {
+            padding-block-start: 12px !important;
+            padding-inline-start: 0px !important;
+            padding-inline-end: 0 !important;
+            padding-block-end: 0 !important;
+            
+            .form-row {
+              label {
+                .required {
+                  color: $primary;
+                  font-size: $size-small;
+                }
+              }
+            }
+          }
+
+          ul.wc-saved-payment-methods {
+            padding-top: 6px;
+            width: 100%;
+
+            li {
+              cursor: pointer;
+              display: block;
+              margin-top: 6px;
+            }
+          }
+          
+          p.woocommerce-SavedPaymentMethods-saveNew {
+            position: relative;
+            padding: 0 0 0 36px;
+            font-size: $size-normal;
+            margin-left: -3px;
+          }
+          input#wc-stripe-new-payment-method {
+            position: absolute;
+            left: 8px;
+            top: -6px;
+          }
+          label[for=wc-stripe-new-payment-method] {
+            cursor: pointer;
+            line-height: 1.15;
+          }
+        }
+      }
+    }
+  }
+
+  // Coupon
+  .checkout_coupon {
+    width: 100%;
+    overflow: hidden;
+    margin-top: 20px;
+    color: $text;
+    font-size: $size-normal;
+    font-weight: $weight-normal;
+    line-height: 1.15;
+    border-radius: 3px;
+    background-color: $white-light;
+    
+    @media #{$mobile}, #{$tablet} {
+      padding: 17px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      padding: 19px;
+    }
+
+    .form-coupon-label {
+      margin: 2px 0 0 0;
+      font-size: $size-normal;
+      font-weight: $weight-medium;
+    }
+
+    .form-row {
+      margin-top: 12px;
+      margin-bottom: 6px;
+      &.form-row-first {
+        width: calc(100% - 128px);
+        margin-right: 8px;
+      }
+      &.form-row-last {
+        width: 120px;
+        margin-left: 0;
+      }
+    }
+  }
+
+  .form-row.place-order {
+    margin-top: 20px;
+
+    .woocommerce-terms-and-conditions-wrapper {
+      a {
+        color: $link-primary;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        background-position: 100%;
+        background-image: linear-gradient(transparent calc(100% - 1px), lighten($link-primary, 10%) 1px);
+        transition: background-size ease $menu-transition;
+        // ---------
+        // !! Hover :: Managed in no-touch section
+        // ---------
+      }
+      .woocommerce-privacy-policy-text {
+        p {
+          margin-bottom: 18px;
+          font-size: $size-normal;
+          line-height: 1.25;
+        }
+      }
+      .form-row.validate-required {
+        margin-bottom: 22px;
+      }
+    }
+    .btn-place-order {
+      height: 54px;
+      padding: 11px 0 11px;
+      border-color: $link-primary;
+      background-color: $link-primary;
+      // ---------
+      // !! Hover :: Managed in no-touch section
+      // ---------
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .checkout-collateral {
+    .form-row.place-order {
+      .woocommerce-terms-and-conditions-wrapper {
+        a {
+          &:hover {
+            color: $link-primary;
+            background-size: 0 100%;
+          }
+        }
+      }
+      .btn-place-order {
+        &:hover,
+        &:focus,
+        &:active {
+          color: $white;
+          border: 2px solid $button-hover-grey;
+          background-color: $button-hover-grey;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,186 @@
+.footer-middle {
+  overflow: hidden;
+  padding-top: 40px;
+  padding-bottom: 50px;
+  background-color: $white;
+
+  .footer-social {
+ 
+    @media #{$mobile}, #{$tablet} {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      display: block;
+      float: left;
+      width: 66.6666666%;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+      color: $text;
+      font-size: $size-large;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+    }
+
+    &__list {
+  
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        margin-left: -4px;
+      }
+
+      li {
+        float: left;
+        width: 44px;
+        height: 44px;
+        margin-left: 4px;
+        margin-right: 4px;
+
+        a {
+          display: block;
+          width: 44px;
+          height: 44px;
+          padding: 2px;
+          opacity: 1;
+          font-size: 0;
+          color: transparent;
+          border-radius: 50%;
+          background-color: $black;
+          transition: opacity $menu-transition ease-in-out 0ms;
+
+          .footer-social__list--icon {
+            display: block;
+            overflow: hidden;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-size: 308px 44px;
+            background-repeat: no-repeat;
+            background-color: $black;
+            background-image: $icon__social-media;
+
+            &.svg--facebook {
+              background-position: -2px -2px;
+            }
+            &.svg--twitter {
+              background-position: -46px -2px;
+            }
+            &.svg--tumblr {
+              background-position: -90px -2px;
+            }
+            &.svg--pinterest {
+              background-position: -134px -2px;
+            }
+            &.svg--instagram {
+              background-position: -178px -2px;
+            }
+            &.svg--snapchat {
+              background-position: -222px -2px;
+            }
+            &.svg--youtube {
+              background-position: -265px 0;
+            }
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+        }
+      }
+    }
+  }
+
+  .footer-payment {
+
+    @media #{$mobile}, #{$tablet} {
+      display: none;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      display: block;
+      float: right;
+      width: 33.333333%;
+      max-width: 800px;
+    }
+
+    &__title {
+      margin-bottom: 15px;
+      color: $text;
+      font-size: $size-large;
+      letter-spacing: 1.25px;
+      text-transform: uppercase;
+    }
+    &__prices{
+      display: inline-block;
+      padding-left: 10px;
+      color: $text;
+      font-family: $family-primary;
+      font-size: $size-normal;
+      font-weight: $weight-normal;
+      letter-spacing: 0px;
+      text-transform: initial;
+    }
+
+    ul {
+      display: block;
+      overflow: hidden;
+
+      li {
+        float: left;
+        width: 42px;
+        height: 27px;
+        margin: 4px 4px 0 0;
+        font-size: 0;
+
+        div {
+          width: 42px;
+          height: 27px;
+          background-position: 0 0;
+          background-repeat: no-repeat;
+          background-size: 100% auto;
+          &.footer-payment__paypal {
+            background-image: url(#{$loader-url}payment-paypal.svg);
+          }
+          &.footer-payment__visa {
+            background-image: url(#{$loader-url}payment-visa.svg);
+          }
+          &.footer-payment__amexco {
+            background-image: url(#{$loader-url}payment-amex.svg);
+          }
+          &.footer-payment__mastercard {
+            background-image: url(#{$loader-url}payment-mastercard.svg);
+          }
+          &.footer-payment__discover {
+            background-image: url(#{$loader-url}payment-discover.svg);
+          }
+          &.footer-payment__jcb {
+            background-image: url(#{$loader-url}payment-jcb.svg);
+          }
+          &.footer-payment__diners {
+            background-image: url(#{$loader-url}payment-diners.svg);
+          }
+        }              
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .footer-middle {
+    .footer-social {
+      &__list {
+        li {
+          a {
+            &:hover {
+              opacity: $menu-opacity;
+            }
+          }
+        }
+      }
+    }
+  }
+}

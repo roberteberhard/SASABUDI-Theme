@@ -1,0 +1,155 @@
+.account {
+  .woocommerce {
+
+    // Account Content
+    .account-content {
+      display: flex;
+      flex-direction: column;
+
+      @media #{$mobile} {
+        width: 100%;
+        padding-top: 50px;
+        padding-bottom: 70px;
+      }
+      @media #{$tablet} {
+        width: 100%;
+        padding-top: 60px;
+        padding-bottom: 90px;
+      }
+      @media #{$notebook}, #{$desktop} {
+        display: flex;
+        flex-basis: 75%;
+        padding-left: 4%;
+        padding-bottom: 110px;
+      }
+      @media #{$wide} {
+        display: flex;
+        flex-basis: 75%;
+        padding-left: 4%;
+        padding-bottom: 130px;
+      }
+
+      &__title {
+        width: 100%;
+        padding: 10px 0 48px 0;
+        font-family: $family-secondary;
+        color: $grey-light;
+        font-size: $size-normal;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+
+        @media #{$mobile}, #{$tablet}  {
+          display: none;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          margin-top: 60px;
+          border-top: 1px solid $border;
+        }
+      }
+
+      // Dashboard Welcome
+      .dashboard-welcome {
+        padding-bottom: 40px;
+
+        p.dashboard-username {
+          margin-bottom: 10px;
+        }
+      }
+
+      // Dashboard Links
+      .dashboard-links {
+        display: flex;
+        justify-content: top;
+
+        @media #{$mobile} {
+          flex-direction: column;
+          width: 100%;
+        }
+        @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+          flex-direction: row;
+          width: calc(100% + 20px);
+          margin: 0 -10px;
+        }
+
+        .col {
+          @media #{$mobile} {
+            margin: 10px 0;
+          }
+          @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+            margin: 0 10px;
+          }
+
+          .dashboard-link {
+            display: block;
+            position: relative;
+            padding: 24px 35px 24px 25px;
+            border: 1px solid $black;
+            border-radius: 3px;
+            color: inherit;
+            background-color: $white;
+            transition: background-color $menu-transition ease-in-out 0ms, border-color $menu-transition ease-in-out 0ms;
+
+            h3 {  
+              font-size: $size-large;
+              line-height: 1;
+              margin-bottom: 12px;
+            }
+
+            p {
+              color: $grey-darker;
+              font-size: $size-normal;
+              line-height: 1.15;
+            }
+
+            .arrow-next {
+              display: block;
+              opacity: 1;
+              position: absolute;
+              z-index: 0;
+              right: 15px;
+              top: 50%;
+              transform: translate(0, -50%);
+              width: 7px;
+              height: 15px;
+              background-size: 100%;
+              background-repeat: no-repeat;
+              background-position: center;
+              background-image: $icon__arrow-black-next;
+              transition: opacity $menu-transition ease-in-out 0ms;
+            }
+
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------           
+          }
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .account {
+    .woocommerce {
+      .account-content {
+        .dashboard-links {
+          .col {
+            .dashboard-link {
+              &:hover {
+                border: 1px solid $grey-light;
+                background-color: $white-light;
+                .arrow-next {
+                  opacity: 0.5;
+                }
+              }          
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,115 @@
+// Infinite spinning
+@keyframes infinite-spinning {
+  from { transform: scale(1) rotate(0deg);}
+  to { transform: scale(1) rotate(360deg);}
+}
+@keyframes infinite-spinning-hide {
+  from { transform: scale(1) rotate(0deg);}
+  to { transform: scale(1) rotate(360deg);}
+}
+
+// Offset left animations
+@keyframes show-left-offset {
+  0% { visibility: visible; }
+  100% { visibility: visible; }
+}
+@keyframes hide-left-offset {
+  0% { visibility: visible; }
+  99% { visibility: visible; }
+  100% { visibility: hidden; }
+}
+
+// Offset right animations
+@keyframes show-right-offset {
+  0% { visibility: visible; }
+  100% { visibility: visible; }
+}
+@keyframes hide-right-offset {
+  0% { visibility: visible; }
+  99% { visibility: visible; }
+  100% { visibility: hidden; }
+}
+
+// Shop notice animations
+@keyframes show-notice { 
+  0% { visibility: hidden; }
+  1% { transform: translateX(100%); visibility: visible; }
+  50%, 100% { transform: translateX(0); visibility: visible; } 
+  70% { transform: translateX(-30px); visibility: visible; }
+}
+@keyframes hide-notice {
+  0% { transform: translateX(0); visibility: visible; }
+  29% { transform: translateX(-30px); visibility: visible; }
+  99% { transform: translateX(100%); visibility: visible; }
+  100% {transform: translateX(150%); visibility: hidden; }
+}
+
+// Shop notice animations
+@keyframes show-signup-notice { 
+  0% { visibility: hidden; }
+  1% { transform: translateY(100%); visibility: visible; opacity: 0;}
+  75% { transform: translateY(0%); visibility: visible; opacity: 1;} 
+  100% { transform: translateY(0%); visibility: visible; opacity: 1;} 
+}
+@keyframes hide-signup-notice {
+  0% { transform: translateY(0%); visibility: visible; opacity: 1;}
+  99% { transform: translateY(0%); visibility: visible; opacity: 0;}
+  100% {transform: translateY(150%); visibility: hidden; }
+}
+
+// Search modal animations
+@keyframes fade-in-search { 
+  0% { opacity: 0; transform: scale(1.05); visibility: visible; } 
+  100% { opacity: 1; transform: scale(1); visibility: visible; }
+}
+@keyframes fade-out-search {
+  0% { opacity: 1; transform: scale(1); visibility: visible; }
+  99% { opacity: 0; transform: scale(1.01); visibility: visible; }
+  100% { visibility: hidden; }
+}
+
+// Navbar-Nav animations
+@keyframes fade-in-dropdown { 
+  0% { visibility: hidden; opacity: 0; } 
+  100% { visibility: visible; opacity: 1; }
+}
+@keyframes fade-out-dropdown {
+  0% { visibility: hidden; opacity: 0; }
+  100% { visibility: hidden; opacity: 0; }
+}
+
+// Button waiting effect
+@keyframes blink {
+  0% { opacity: .3; }
+  20% { opacity: 1; }
+  100% { opacity: .3; }
+}
+
+// Turn navigation before
+@keyframes turn_on_before {
+  from { transform: rotate(0deg) } // 0
+  to { transform: rotate(45deg) }
+}
+@keyframes turn_off_before {
+  from { transform: rotate(45deg) }
+  to { transform: rotate(0deg) }
+}
+
+// Turn navigation after
+@keyframes turn_on_after {
+  from { transform: rotate(90deg) } // 90
+  to { transform: rotate(135deg) }
+}
+@keyframes turn_off_after {
+  from { transform: rotate(135deg) }
+  to { transform: rotate(90deg) }
+}
+
+// Fade out and remove saved item
+@keyframes fade-out-remove {
+  0% { opacity: 1; max-height: 400px; max-width: 800px;}
+  50% { opacity: 0.3; max-height: 400px; max-width: 800px; margin-left: 0px; margin-right: 0px; margin-bottom: 20px;}
+  51% { opacity: 0; max-height: 0px; max-width: 800px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px;}
+  100% { opacity: 0; max-height: 0px; max-width: 0px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px;}
+}
+

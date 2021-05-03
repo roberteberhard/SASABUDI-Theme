@@ -1,0 +1,123 @@
+.note-desktop {
+
+  @media #{$mobile}, #{$tablet} {
+    display: none;
+  }
+  @media #{$notebook}, #{$desktop}, #{$wide} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    box-shadow: inset 0 -1px 0 $border;
+  }
+
+  &.default-style {
+    background-color: $white;
+  }
+
+  &.light-style {
+    background-color: $white-dark;
+  }
+
+  &__prompt {
+    color: $text;
+    font-size: $size-small;
+    font-family: $family-primary;
+    text-align: center;
+    font-weight: $weight-medium;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    .is-secure {
+      display: block;
+      float: left;
+      width: 12px;
+      height: 12px;
+      margin-top: 2px;
+      margin-right: 3px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: $icon__secure-shopping;
+    }
+
+    b,
+    strong {
+      color: $text;
+      font-weight: $weight-bold;
+    }
+    a {
+      color: $text;
+      text-decoration: none;
+      font-weight: $weight-medium;
+    }
+  }
+}
+
+.note-desktop__selector {
+  display: block;
+  position: absolute;
+  right: calc(4% - 8px);
+  top: -2px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $color-mobile;
+
+  .location-flag {
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    font-size: 0;
+    margin: 7px;
+    color: transparent;
+    background-size: 26px 26px;
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+  }
+
+  &.us-section {
+    .location-flag {
+      background-image: url(#{$loader-url}us.png);
+    }
+  }
+  &.ca-section {
+    .location-flag {
+      background-image: url(#{$loader-url}ca.png);
+    }
+  }
+  &.eu-section {
+    .location-flag {
+      background-image: url(#{$loader-url}eu.png);
+    }
+  }
+  &.uk-section {
+    .location-flag {
+      background-image: url(#{$loader-url}uk.png);
+    }
+  }
+  &.jp-section {
+    .location-flag {
+      background-image: url(#{$loader-url}jp.png);
+    }
+  }
+  &.au-section {
+    .location-flag {
+      background-image: url(#{$loader-url}au.png);
+    }
+  }
+  &.world-section {
+    .location-flag {
+      background-image: url(#{$loader-url}world.png);
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */

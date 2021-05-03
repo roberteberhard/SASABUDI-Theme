@@ -1,0 +1,190 @@
+.notice {
+  position: fixed;
+  z-index: 999;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 83px;
+  background-color: $color-alert;
+
+  visibility: hidden;
+  transform: translateY(150%);
+
+  &.notice-alert {
+    background-color: $color-alert;
+
+    .notice-close {
+      .notice-close__btn {
+        .notice-close__btn--bar {
+          background-color: $color-alert;
+
+          &:before {
+            background-color: $color-alert;
+          }
+        }
+      }
+    }
+  }
+
+  &.notice-success {
+    background-color: $color-success;
+
+    .notice-close {
+      .notice-close__btn {
+        .notice-close__btn--bar {
+          background-color: $color-success;
+
+          &:before {
+            background-color: $color-success;
+          }
+        }
+      }
+    }
+  }
+
+  &.notice-info {
+    background-color: $color-info;
+
+    .notice-close {
+      .notice-close__btn {
+        .notice-close__btn--bar {
+          background-color: $color-info;
+
+          &:before {
+            background-color: $color-info;
+          }
+        }
+      }
+    }
+  }
+
+  .notice-prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 82px;
+    color: $white;
+    font-size: $size-medium;
+    font-weight: 400;
+    line-height: 1.25;
+    text-align: center;
+
+    @media #{$mobile} {
+      padding: 0 60px;
+    }
+    @media #{$tablet} {
+      padding: 0 80px;
+    }
+    @media #{$notebook} {
+      padding: 0 15%;
+    }
+    @media #{$desktop} {
+      padding: 0 20%;
+    }
+    @media #{$wide} {
+      padding: 0 25%;
+    }
+
+    a {
+      color: $white;
+      font-weight: 700;
+      transition: color $menu-transition ease-in-out 0ms;
+      // ---------
+      // !! Hover :: Managed in no-touch section
+      // ---------
+    }
+  }
+
+  .notice-close {
+    position: absolute;
+    z-index: 1;
+    top: calc(50% - 16px);
+    width: 32px;
+    height: 32px;
+
+    @media #{$mobile} {
+      right: 20px;
+    }
+    @media #{$tablet} {
+      right: 25px;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      right: 4%;
+    }
+
+    &__btn {
+      display: block;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background-color: $white;
+      transition: background-color $menu-transition ease-in-out 0ms;
+
+      &--bar {
+        display: block;
+        position: relative;
+        z-index: 1;
+        top: 15px;
+        left: 8px;
+        width: 16px;
+        height: 2px;
+        transform: rotate(-45deg);
+        background-color: $color-alert;
+        
+        &:before {
+          display: block;
+          position: relative;
+          z-index: 1;
+          content: '';
+          width: 16px;
+          height: 2px;
+          top: 0;
+          left: 0;
+          transform: rotate(90deg);
+          background-color: $color-alert;
+        }
+      }
+      // ---------
+      // !! Hover :: Managed in no-touch section
+      // ---------
+    }
+  }
+
+  &.notice-on {
+    animation: show-signup-notice;
+    animation-duration: 350ms;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+
+  &.notice-off {
+    animation: hide-signup-notice;
+    animation-duration: 350ms;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .notice {
+    
+    .notice-prompt {
+      a:hover {
+        color: white(0.75);
+      }
+    }
+
+    .notice-close {
+      &__btn:hover {
+        background-color: white(0.75);
+      }
+    }
+  }
+}

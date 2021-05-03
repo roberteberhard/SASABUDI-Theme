@@ -1,0 +1,40 @@
+.account {
+  .woocommerce {
+
+    // Account Aside
+    .account-aside {
+      flex-direction: column;
+
+      @media #{$mobile}, #{$tablet}  {
+        display: none;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: flex;
+        flex-basis: 25%;
+        margin-top: 60px;
+        padding-top: 10px;
+        border-top: 1px solid $border;
+      }
+
+      &__menu {
+
+        h3 {
+          font-family: $family-secondary;
+          color: $grey-light;
+          font-size: $size-normal;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+
+        p {
+          margin-top: 46px;
+        }
+
+        p.is-required {
+          margin-top: 25px;
+          font-size: 0.8125rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,496 @@
+.promo-on {
+  .catalog {
+    border-top: none;
+
+    .catalog-header {
+      .catalog-header__filter {
+        ul.filter-bar {
+          border-top: none;
+        }
+      }
+    }
+  }
+}
+
+.catalog {
+  .catalog-header {
+
+    &.filter-on {
+      .catalog-header__filter {
+        .filter-bar {
+          position: fixed;
+          z-index: 98;
+          left: 0;
+          width: 100%;
+          height: 46px;
+          border-bottom: 1px solid $border;
+          background-color: $white;
+
+          @media #{$mobile} {
+            top: 56px;
+          }
+          @media #{$tablet} {
+            top: 64px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.catalog {
+  overflow: hidden;
+  border-top: 1px solid $border;
+
+  @media #{$mobile} {
+    padding: 0 0 60px;
+  } 
+  @media #{$tablet} {
+    padding: 0 0 80px;
+  }
+  @media #{$notebook} {
+    padding: 0 0 90px;
+  }
+  @media #{$desktop} {
+    padding: 0 0 100px;
+  }
+  @media #{$wide} {
+    padding: 0 0 110px;
+  }
+
+  .catalog-header {
+
+    @media #{$mobile}, #{$tablet} {
+
+      .catalog-header__filter {
+        position: relative;
+        width: 100%;
+        height: 0;
+
+        .filter-bar {
+          display: block;
+          position: absolute;
+          z-index: 98;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 46px;
+          border-bottom: 1px solid $border;
+          background-color: $white;
+
+          @media #{$mobile} {
+            padding: 0 20px;
+          }
+          @media #{$tablet} {
+            padding: 0 25px;
+          }
+
+          &__btn {
+            display: block;
+            float: left;
+            margin-left: -20px;
+            height: 45px;
+            width: 130px;
+            border-right: 1px solid $border;
+            background-color: $color-mobile;
+
+            &--filter {
+              display: block;
+              position: relative;
+              height: 46px;
+              padding: 14px 0 0 50px;
+              color: $text;
+              font-size: $size-between;  
+              font-family: $family-secondary;      
+              font-weight: $weight-bold;
+              line-height: 1;
+              letter-spacing: 0.5px;
+              text-transform: initial;
+              transition: opacity $menu-transition ease-in-out 0ms;
+
+              &:before {
+                content: "";
+                position: absolute;
+                display: block;
+                left: 8px;
+                top: 3px;
+                width: 40px;
+                height: 40px;
+                font-size: 0;
+                color: transparent;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: 40px 40px;
+                background-image: $icon__product-filter;
+              }
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+
+          &__total {
+            float: right;
+            height: 46px;
+            width: 110px;
+            padding-top: 14px;
+            border-left: 1px solid $border;
+            color: $text;
+            font-size: $size-normal;         
+            font-weight: $weight-medium;
+            line-height: 1;
+            letter-spacing: 0;
+            text-align: right;
+          }
+        }
+      } 
+    }
+
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      .catalog-header__filter {
+        display: none;
+      }
+    }
+    
+    .catalog-header__nav {
+
+      @media #{$mobile}, #{$tablet} {
+        width: 100%;
+        padding: calc(18px + 46px) 0 15px;
+        text-align: center;
+      }
+      @media #{$notebook} {
+        float: left;
+        width: 25%;
+        padding: 18px 0 18px;
+        text-align: left;
+      }
+      @media #{$desktop} {
+        float: left;
+        width: 25%;
+        padding: 22px 0 22px;
+        text-align: left;
+      }
+      @media #{$wide} {
+        float: left;
+        width: 25%;
+        padding: 22px 0 22px;
+        text-align: left;
+      }
+
+      &--list {
+        display: inline-block;
+
+        li {
+          float: left;
+          color: $text;
+          font-size: $size-small;
+          font-weight: $weight-medium;
+          line-height: 20px;
+          letter-spacing: 0px;
+
+          span.spacer {
+            padding: 0 6px 0 6px;
+          } 
+
+          a {
+            color: $text;
+            font-family: $family-secondary;
+            font-weight: $weight-bold;
+            letter-spacing: 0.5px;
+            transition: color $menu-transition ease-in-out 0ms;
+
+            @media #{$mobile}, #{$tablet}, #{$notebook} {
+              font-size: $size-between;
+            }
+            @media #{$desktop}, #{$wide} {
+              font-size: $size-medium;
+            }
+
+            &.active {
+              color: $text;
+            }
+
+            &.tag-active {
+              color: $text;
+              &:before  {
+                content: '';
+                opacity: 1;
+                position: relative;
+                top: 6px;
+                padding-right: 16px;
+                background-position: 0 0;
+                background-repeat: no-repeat;
+                background-size: 11px 11px;
+                background-image: $icon__product-filter-tag-black; 
+                transition: opacity $menu-transition ease-in-out 0ms;
+              }
+              // ---------
+              // !! Hover :: Managed in no-touch section
+              // ---------
+            }
+          }
+        }
+      }
+
+      .filter-tags {
+
+        @media #{$mobile}, #{$tablet} {
+          display: inline-block;
+
+          ul {
+            li.chosen {
+              float: left;
+              color: $text;
+              font-size: $size-medium;
+              line-height: 20px;
+              letter-spacing: 0;
+
+              span.spacer {
+                padding: 0 6px 0 6px;
+                font-size: $size-small;
+                font-weight: $weight-medium;
+              } 
+
+              a {
+                color: $text;
+                font-size: $size-normal;
+                font-weight: $weight-normal;
+                letter-spacing: 0px;
+                position: relative;
+                transition: color $menu-transition ease 0ms;
+
+                &:before {
+                  content: '';
+                  position: absolute;
+                  display: inline-block;
+                  width: 14px;
+                  height: 14px;
+                  top: 3px;
+                  right: -3px;
+                  z-index: 2;
+                  opacity: 0;
+                  background-position: -14px 0;
+                  background-repeat: no-repeat;
+                  background-size: 28px 14px;
+                  background-image: $icon__product-filter-remove;
+                  transition: opacity $menu-transition ease 0ms;
+                }
+
+                &:after {
+                  content: '';
+                  position: relative;
+                  top: 3px;
+                  left: 3px;
+                  z-index: 1;
+                  opacity: 1;
+                  padding-left: 14px;
+                  background-position: 0 0;
+                  background-repeat: no-repeat;
+                  background-size: 28px 14px;
+                  background-image: $icon__product-filter-remove;
+                  transition: opacity $menu-transition ease-in-out 0ms;
+                }
+
+                // ---------
+                // !! Hover :: Managed in no-touch section
+                // ---------
+              }
+              
+              &:nth-child(1) {
+                &:before {
+                  content: '/';
+                  padding: 0 6px 0 6px;
+                  font-size: $size-small;
+                  font-weight: $weight-medium;
+                }
+              }
+
+              &:nth-child(n+2) {
+                &:before {
+                  content: ',';
+                  padding-left: 3px;
+                  padding-right: 4px;
+                }
+              }
+            }
+          }
+        }
+
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          display: none;
+        }
+      }
+    }
+
+    .catalog-header__desc {
+      overflow: hidden;
+
+      @media #{$mobile} {
+        width: 100%;
+        padding: 0 0 25px;
+      }
+      @media #{$tablet} {
+        width: 100%;
+        padding: 0 15px 25px;
+      }
+      @media #{$notebook} {
+        width: 75%;
+        padding: 17px 5px 17px 3px;
+      }
+      @media #{$desktop} {
+        width: 75%;
+        padding: 21px 5px 21px 3px;
+      }
+      @media #{$wide} {
+        width: 75%;
+        padding: 21px 5px 21px 3px;
+      }
+
+      &.is-topic {
+        @media #{$notebook} {
+          padding-top: 8px;
+          padding-bottom: 12px;
+        }
+        @media #{$desktop}, #{$wide} {
+          padding-top: 12px;
+          padding-bottom: 16px;
+        }        
+      }
+
+      p {
+        color: $text;
+        font-weight: normal;
+        line-height: 1.25;
+        margin-bottom: 4px;
+
+        @media #{$mobile}, #{$tablet} {
+          text-align: center
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          text-align: left;
+        }
+      }
+
+      .catalog-tags {
+        display: block;
+        width: calc(100% + 6px);
+        margin-left: -3px;
+        margin-right: -3px;
+
+        @media #{$mobile}, #{$tablet} {
+          text-align: center;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          text-align: left;
+        }
+
+        a.tagged {
+          cursor: pointer;
+          display: inline-block;
+          position: relative;
+          width: auto;
+          margin: 3px 3px;
+          padding: 6px 8px 7px 7px;
+          // fonts
+          color: $white;
+          font-size: $size-normal;
+          font-family: $family-secondary;
+          font-weight: $weight-normal;
+          line-height: 1;
+          letter-spacing: 0px;
+          // background
+          border: none;
+          border-radius: 3px;
+          background-color: $primary;
+          transition: background-color $menu-transition ease-in-out 0ms;
+
+          &:before {
+            content: '';
+            position: relative;
+            top: 6px;
+            opacity: 1;
+            padding-right: 15px;
+            background-position: 0 0;
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-image: $icon__product-filter-tag_white; 
+          }
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+      }
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .catalog {
+    .catalog-header {
+
+       &__filter {
+        .filter-bar {
+          &__btn {
+            &--filter {
+              &:hover {
+                 opacity: $menu-opacity;
+              }
+            }
+          }
+        }
+      }
+
+      &__nav {
+        &--list {
+          li {
+            a {
+              &:hover {
+                color: $link-hover-text;
+                &.tag-active {
+                  &:before {
+                    opacity: $menu-opacity;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .filter-tags {
+          @media #{$mobile}, #{$tablet} {
+            ul {
+              li.chosen {
+                a {
+                  &:hover {
+                    color: $link-hover-text;
+                    &:before {
+                      opacity: 1; 
+                    }
+                    &:after {
+                      opacity: 0;  
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .catalog-header__desc {
+      .catalog-tags {
+        a.tagged {
+          &:hover {
+            background-color: $button-hover-grey;
+          }
+        }
+      }
+    }
+  }
+}

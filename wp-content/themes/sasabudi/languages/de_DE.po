@@ -1,0 +1,1249 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: SASABUDI WP Theme\n"
+"POT-Creation-Date: 2020-03-13 16:46+0100\n"
+"PO-Revision-Date: 2020-03-13 16:52+0100\n"
+"Last-Translator: \n"
+"Language-Team: The SASABUDI Crew\n"
+"Language: de\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.3\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: __;_e;esc_attr_e\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: assets\n"
+"X-Poedit-SearchPathExcluded-1: languages\n"
+"X-Poedit-SearchPathExcluded-2: source\n"
+
+#: 404.php:44
+msgid "Oops! Page not found."
+msgstr "Oops! Seite nicht gefunden."
+
+#: 404.php:48
+msgid ""
+"Unfortunately we can't find the page you've requested. This could be because "
+"it has been moved, taken down or the address has been entered incorrectly."
+msgstr ""
+"Leider können wir die von dir angeforderte Seite nicht finden. Dies könnte "
+"daran liegen, dass sie verschoben oder entfernt wurde oder die Adresse "
+"falsch eingegeben wurde."
+
+#: includes/functions/account.php:18
+msgid "First name is required."
+msgstr ""
+
+#: includes/functions/account.php:23
+msgid "Last name is required."
+msgstr ""
+
+#: includes/functions/account.php:54 woocommerce/myaccount/dashboard.php:27
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: includes/functions/account.php:55 includes/structure/header.php:324
+msgid "Account"
+msgstr ""
+
+#: includes/functions/account.php:56
+msgid "Address"
+msgstr ""
+
+#: includes/functions/account.php:57
+msgid "Orders"
+msgstr "Bestellung"
+
+#: includes/functions/account.php:58
+msgid "Downloads"
+msgstr ""
+
+#: includes/functions/account.php:59
+msgid "Logout"
+msgstr ""
+
+#: includes/functions/account.php:71
+msgid "Order History"
+msgstr ""
+
+#: includes/functions/account.php:77
+msgid "Download History"
+msgstr ""
+
+#: includes/functions/account.php:80
+msgid "Addresses"
+msgstr ""
+
+#: includes/functions/account.php:83
+msgid "Account details"
+msgstr ""
+
+#: includes/functions/post-types.php:23
+msgid "Options"
+msgstr ""
+
+#: includes/functions/post-types.php:25
+msgid "Theme Settings"
+msgstr "Theme Einstellungen"
+
+#: includes/functions/post-types.php:35
+msgid "General"
+msgstr "Allgemeines"
+
+#: includes/functions/post-types.php:37
+msgid "General Page Settings"
+msgstr ""
+
+#: includes/functions/post-types.php:48
+msgid "collections"
+msgstr "kollektionen"
+
+#: includes/functions/post-types.php:54 includes/functions/post-types.php:69
+msgid "Instagram"
+msgstr "Instagram"
+
+#: includes/functions/post-types.php:55
+msgid "Parent Instagram"
+msgstr "Eltern Instagram"
+
+#: includes/functions/post-types.php:56
+msgid "All Instagram"
+msgstr "Instagram anzeigen"
+
+#: includes/functions/post-types.php:57
+msgid "View Instagram"
+msgstr "Instagram anzeigen"
+
+#: includes/functions/post-types.php:58
+msgid "Add New Instagram"
+msgstr "Neuer Instagram Beitrag"
+
+#: includes/functions/post-types.php:59 includes/functions/post-types.php:109
+#: includes/functions/post-types.php:159
+msgid "Add New"
+msgstr "Neuer Beitrag"
+
+#: includes/functions/post-types.php:60
+msgid "Edit Instagram"
+msgstr "Instagram bearbeiten"
+
+#: includes/functions/post-types.php:61
+msgid "Update Instagram"
+msgstr "Instagram aktualisieren"
+
+#: includes/functions/post-types.php:62
+msgid "Search Instagram"
+msgstr "Instagram suchen"
+
+#: includes/functions/post-types.php:63 includes/functions/post-types.php:113
+#: includes/functions/post-types.php:163
+msgid "Not Found"
+msgstr "Nicht gefunden"
+
+#: includes/functions/post-types.php:64 includes/functions/post-types.php:114
+#: includes/functions/post-types.php:164
+msgid "Not found in Trash"
+msgstr "Im Papierkorb nicht gefunden"
+
+#: includes/functions/post-types.php:70
+msgid "Shop our Instagram"
+msgstr "Unser Instagram kaufen"
+
+#: includes/functions/post-types.php:104 includes/functions/post-types.php:119
+#: includes/structure/collections.php:319
+msgid "Collections"
+msgstr "Kollektionen"
+
+#: includes/functions/post-types.php:105
+msgid "Parent Collection"
+msgstr "Eltern Kollektion"
+
+#: includes/functions/post-types.php:106
+msgid "All Collections"
+msgstr "Alle Kollektionen"
+
+#: includes/functions/post-types.php:107
+msgid "View Collection"
+msgstr "Kollektion anzeigen"
+
+#: includes/functions/post-types.php:108
+msgid "Add New Collection"
+msgstr "Neue Kollektion"
+
+#: includes/functions/post-types.php:110
+msgid "Edit Collection"
+msgstr "Kollektion bearbeiten"
+
+#: includes/functions/post-types.php:111
+msgid "Update Collection"
+msgstr "Kollektion aktualisieren"
+
+#: includes/functions/post-types.php:112
+msgid "Search Collection"
+msgstr "Kollektion suchen"
+
+#: includes/functions/post-types.php:120
+msgid "Shop our Collections"
+msgstr "Unsere Kollektionen kaufen"
+
+#: includes/functions/post-types.php:154 includes/functions/post-types.php:169
+msgid "Messages"
+msgstr "Nachrichten"
+
+#: includes/functions/post-types.php:155
+msgid "Parent Message"
+msgstr "Eltern Nachricht"
+
+#: includes/functions/post-types.php:156
+msgid "All Messages"
+msgstr "Alle Nachrichten"
+
+#: includes/functions/post-types.php:157
+msgid "View Message"
+msgstr "Nachricht anzeigen"
+
+#: includes/functions/post-types.php:158
+msgid "Add New Message"
+msgstr "Neue Nachricht"
+
+#: includes/functions/post-types.php:160
+msgid "Edit Message"
+msgstr "Nachricht bearbeiten"
+
+#: includes/functions/post-types.php:161
+msgid "Update Message"
+msgstr "Nachricht aktualisieren"
+
+#: includes/functions/post-types.php:162
+msgid "Search Message"
+msgstr "Nachricht suchen"
+
+#: includes/functions/post-types.php:170
+msgid "Contact Form Messages"
+msgstr "Kontaktformular Nachrichten"
+
+#: includes/functions/post-types.php:201
+msgid "Full Name"
+msgstr "Name"
+
+#: includes/functions/post-types.php:202
+msgid "Message"
+msgstr "Nachricht"
+
+#: includes/functions/post-types.php:203 includes/structure/collections.php:331
+msgid "Email"
+msgstr "E-Mail"
+
+#: includes/functions/post-types.php:204
+msgid "Date"
+msgstr "Datum"
+
+#: includes/functions/setup.php:178
+msgid "Desktop Menu"
+msgstr ""
+
+#: includes/functions/setup.php:179
+msgid "Mobile Menu"
+msgstr ""
+
+#: includes/functions/setup.php:180
+msgid "Help Menu"
+msgstr ""
+
+#: includes/functions/setup.php:207
+msgid "Left Offset Mobile Navigation"
+msgstr ""
+
+#: includes/functions/setup.php:209
+msgid "Widgets in this area will be displayed in the left sidebar area."
+msgstr ""
+
+#: includes/functions/setup.php:219
+msgid "Left Offset Product Filters"
+msgstr ""
+
+#: includes/functions/setup.php:221
+msgid "Widgets in this area will be displayed in the product filters area."
+msgstr ""
+
+#: includes/functions/setup.php:231
+msgid "Right Offset Mini Cart"
+msgstr ""
+
+#: includes/functions/setup.php:235
+msgid "Widgets in this area will be displayed in the mini cart widget area"
+msgstr ""
+
+#: includes/functions/setup.php:245
+msgid "Footer #1"
+msgstr ""
+
+#: includes/functions/setup.php:247
+msgid ""
+"Widgets in this area will be displayed in the first column in the footer."
+msgstr ""
+
+#: includes/functions/setup.php:257
+msgid "Footer #2"
+msgstr ""
+
+#: includes/functions/setup.php:259
+msgid ""
+"Widgets in this area will be displayed in the second column in the footer."
+msgstr ""
+
+#: includes/functions/setup.php:269
+msgid "Footer #3"
+msgstr ""
+
+#: includes/functions/setup.php:271
+msgid ""
+"Widgets in this area will be displayed in the third column in the footer."
+msgstr ""
+
+#: includes/functions/shop.php:34
+msgid "from"
+msgstr ""
+
+#: includes/metaboxes/product.php:34
+msgid "Featured"
+msgstr ""
+
+#: includes/metaboxes/product.php:37
+msgid "Add this product to the trending and collection feed."
+msgstr ""
+
+#: includes/structure/collections.php:85 includes/structure/collections.php:183
+#: includes/structure/home.php:214
+msgid "View All"
+msgstr ""
+
+#: includes/structure/collections.php:301
+msgid "— We all Love Mugs —"
+msgstr ""
+
+#: includes/structure/collections.php:327
+msgid "Facebook"
+msgstr "Facebook"
+
+#: includes/structure/collections.php:328
+msgid "Twitter"
+msgstr "Twitter"
+
+#: includes/structure/collections.php:329
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: includes/structure/collections.php:330
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: includes/structure/footer.php:42
+msgid "Scroll to Top"
+msgstr "Nach oben scrollen"
+
+#: includes/structure/footer.php:91
+msgid "We send fun emails!"
+msgstr "Wir senden lustige E-Mails!"
+
+#: includes/structure/footer.php:97
+msgid "And you get a 20&#37; discount when you sign up!"
+msgstr "Und erhalte 20% Rabatt, wenn du dich anmeldest!"
+
+#: includes/structure/footer.php:100
+msgid "Enter your name"
+msgstr "Dein Name"
+
+#: includes/structure/footer.php:105
+msgid "Enter your email"
+msgstr "Deine E-Mail"
+
+#: includes/structure/footer.php:110
+msgid "Sign up now"
+msgstr "Jetzt Anmelden"
+
+#: includes/structure/footer.php:242 page-policy.php:92
+msgid "Nutzungsbedingungen"
+msgstr "Nutzungsbedingungen"
+
+#: includes/structure/footer.php:243 page-policy.php:93
+msgid "Datenschutzerklärung"
+msgstr "Datenschutzerklärung"
+
+#: includes/structure/footer.php:244 page-policy.php:96
+msgid "Cookie Richtlinie"
+msgstr "Cookie Richtlinie"
+
+#: includes/structure/footer.php:245 page-policy.php:97
+#: templates/de/article-policy-legal-notice.php:14
+msgid "Impressum"
+msgstr "Impressum"
+
+#: includes/structure/footer.php:248 page-policy.php:101
+#: templates/article-policy-terms.php:14
+#: templates/de/article-policy-terms.php:14
+msgid "Terms of Service"
+msgstr "Nutzungsbedingungen"
+
+#: includes/structure/footer.php:249 page-policy.php:102
+#: templates/article-policy-privacy.php:14
+#: templates/de/article-policy-privacy.php:14
+msgid "Privacy Policy"
+msgstr "Datenschutzerklärung"
+
+#: includes/structure/footer.php:250 page-policy.php:105
+msgid "Cookie Settings"
+msgstr ""
+
+#: includes/structure/footer.php:251 page-policy.php:106
+#: templates/article-policy-legal-notice.php:14
+msgid "Legal Notice"
+msgstr ""
+
+#: includes/structure/footer.php:293
+msgid "What are you looking for?"
+msgstr ""
+
+#: includes/structure/header.php:41
+msgid "View Menu"
+msgstr ""
+
+#: includes/structure/header.php:69 includes/structure/header.php:300
+msgid "Search"
+msgstr ""
+
+#: includes/structure/header.php:84 includes/structure/header.php:341
+#: woocommerce/cart/mini-cart.php:121
+msgid "View Cart"
+msgstr ""
+
+#: includes/structure/header.php:268
+msgid "sasabudi"
+msgstr ""
+
+#: includes/structure/home.php:33
+msgid "Shop Achieve Greatness"
+msgstr ""
+
+#: includes/structure/home.php:70
+msgid "Authentic artwork"
+msgstr "Authentische Kunstwerke"
+
+#: includes/structure/home.php:71
+msgid ""
+"SASABUDI artworks are authentic. We believe in creativity and deliver "
+"products with a unique design that creates an everyday environment for your "
+"personal style."
+msgstr ""
+
+#: includes/structure/home.php:77
+msgid "Made to order"
+msgstr "Auf Bestellung gefertigt"
+
+#: includes/structure/home.php:78
+msgid ""
+"SASABUDI products are custom made and individually printed when you order "
+"it. Please allow 2-5 business days manufacture time for your product."
+msgstr ""
+
+#: includes/structure/home.php:84
+msgid "Worldwide shipping"
+msgstr "Weltweiter Versand"
+
+#: includes/structure/home.php:86
+#, php-format
+msgid ""
+"SASABUDI works together with selected manufacturing partners in the USA and "
+"Europe. Please note the following %1$s for worldwide delivery."
+msgstr ""
+
+#: includes/structure/home.php:268
+msgid "Trending Mugs"
+msgstr ""
+
+#: includes/structure/home.php:289 includes/structure/page.php:129
+#: includes/structure/page.php:206
+msgid "Hmm, no products were found..."
+msgstr ""
+
+#: includes/structure/home.php:302 includes/structure/page.php:140
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: includes/structure/home.php:366
+msgid "#welovemugs"
+msgstr ""
+
+#: includes/structure/home.php:370
+#, php-format
+msgid ""
+"Tag #WeLoveMugs on Instagram for a chance to be</br>featured in our gallery "
+"%1$s"
+msgstr ""
+
+#: includes/structure/home.php:490
+msgid "Shop Insta"
+msgstr ""
+
+#: includes/structure/instagram.php:43
+msgid "Insta-Shop"
+msgstr ""
+
+#: includes/structure/instagram.php:46
+#, php-format
+msgid ""
+"Shopping made easy! Click photos below to shop your favorite mug instantly."
+"<br/>%1$s"
+msgstr ""
+
+#: includes/structure/offset.php:29
+msgid "Hi, "
+msgstr ""
+
+#: includes/structure/offset.php:31
+msgid "Sign In or Register"
+msgstr ""
+
+#: includes/structure/page.php:30 includes/structure/page.php:60
+msgid "Welcome to Sasabudi.com"
+msgstr ""
+
+#: includes/structure/page.php:31 includes/structure/page.php:61
+msgid "Our new site is coming soon. Stay tuned!"
+msgstr ""
+
+#: includes/structure/page.php:110
+msgid "Designed Just For You"
+msgstr ""
+
+#: includes/structure/page.php:185
+msgid "Trending Designs!"
+msgstr ""
+
+#: includes/structure/woocommerce.php:101
+msgid "New"
+msgstr ""
+
+#: includes/structure/woocommerce.php:126
+#: includes/structure/woocommerce.php:270
+#: templates/search-results-overview.php:162
+msgid "Sale"
+msgstr ""
+
+#: includes/structure/woocommerce.php:309
+msgid "Out of Stock"
+msgstr ""
+
+#: includes/structure/woocommerce.php:347
+msgid "Home "
+msgstr ""
+
+#: includes/structure/woocommerce.php:402
+msgid "Items"
+msgstr ""
+
+#: includes/structure/woocommerce.php:402
+msgid "Item"
+msgstr ""
+
+#: includes/structure/woocommerce.php:407
+msgid "Filters"
+msgstr ""
+
+#: page-about.php:57
+msgid "— We All Love Mugs —"
+msgstr ""
+
+#: page-about.php:71
+msgid "About SASABUDI"
+msgstr ""
+
+#: page-about.php:74
+msgid ""
+"You feel free, independent and you want to transport your personality "
+"outside the mainstream? SASABUDI believes in creativity and delivers "
+"products with a unique design that creates an everyday environment for your "
+"personal style. Our products underline your individual taste and make a "
+"design statement like a message to the world."
+msgstr ""
+
+#: page-about.php:89
+msgid ""
+"With our products we want to underline your unique personality. Because your "
+"life is your message to the world."
+msgstr ""
+
+#: page-about.php:92
+msgid "Robert Eberhard, SASABUDI Founder"
+msgstr ""
+
+#: page-about.php:107
+msgid "Our Story"
+msgstr ""
+
+#: page-about.php:121
+msgid "Our Products"
+msgstr ""
+
+#: page-about.php:124
+msgid ""
+"SASABUDI works with selected manufacturing partners in the USA and Europe. "
+"Our products are authentic and handmade artworks that are worth becoming "
+"your favourite pieces. We’re using the latest printing techniques, "
+"environmentally friendly inks and high quality materials. The products are "
+"custom made and individually printed when you order it."
+msgstr ""
+
+#: page-about.php:125
+msgid "Explore"
+msgstr ""
+
+#: page-help.php:90
+msgid "Help & Contact"
+msgstr ""
+
+#: page-help.php:95 page-help.php:105
+msgid "FAQs"
+msgstr ""
+
+#: page-help.php:96
+msgid "Kontakt"
+msgstr ""
+
+#: page-help.php:97
+msgid "Bestellung"
+msgstr ""
+
+#: page-help.php:98
+msgid "Bezahlung"
+msgstr ""
+
+#: page-help.php:99
+msgid "Versand"
+msgstr ""
+
+#: page-help.php:100
+msgid "Retouren"
+msgstr ""
+
+#: page-help.php:101
+msgid "Größentabelle"
+msgstr ""
+
+#: page-help.php:106
+msgid "Contact"
+msgstr "Kontakt"
+
+#: page-help.php:107
+msgid "Ordering"
+msgstr "Bestellung"
+
+#: page-help.php:108
+msgid "Payment"
+msgstr "Bezahlung"
+
+#: page-help.php:109
+msgid "Shipping"
+msgstr "Versand"
+
+#: page-help.php:110
+msgid "Returns"
+msgstr "Retouren"
+
+#: page-help.php:111 templates/article-help-sizeguide.php:17
+#: templates/de/article-help-sizeguide.php:17
+msgid "Size Guide"
+msgstr "Größentabelle"
+
+#: page-help.php:117 page-policy.php:112
+#: woocommerce/myaccount/navigation.php:44
+msgid "Need Assistance?"
+msgstr "Unterstützung benötigt?"
+
+#: page-help.php:120 page-policy.php:115
+#: woocommerce/myaccount/navigation.php:47
+#, php-format
+msgid "Be sure to check out our %1$s before writing an %2$s."
+msgstr "Schau bitte unsere %1$s an, bevor du eine %2$s schreibst."
+
+#: page-help.php:122 page-policy.php:117
+#: woocommerce/myaccount/navigation.php:49
+msgid "We usually answer within 24 hours on weekdays."
+msgstr "An Wochentagen antworten wir in der Regel innerhalb von 24 Stunden."
+
+#: page-policy.php:87
+msgid "Policies"
+msgstr "Richtlinien"
+
+#: page-policy.php:94
+msgid "Widerrufsbelehrung"
+msgstr ""
+
+#: page-policy.php:95
+msgid "Urheberrecht"
+msgstr ""
+
+#: page-policy.php:103 templates/article-policy-cancellation.php:14
+#: templates/de/article-policy-cancellation.php:14
+msgid "Cancellation Policy"
+msgstr "Widerrufsbelehrung"
+
+#: page-policy.php:104 templates/article-policy-copyright.php:14
+#: templates/de/article-policy-copyright.php:14
+msgid "Copyright Policy"
+msgstr "Urheberrecht"
+
+#: templates/article-help-contact.php:16
+#: templates/de/article-help-contact.php:16
+msgid "Human verification incorrect."
+msgstr ""
+
+#: templates/article-help-contact.php:17
+#: templates/de/article-help-contact.php:17
+msgid "Please supply all information."
+msgstr ""
+
+#: templates/article-help-contact.php:18
+#: templates/de/article-help-contact.php:18
+msgid "Email Address Invalid."
+msgstr "Ungültige E-Mail Adresse."
+
+#: templates/article-help-contact.php:19
+#: templates/de/article-help-contact.php:19
+msgid ""
+"Please read and accept the Terms of Service to proceed with your message."
+msgstr ""
+
+#: templates/article-help-contact.php:20
+#: templates/de/article-help-contact.php:20
+msgid "Message was not sent. Try Again."
+msgstr ""
+
+#: templates/article-help-contact.php:21
+#: templates/de/article-help-contact.php:21
+msgid "Thanks! Your message has been sent."
+msgstr ""
+
+#: templates/article-help-contact.php:130
+#: templates/de/article-help-contact.php:130
+msgid "Contact Us"
+msgstr ""
+
+#: templates/article-help-contact.php:134
+#: templates/de/article-help-contact.php:134
+msgid "We love hearing from you!"
+msgstr ""
+
+#: templates/article-help-contact.php:138
+#: templates/de/article-help-contact.php:138
+msgid "If you have suggestions, comments or questions, get in touch below."
+msgstr ""
+
+#: templates/article-help-contact.php:146
+#: templates/de/article-help-contact.php:146
+msgid "First Name"
+msgstr ""
+
+#: templates/article-help-contact.php:151
+#: templates/de/article-help-contact.php:151
+msgid "Last Name"
+msgstr ""
+
+#: templates/article-help-contact.php:156
+#: templates/de/article-help-contact.php:156
+msgid "Your Email"
+msgstr "Deine E-Mail"
+
+#: templates/article-help-contact.php:161
+#: templates/de/article-help-contact.php:161
+msgid "Subject (please include order number, if any)"
+msgstr ""
+
+#: templates/article-help-contact.php:166
+#: templates/de/article-help-contact.php:166
+msgid "Your Message"
+msgstr "Deine Nachricht"
+
+#: templates/article-help-contact.php:171
+#: templates/de/article-help-contact.php:171
+msgid "Human Verification"
+msgstr ""
+
+#: templates/article-help-contact.php:175
+#: templates/de/article-help-contact.php:175
+msgid ""
+"We take our privacy very seriously. Please state that you have read and "
+"agreed to our Terms of Service before your continue."
+msgstr ""
+
+#: templates/article-help-contact.php:189
+msgid "Sende Message"
+msgstr ""
+
+#: templates/article-help-faqs.php:14
+#: templates/de/article-help-faqs.php:14
+msgid "Help & FAQs Answers"
+msgstr ""
+
+#: templates/article-help-faqs.php:17
+#: templates/de/article-help-faqs.php:17
+msgid "Help Methods"
+msgstr ""
+
+#: templates/article-help-faqs.php:20
+#: templates/de/article-help-faqs.php:20
+#, php-format
+msgid "If you can't find what you're looking for, please email us at %1$s."
+msgstr ""
+
+#: templates/article-help-ordering.php:14
+#: templates/de/article-help-ordering.php:14
+msgid "Ordering Answers"
+msgstr ""
+
+#: templates/article-help-ordering.php:18
+#: templates/de/article-help-ordering.php:18
+msgid "Ordering Methods"
+msgstr ""
+
+#: templates/article-help-payment.php:14
+#: templates/de/article-help-payment.php:14
+msgid "Payment Answers"
+msgstr ""
+
+#: templates/article-help-payment.php:17
+#: templates/de/article-help-payment.php:17
+msgid "Payment Methods"
+msgstr ""
+
+#: templates/article-help-returns.php:14
+#: templates/de/article-help-returns.php:14
+msgid "Return Answers"
+msgstr ""
+
+#: templates/article-help-returns.php:17
+#: templates/de/article-help-returns.php:17
+msgid "Return Methods"
+msgstr ""
+
+#: templates/article-help-shipping.php:14
+msgid "Shipping Answers"
+msgstr ""
+
+#: templates/article-help-shipping.php:18
+msgid "Shipping Methods"
+msgstr ""
+
+#: templates/article-help-sizeguide.php:14
+#: templates/de/article-help-sizeguide.php:14
+msgid "Size Answers"
+msgstr ""
+
+#: templates/article-policy-cancellation.php:17
+#: templates/de/article-policy-cancellation.php:17
+msgid "Cancellation Policy Methods"
+msgstr ""
+
+#: templates/article-policy-cookies.php:14
+#: templates/de/article-policy-cookies.php:14
+msgid "Cookies Policy"
+msgstr "Cookie Richtlinie"
+
+#: templates/article-policy-cookies.php:17
+#: templates/de/article-policy-cookies.php:17
+msgid "Cookies Policy Methods"
+msgstr ""
+
+#: templates/article-policy-copyright.php:17
+#: templates/de/article-policy-copyright.php:17
+msgid "Copyright Policy Methods"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:17
+msgid "Service Provider"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:20
+#: templates/de/article-policy-legal-notice.php:20
+msgid "SASABUDI"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:22
+#: templates/de/article-policy-legal-notice.php:22
+msgid "Schaffhauserstrasse 42"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:24
+#: templates/de/article-policy-legal-notice.php:24
+msgid "8400 Winterthur"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:26
+msgid "Switzerland"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:30
+#: templates/de/article-policy-legal-notice.php:30
+msgid "Phone: +41 44 586 40 46‬"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:32
+#, php-format
+msgid "Email: %1$s"
+msgstr "E-Mail: %1$s"
+
+#: templates/article-policy-legal-notice.php:36
+#: templates/de/article-policy-legal-notice.php:36
+msgid "Managing Director: Robert Eberhard"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:58
+#: templates/de/article-policy-legal-notice.php:58
+#, php-format
+msgid ""
+"This Legal Notice is also for the following social media profiles and "
+"incorporates the terms contained in the %1$s and the %2$s."
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:63
+#: templates/de/article-policy-legal-notice.php:63
+#, php-format
+msgid "Facebook: <a href=\"%1$s\" target=\"_blank\">"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:68
+#: templates/de/article-policy-legal-notice.php:68
+#, php-format
+msgid "Twitter: <a href=\"%1$s\" target=\"_blank\">"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:73
+#: templates/de/article-policy-legal-notice.php:73
+#, php-format
+msgid "Google+: <a href=\"%1$s\" target=\"_blank\">"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:78
+#: templates/de/article-policy-legal-notice.php:78
+#, php-format
+msgid "Tumblr: <a href=\"%1$s\" target=\"_blank\">"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:83
+#: templates/de/article-policy-legal-notice.php:83
+#, php-format
+msgid "Pinterest: <a href=\"%1$s\" target=\"_blank\">"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:88
+#: templates/de/article-policy-legal-notice.php:88
+#, php-format
+msgid "Instagram: <a href=\"%1$s\" target=\"_blank\">"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:96
+#: templates/de/article-policy-legal-notice.php:96
+#, php-format
+msgid "© %1$s SASABUDI. All rights reserved."
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:103
+#: templates/de/article-policy-legal-notice.php:103
+msgid "Intellectual Property Policy"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:106
+#: templates/de/article-policy-legal-notice.php:106
+#, php-format
+msgid ""
+"If you believe that content on this site infringes your copyright, please "
+"read our %1$s for instructions on sending a notice of copyright infringement."
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:113
+#: templates/de/article-policy-legal-notice.php:113
+msgid "Online Dispute Resolution"
+msgstr ""
+
+#: templates/article-policy-legal-notice.php:116
+#: templates/de/article-policy-legal-notice.php:116
+#, php-format
+msgid ""
+"The European Commission offers a platform for Online Dispute Resolution (ODR "
+"platform), which you can access at %1$s. We have no obligation or "
+"willingness to participate in any such dispute resolution proceedings."
+msgstr ""
+
+#: templates/article-policy-privacy.php:17
+#: templates/de/article-policy-privacy.php:17
+msgid "Privacy Policy Methods"
+msgstr ""
+
+#: templates/article-policy-terms.php:17
+#: templates/de/article-policy-terms.php:17
+msgid "Terms of Service Methods"
+msgstr ""
+
+#: templates/de/article-help-contact.php:189
+msgid "Send Message"
+msgstr "Nachricht senden"
+
+#: templates/de/article-policy-legal-notice.php:17
+msgid "Anbieter"
+msgstr ""
+
+#: templates/de/article-policy-legal-notice.php:26
+msgid "Schweiz"
+msgstr ""
+
+#: templates/de/article-policy-legal-notice.php:32
+#, php-format
+msgid "E-Mail: %1$s"
+msgstr ""
+
+#: woocommerce/cart/mini-cart.php:21
+msgid "Your Shopping Cart"
+msgstr "Dein Warenkorb"
+
+#: woocommerce/cart/mini-cart.php:50
+msgid "Remove this item"
+msgstr "Dieses Element entfernen"
+
+#: woocommerce/cart/mini-cart.php:91
+msgid "Hmm, it feels a little empty in here.."
+msgstr "Hmm, es fühlt sich ein wenig leer hier drin an.."
+
+#: woocommerce/cart/mini-cart.php:92
+msgid "There are no orders in your cart yet. Click below to choose one!"
+msgstr ""
+"Es sind noch keine Bestellungen in deinem Warenkorb. Klicke unten, um eine "
+"auszuwählen!"
+
+#: woocommerce/cart/mini-cart.php:96
+msgid "Choose a Product"
+msgstr "Wähle ein Produkt"
+
+#: woocommerce/cart/mini-cart.php:122
+msgid "Proceed To Checkout"
+msgstr "Zur Kasse gehen"
+
+#: woocommerce/loop/no-products-found.php:21
+msgid "Hmm, no products were found matching your selection.."
+msgstr ""
+"Hmm, es wurden keine Produkte gefunden, die deiner Auswahl entsprechen."
+
+#: woocommerce/myaccount/_lost-password-confirmation.php:27
+#: woocommerce/myaccount/form-login-single.php:22
+#: woocommerce/myaccount/form-lost-password.php:25
+#: woocommerce/myaccount/form-register-single.php:48
+#: woocommerce/myaccount/form-reset-password.php:25
+#: woocommerce/myaccount/navigation.php:33
+msgid "My Account"
+msgstr ""
+
+#: woocommerce/myaccount/_lost-password-confirmation.php:29
+#: woocommerce/myaccount/form-lost-password.php:27
+#: woocommerce/myaccount/form-register-single.php:50
+#: woocommerce/myaccount/form-reset-password.php:27
+msgid "Already have an account?<br /><a class=\"primary-link\" href=\""
+msgstr ""
+
+#: woocommerce/myaccount/_lost-password-confirmation.php:29
+#: woocommerce/myaccount/form-lost-password.php:27
+#: woocommerce/myaccount/form-register-single.php:50
+#: woocommerce/myaccount/form-reset-password.php:27
+msgid "Login!"
+msgstr ""
+
+#: woocommerce/myaccount/_lost-password-confirmation.php:40
+#: woocommerce/myaccount/form-lost-password.php:43
+#: woocommerce/myaccount/form-reset-password.php:38
+msgid "Password Reset"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:31
+#: woocommerce/myaccount/dashboard.php:34
+#: woocommerce/myaccount/dashboard.php:37
+#: woocommerce/myaccount/dashboard.php:40
+#: woocommerce/myaccount/dashboard.php:43
+msgid "Hi"
+msgstr ""
+
+#: woocommerce/myaccount/dashboard.php:55
+msgid ""
+"From this dashboard, you have the ability to view a snapshot your recent "
+"account activity and update your account information."
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:40
+#: woocommerce/myaccount/downloads.php:59
+msgid "Downloads History"
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:44 woocommerce/myaccount/orders.php:39
+#, php-format
+msgid ""
+"%1$s track status of the order you have placed or consult the details of any "
+"order."
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:63
+msgid "My Downloads"
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:67 woocommerce/myaccount/orders.php:176
+#, php-format
+msgid ""
+"%1$s, no downloads has been made yet. Please, have a look at our %2$s and "
+"get inspired."
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:67 woocommerce/myaccount/orders.php:176
+msgid "Products"
+msgstr ""
+
+#: woocommerce/myaccount/downloads.php:72 woocommerce/myaccount/orders.php:182
+msgid "Choose a product"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-account.php:26
+msgid "Account Information"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:27
+#: woocommerce/myaccount/my-address.php:32
+msgid "Billing address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:20
+#: woocommerce/myaccount/my-address.php:28
+msgid "Shipping address"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:28
+msgid "Account Addresses"
+msgstr ""
+
+#: woocommerce/myaccount/form-edit-address.php:71
+#, php-format
+msgid ""
+"Here at SASABUDI.com we take your privacy very seriously and are committed "
+"to the protection of your personal data. Read more about how we care for and "
+"use your data in our <a class=\"simple--link\" href=\"%1$s\">Privacy Policy</"
+"a>."
+msgstr ""
+
+#: woocommerce/myaccount/form-login-single.php:24
+msgid "Don't have an account yet?<br /><a class=\"primary-link\" href=\""
+msgstr ""
+
+#: woocommerce/myaccount/form-login-single.php:24
+msgid "Create one!"
+msgstr ""
+
+#: woocommerce/myaccount/form-login-single.php:40
+msgid "Customer Login"
+msgstr ""
+
+#: woocommerce/myaccount/form-register-single.php:66
+msgid "Create Account"
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:44
+msgid "The following addresses will be used on the checkout page by default."
+msgstr ""
+
+#: woocommerce/myaccount/my-address.php:65
+msgid "Edit"
+msgstr "Bearbeiten"
+
+#: woocommerce/myaccount/orders.php:35 woocommerce/myaccount/orders.php:168
+msgid "Orders History"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:151
+msgid "Prev"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:155
+msgid "Next"
+msgstr ""
+
+#: woocommerce/myaccount/orders.php:172
+msgid "My Orders"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:26
+msgid "Order Receipt"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:30
+#, php-format
+msgid "Receipt for your order %1$s"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:39
+#, php-format
+msgid "Order #%1$s was placed on %2$s and is currently %3$s."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:51
+msgid "Cancelled by an admin or the customer – no further action required."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:56
+msgid ""
+"Great news! Your order is on its way. International orders may take up to 2 "
+"weeks to arrive. Please let us know if you are experiencing delays in "
+"receiving your order."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:61
+msgid ""
+"Payment failed or was declined (unpaid). Note that this status may not show "
+"immediately and instead show as Pending until verified (i.e., PayPal)."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:66
+msgid "Awaiting payment – stock is reduced, but you need to confirm payment."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:71
+msgid "Order received (unpaid)."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:76
+msgid ""
+"Payment received and stock has been reduced – the order is awaiting "
+"fulfillment. All product orders require processing, except those that are "
+"Digital and Downloadable.."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:81
+msgid "Refunded by an admin – no further action required."
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:90
+msgid "Order updates"
+msgstr ""
+
+#: woocommerce/myaccount/view-order.php:96
+msgid "l jS \\o\\f F Y, h:ia"
+msgstr ""
+
+#, fuzzy
+#~| msgid "Your name"
+#~ msgid "Your name, please"
+#~ msgstr "Deinen Namen"
+
+#~ msgid "Subscribe to our newsletter"
+#~ msgstr "Jetzt anmelden"
+
+#~ msgid "Subscribe"
+#~ msgstr "Abonnieren"
+
+#~ msgid "All highlights by e-mail"
+#~ msgstr "Alle Highlights per E-Mail"

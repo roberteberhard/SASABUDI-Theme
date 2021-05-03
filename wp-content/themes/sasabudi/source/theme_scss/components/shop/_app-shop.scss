@@ -1,0 +1,150 @@
+
+/* Products Empty */
+ul.products {
+  li {
+    width: 100%;
+    .products-empty {
+      display: block;
+      p {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-size: $size-medium;
+        font-weight: $weight-normal;
+        text-align: center; 
+      }
+    }
+  }
+}
+
+/* Archive Empty */
+.archive-no-products {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40vh;
+  width: 100%;
+  padding: 30px 40px 20px 40px;
+  p {
+    text-align: center;
+  }
+}
+
+/* Woocommerce Screen Reader */
+.screen-reader-text {
+	clip: rect(1px, 1px, 1px, 1px);
+	height: 1px;
+	overflow: hidden;
+	position: absolute !important;
+	width: 1px;
+	word-wrap: normal !important;
+}
+
+/* Woocommerce Block Overlay */
+.blockUI.blockOverlay  {
+  z-index: 991 !important;
+  opacity: 0.75 !important;
+  background-image: url(#{$loader-url}preloader-infinity-black.gif) !important;
+  background-size: auto 38px !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-color: rgb(255,255,255) !important;
+}
+
+/* Woocommerce Password Strength */
+.woocommerce-password-strength {
+  display: block;
+  margin-top: 12px;
+  margin-bottom: 8px;
+  padding: 10px 15px 11px 15px;
+  font-size: $size-normal;
+  font-weight: $weight-medium;
+  line-height: 1;
+  border-radius: 3px;
+
+  &.short {
+    color: $white;
+    background-color: $color-alert;
+  }
+  &.bad {
+    color: $white;
+    background-color: $color-alert;
+  }
+  &.good {
+    color: $white;
+    background-color: $secondary;
+  }
+  &.strong {
+    color: $white;
+    background-color: $color-success;
+  }
+}
+
+small.woocommerce-password-hint {
+  color: $grey-darker;
+  font-size: $size-small;
+  line-height: 1.25;
+}
+
+.processing {
+  z-index: 990 !important;
+}
+
+/**
+ * Password Input
+ */ 
+.password-input {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+
+  input[type="password"] {
+    padding-right: 3rem;
+  }
+
+  /* Hide the Edge "reveal password" native button */
+  input::-ms-reveal {
+    display: none;
+  }
+
+  .show-password-input {
+    position: absolute;
+    right: 12px;
+    top: 9px;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    background-size: 20px 20px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-image: $icon__form-eye-hide;
+  }
+  .show-password-input.display-password {
+    background-image: $icon__form-eye-show;
+  }
+}
+
+mark {
+  color: $text;
+  font-weight: $weight-medium;
+  background-color: transparent;
+  &.order-status {
+    &.completed {
+      color: $text;
+    }
+    &.cancelled,
+    &.refunded,
+    &.failed,
+    &.pending {
+    color: #777;
+    }
+    &.processing {
+      color: #5b841b;
+    }
+    &.hold {
+      color: #94660c;
+    }
+  }
+}

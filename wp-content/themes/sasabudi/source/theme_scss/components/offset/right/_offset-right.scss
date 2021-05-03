@@ -1,0 +1,82 @@
+.offset-right {
+  position: fixed;
+  z-index: 997;
+  top: 0;
+  right: 0;
+  height: 100%;
+  background-color: $white;
+
+  @media #{$mobile} {
+    width: 400px; // origin 360px
+    transform: translate3d(420px, 0, 0);
+  }
+  @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+    width: 460px; // origin 420px
+    transform: translate3d(480px, 0, 0);
+  }
+
+  &:before {
+    content: "";
+    visibility: visible;
+    position: absolute; 
+    z-index: 2;
+    top: 0px;
+    left: -10px;
+    opacity: 1;
+    width: 10px;
+    height: 100%; 
+    background-size: 10px 100px;
+    background-repeat: repeat-y;
+    background-position: 0 0;
+    background-image: $icon__menu-offset-shadow;
+    transform: rotate(180deg);
+  }
+}
+
+/* ON */
+#app.right-on {
+  .offset-right {
+    animation: show-right-offset;
+    animation-duration: $menu-transition;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    transition: transform $menu-transition ease-in-out 0ms;
+    transform: translate3d(40px, 0, 0);
+
+    &:before {
+      animation: show-right-offset;
+      animation-duration: $menu-transition;
+      animation-delay: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+    }
+  }
+}
+
+/* OFF */
+#app.right-off {
+  .offset-right {
+    animation: hide-right-offset;
+    animation-duration: $menu-transition;
+    animation-delay: 0;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    transition: transform $menu-transition ease-in-out 0ms;
+
+    @media #{$mobile} {
+      transform: translate3d(420px, 0, 0);
+    }
+    @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+      transform: translate3d(480px, 0, 0);
+    }
+    
+    &:before {
+      animation: hide-right-offset;
+      animation-duration: $menu-transition;
+      animation-delay: 0;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease;
+    }
+  }
+}

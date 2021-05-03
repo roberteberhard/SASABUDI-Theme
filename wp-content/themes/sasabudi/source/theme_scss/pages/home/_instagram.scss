@@ -1,0 +1,267 @@
+.instagram {
+
+  &.is-home {
+    border-top: none !important;
+    background-color: $white-light;
+
+    @media #{$mobile} {
+      padding: 40px 0 50px;
+    }
+    @media #{$tablet} {
+      padding: 50px 0 70px;
+    }
+    @media #{$notebook} {
+      padding: 60px 0 80px;
+    }
+    @media #{$desktop} {
+      padding: 60px 0 90px;
+    }
+    @media #{$wide} {
+      padding: 60px 0 100px;
+    }
+
+    .is-extended {
+      overflow: hidden;
+
+      .instagram-title {
+        font-size: $size-title;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+
+      .instagram-desc {
+        max-width: 400px;
+        margin: 0 auto 25px auto;
+        padding: 0 15px;
+        font-size: $size-medium;
+        font-weight: $weight-normal;
+        text-align: center;
+
+        .darken {
+          font-weight: $weight-medium;
+        }
+      }
+
+      /**
+       * DEVICE STYLES
+       */
+      .instagram-device {
+
+        @media #{$mobile} {
+          margin: 0 -6px;
+          width: calc(100% + 12px);
+        }
+        @media #{$tablet} {
+          margin: 0 -8px;
+          width: calc(100% + 16px);
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          display: none;
+        }
+
+        .showcase {
+          float: left;
+          overflow: hidden;
+          position: relative;
+          height: auto;
+          background-color: $white-dark;
+
+          @media #{$mobile} {
+            margin: 6px;
+            width: calc(50% - 12px);
+            &.ig-1 {
+              width: calc(100% - 12px);
+            }
+          }
+          @media #{$tablet} {
+            margin: 8px;
+            width: calc(50% - 16px);
+            &.ig-1 {
+              width: calc(100% - 16px);
+            }
+          }
+
+          .showcase-link {
+            display: block;
+
+            &__white {
+              position: absolute;
+              overflow: hidden;
+              top: 0;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              background-color: rgba(255,255,255,0);
+              transition: background-color $image-transition ease-in-out 0ms;
+            }
+
+            &__image {
+              transform: scale(1);
+              transition: transform $image-transition ease-in-out 0ms;
+
+              img {
+                opacity: 0;
+                width: 100%;
+                width: 100%;
+                max-height: 100%;
+                background-color: $white-dark;
+                transition: opacity $image-transition ease-in-out 0ms;
+
+                &.lazy-fade {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+          // ---------
+          // !! Hover :: Managed in no-touch section
+          // ---------
+        }
+      }
+
+      /**
+       * DESKTOP STYLES
+       */
+      .instagram-desktop {
+
+        @media #{$mobile}, #{$tablet} {
+          display: none;
+        }
+        @media #{$notebook}, #{$desktop} {
+          margin: 0 -8px;
+          width: calc(100% + 16px);
+        }
+        @media #{$wide} {
+          margin: 0 -10px;
+          width: calc(100% + 20px);
+        }
+
+        &__one,
+        &__two,
+        &__three {
+          float: left;
+          width: 33.333333%;
+
+          .showcase {
+            float: left;
+            overflow: hidden;
+            position: relative;
+            height: auto;
+            background-color: $white-dark;
+
+            .showcase-link {
+              display: block;
+
+              &__white {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(255,255,255,0);
+                transition: background-color $image-transition ease-in-out 0ms;
+              }
+
+              &__image {
+                transform: scale(1);
+                transition: transform $image-transition ease-in-out 0ms;
+
+                img {
+                  opacity: 0;
+                  width: 100%;
+                  width: 100%;
+                  max-height: 100%;
+                  background-color: $white-dark;
+                  transition: opacity $image-transition ease-in-out 0ms;
+
+                  &.lazy-fade {
+                    opacity: 1;
+                  }
+                }
+              }
+            }
+            // ---------
+            // !! Hover :: Managed in no-touch section
+            // ---------
+          }
+        }
+
+        &__one,
+        &__three {
+          .showcase {
+
+            @media #{$notebook}, #{$desktop} {
+              margin: 8px;
+              width: calc(50% - 16px);
+            }
+            @media #{$wide} {
+              margin: 10px;
+              width: calc(50% - 20px);
+            }
+          }
+        }
+
+        &__two {
+          @media #{$notebook}, #{$desktop} {
+            padding: 8px;
+          }
+          @media #{$wide} {
+            padding: 10px;
+          }
+        }
+      }
+
+      .instagram-all {
+        display: flex;
+        clear: left;
+        overflow: hidden;
+        flex-direction: column;
+        align-items: center;
+        padding: 36px 0 10px;
+      }
+    }
+  }
+}
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .instagram {
+    &.is-home {
+      .is-extended {
+
+        .instagram-device {
+          .showcase {
+            &:hover {
+              .showcase-link__white {
+                background-color: $image-opacity;
+              }
+              .showcase-link__image {
+                transform: $image-scale;
+              }
+            }
+          }
+        }
+
+        .instagram-desktop {
+          &__one,
+          &__two,
+          &__three {
+            .showcase {
+              &:hover {
+                .showcase-link__white {
+                  background-color: $image-opacity;
+                }
+                .showcase-link__image {
+                  transform: $image-scale;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.pswp__bg {
+  background-color: $white !important;
+}
+.pswp__caption,
+.pswp__top-bar {
+  background-color: $white !important;
+}
+.pswp__caption__center {
+  text-align: center !important;
+  font-size: $size-normal !important;
+  color: $grey-light !important;
+}
+.pswp--css_animation .pswp__preloader__donut {
+  border: 2px solid $text !important;
+}
+.pswp__counter {
+  opacity: 1 !important;
+  color: $grey-light !important;
+  font-size: $size-normal !important;
+  background: $white !important;
+}
+.pswp__img--placeholder--blank {
+  background-color: $white !important;
+}
+
+.pswp__button {
+  background-repeat: no-repeat !important;
+  background-image: none !important;
+  &.pswp__button--close,
+  &.pswp__button--share,
+  &.pswp__button--fs,
+  &.pswp__button--zoom {
+      background-image: $icon__product-default-skin !important;
+  }
+}
+.pswp--svg .pswp__button--arrow--left:before,
+.pswp--svg .pswp__button--arrow--right:before {
+  background-repeat: no-repeat !important;
+  background-color: $white !important;
+  background-image: $icon__product-default-skin !important;
+}
+
+@media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
+  /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
+  .pswp--svg .pswp__button--arrow--left:before,
+  .pswp--svg .pswp__button--arrow--right:before {
+      background-repeat: no-repeat !important;
+      background-image: $icon__product-default-skin !important;
+  }
+}

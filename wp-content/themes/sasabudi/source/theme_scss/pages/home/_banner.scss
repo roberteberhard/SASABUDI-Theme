@@ -1,0 +1,462 @@
+.banner {
+  overflow: hidden;
+  position: relative;
+  transition: height $menu-transition ease 0ms;
+
+  @media #{$mobile} {
+    height: 400px;
+  }
+  @media #{$tablet} {
+    height: 400px;
+  }
+  @media #{$notebook} {
+    height: 440px;
+  }
+  @media #{$desktop} {
+    height: 500px;
+  }
+  @media #{$wide} {
+    overflow: hidden;
+    height: 540px;
+  }
+
+  .banner-box {
+    opacity: 0;
+    position: absolute;
+    z-index: 2;
+
+    @media #{$mobile} {
+      left: 20px;
+      bottom: 45px;
+      width: calc(100% - 40px);
+      height: 210px;
+    }
+    @media #{$tablet} {
+      left: 8%;
+      bottom: 55px;
+      width: 84%;
+      height: 210px;
+    }
+    @media #{$notebook} {
+      width: 280px; 
+      top: 50%;
+      right: 6%;
+      transform: translate(0, -50%);
+    }
+    @media #{$desktop} {
+      top: 50%;
+      right: 8%;
+      width: 280px;
+      transform: translate(0, -50%);
+    }
+    @media #{$wide} {
+      top: 50%;
+      right: 12%;
+      width: 280px;
+      transform: translate(0, -50%);
+    }
+
+    &__teaser {
+      overflow: hidden;
+      text-decoration: none;
+      background-color: $white;
+      box-shadow: 0 20px 20px -10px rgba(0,0,0,.2);
+
+      @media #{$mobile}, #{$tablet} {
+        border-radius: 3px;
+        height: 210px;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        border-radius: 10px;
+      }
+
+      .thumb-img {
+        overflow: hidden;
+        color: transparent;
+        font-size: 0;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+
+        @media #{$mobile} {
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          left: 0;
+          width: 150px;
+          height: 210px;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        @media #{$tablet} {
+          position: absolute;
+          z-index: 0;
+          top: 0;
+          left: 0;
+          width: 240px;
+          height: 210px;
+          border-top-left-radius: 3px;
+          border-bottom-left-radius: 3px;
+        }
+        @media #{$notebook}, #{$desktop}, #{$wide} {
+          width: 280px;
+          height: 175px;
+        }
+      }
+
+      .thumb-desc {
+        
+        @media #{$mobile}, #{$tablet} {
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+
+        span {
+          opacity: 0;
+          transform: translateX(-20px);
+          display: inline-block;
+          width: 100%;
+          color: $grey;
+          font-size: $size-small;
+          font-weight: $weight-normal;
+          text-transform: uppercase;
+
+          @media #{$mobile} {
+            padding: 0 20px 0 165px;
+            text-align: left;
+          }
+          @media #{$tablet} {
+            padding: 0 20px 0 260px;
+            text-align: left;
+          }
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            padding: 18px 20px 0px 20px;
+            text-align: center;
+          }
+        }
+
+        h1 {
+          opacity: 0;
+          transform: translateX(20px);
+          width: 100%;
+          color: $text;
+          font-size: 1.6rem;
+          line-height: 1;
+
+          @media #{$mobile} {
+            padding: 6px 10px 4px 165px;
+            text-align: left;
+          }
+          @media #{$tablet} {
+            font-size: 2rem;
+            padding: 8px 20px 4px 260px;
+            text-align: left;
+          }
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            font-size: 2rem;
+            padding: 4px 20px 10px 20px;
+            text-align: center;
+          }
+        }
+
+        p {
+          opacity: 0;
+          transform: translateY(-10px);
+          width: 100%;
+          color: $text;
+          font-size: $size-normal;
+          font-weight: $weight-normal;
+
+          @media #{$mobile} {
+            padding: 4px 20px 5px 165px;
+            text-align: left;
+            line-height: 1.15;
+          }
+          @media #{$tablet} {
+            padding: 4px 20px 5px 260px;
+            text-align: left;
+            //padding: 0 calc(50% - 210px) 10px calc(50% - 210px);
+          }
+          @media #{$notebook}, #{$desktop}, #{$wide} {
+            padding: 0 15px 45px 15px;
+            text-align: center;
+          }
+        }
+      }
+    }
+
+    &__avatar {
+      opacity: 0;
+      transform: scale(1.1);
+      position: absolute;
+      border-radius: 50%;
+      z-index: 1;
+      top: -25px;
+      font-size: 0;
+      color: transparent;
+      width: 68px;
+      height: 68px;
+      background-color: white;
+      box-shadow: 0 20px 8px -6px rgba(0,0,0,.1);
+      img {
+        overflow: hidden;
+        width: 68px;
+        height: 68px;
+        border-radius: 50%;
+        background-color: $white;
+      }
+      @media #{$mobile} {
+        left: 70%;
+      }
+      @media #{$tablet} {
+        left: 75%;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        left: 60%;
+      }
+    }
+
+    &__discover {
+      transform: scale(0.85);
+      position: absolute;
+      bottom: -30px;
+      left: calc(50% - 30px);
+
+      @media #{$mobile}, #{$tablet} {
+        display: none;
+        opacity: 1;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        opacity: 0;
+      }
+      
+      a {
+        display: block;
+        font-size: 0;
+        color: transparent;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: $black;
+
+        &:after {
+          content: "";
+          position: absolute;
+          display: block;
+          left: 0px;
+          top: 0px;
+          width: 60px;
+          height: 60px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: 60px 60px;
+          background-image: $icon__banner-box-next;
+          transform: translateX(0);
+          transition: transform $menu-transition ease-in-out 0ms; 
+        }
+
+        &:active {
+          transform: translateY(1px);
+        }
+        
+        // ---------
+        // !! hover :: managed in no-touch section
+        // ---------
+
+      }
+    }
+  }
+
+  img.banner-image {
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+    transform-style: preserve-3d;
+
+    &.device {
+      @media #{$mobile}, #{$tablet} {
+        left: 50%;
+        max-height: 400px;
+        max-width: none;
+        min-width: 100%;
+        transform: translate3d(-50%,0,0) scale3d(1.5,1.5,1.5) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: none;
+      } 
+    }
+
+    &.desktop {
+      @media #{$mobile}, #{$tablet} {
+        display: none;
+      }
+      @media #{$notebook}, #{$desktop}, #{$wide} {
+        display: block;
+        top: 50%;
+        width: 100%;
+        min-height: 440px;
+        transform: translate3d(0,-50%,0) scale3d(1.5,1.5,1.5) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+      }   
+    }
+  }
+}
+
+.banner-explore {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+  width: 100%;
+  height: 25px;
+
+  // 2. animate explore button
+  opacity: 0;
+  transform: translateY(-80px);
+
+  &.animate-in {
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 400ms ease 2300ms, opacity 600ms ease 2300ms;
+  }
+
+  &__button {
+    height: 52px;
+    margin-top: -26px;
+    padding: 11px 48px 11px 48px;
+    border-radius: 2px;
+    border: 2px solid $primary;
+    background-color: $primary;
+
+    @media #{$mobile} {
+      display: inline-block;
+      width: calc(100% - 40px);
+      padding: 11px 10px 11px 10px;
+    }
+    @media #{$tablet}, #{$notebook}, #{$desktop}, #{$wide} {
+      display: inline-block;
+      width: auto;
+      padding: 11px 48px 11px 48px;
+    } 
+
+    font-family: $family-secondary;
+    color: $white;
+    font-size: $size-large;
+    font-weight: $weight-bold;
+    text-align: center;
+    line-height: 1;
+    letter-spacing: 0.5px;
+    box-shadow: 0 10px 10px -5px rgba(0,0,0,.2);
+    // ---------
+    // !! hover :: managed in no-touch section
+    // ---------
+  }
+}
+
+/**
+ * Banner animation
+ */
+.banner.animate-in {
+
+  // 1. animate banner image
+  img.banner-image {
+    opacity: 1;
+
+    @media #{$mobile}, #{$tablet} {
+      transform: translate3d(-50%,0,0) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+      transition: transform 600ms ease-in-out 400ms, opacity 400ms ease 0ms;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      transform: translate3d(0,-50%,0) scale3d(1,1,1) rotateX(0deg) rotateY(0deg) rotateZ(0deg) skew(0deg,0deg);
+      transition: transform 600ms ease-in 400ms, opacity 400ms ease 0ms;
+    }
+  }
+
+  // 2. animate banner box
+  .banner-box {
+    transition: opacity 500ms ease 1000ms;
+
+    @media #{$mobile}, #{$tablet} {
+      opacity: 0.95;
+    }
+    @media #{$notebook}, #{$desktop}, #{$wide} {
+      opacity: 1
+    }
+
+    &__teaser {
+
+      img {
+        opacity: 1;
+        transition: opacity 1500ms ease 1000ms;
+      }
+
+      span {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 400ms ease 1300ms, opacity 600ms ease 1300ms;
+      }
+
+      h1 {
+        opacity: 1;
+        transform: translateX(0);
+        transition: transform 400ms ease 1500ms, opacity 600ms ease 1500ms;
+      }
+
+      p {
+        opacity: 1;
+        transform: translateY(0);
+        transition: transform 400ms ease 1700ms, opacity 600ms ease 1700ms;
+      }
+    }
+
+    &__discover {
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 400ms ease 1900ms, opacity 200ms ease 1900ms;
+    }
+
+    &__avatar {
+      opacity: 1;
+      transform: scale(1);
+      transition: transform 400ms ease 2100ms, opacity 200ms ease 2100ms;
+    }
+  }
+}
+
+
+/**
+ * Update links on 'no touch' devices
+ */
+.no-touch {
+  .banner {
+    .banner-box {
+      &__discover {
+        a {
+          transition: background-color $menu-transition ease-in-out 0ms;
+          &:hover,
+          &:focus,
+          &:active {
+            background-color: $button-hover-grey;
+
+            &:after {
+              transform: translateX(4px);
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner-explore {
+    &__button {
+      transition: background-color $menu-transition ease-in-out 0ms, border-color $menu-transition ease-in-out 0ms, color $menu-transition ease-in-out 0ms;  
+      &:hover {
+        color: $white;
+        border: 2px solid $button-hover-grey;
+        background-color: $button-hover-grey; 
+      }
+    }
+  }
+}
+
+

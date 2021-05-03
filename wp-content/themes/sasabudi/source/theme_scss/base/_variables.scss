@@ -1,0 +1,88 @@
+$family-primary		    : 'Barlow Semi Condensed', Helvetica, Arial, sans-serif !default; // 400, 500, 700
+$family-secondary	    : 'Barlow Condensed', Helvetica, Arial, sans-serif !default; // 400, 700
+$family-serif				  : 'PT Serif', serif !default;
+$render-mode			    : optimizeLegibility !default;
+
+$size-title						: 2.25rem !default;
+$size-subtitle				: 2rem !default;
+$size-larger					: 1.625rem !default;
+$size-large						: 1.375rem !default;
+$size-medium				  : 1.125rem !default;
+$size-between         : 1.0625rem;
+$size-normal					: 1rem !default;
+$size-small						: 0.875rem !default;
+$size-mini						: 0.75rem !default;
+
+$weight-light			    : 300 !default;
+$weight-normal		    : 400 !default;
+$weight-medium		    : 500 !default;
+$weight-semibold	    : 600 !default;
+$weight-bold			    : 700 !default;
+
+$mobile   				    : "(max-width: 579px)" !default;
+$tablet   				    : "(min-width: 580px) and (max-width: 900px)" !default;
+$notebook 				    : "(min-width: 901px) and (max-width: 1180px)" !default; // JS break at 900!
+$desktop  				    : "(min-width: 1181px) and (max-width: 1420px)" !default;
+$wide  				        : "(min-width: 1421px)" !default;
+
+$max-large            : 1680px !default;
+$max-medium           : 1080px !default;
+$max-small            : 860px !default;
+$max-mini             : 640px !default;
+
+$menu-opacity         : 0.35 !default;
+$menu-transition      : 250ms !default;
+$modal-opacity        : rgba(255, 255, 255, 0.85) !default;
+$image-opacity        : rgba(255, 255, 255, 0.25) !default;
+$image-scale          : scale(1.05) !default;
+$image-transition     : 500ms !default;
+$loader-url           : '../images/';
+
+$black						    : hsl(0, 0%, 4%) !default;
+$black-light				  : hsl(0, 0%, 14%) !default;
+$black-dark				    : hsl(0, 0%, 7%) !default;
+
+$grey						      : hsl(0, 0%, 48%) !default;
+$grey-light				    : hsla(0, 0%, 4%, 0.34) !default;
+$grey-lighter			    : hsl(0, 0%, 82%) !default;
+$grey-darker			    : hsl(0, 0%, 21%) !default;
+
+$white						    : hsl(0, 0%, 100%) !default;
+$white-light				  : #f2f2f2 !default;
+$white-dark				    : #ebebeb !default;
+
+$primary					    : hsl(13, 100%, 59%) !default; // Autumn Orange // #ff5b2e
+$primary-light				: hsl(13, 100%, 69%) !default;
+$primary-dark				  : #fa3600 !default;
+
+$secondary		        : hsl(45, 96%, 60%) !default;
+$secondary-light		  : hsl(46, 96%, 77%) !default;
+$secondary-dark		    : hsl(46, 96%, 57%) !default;
+
+$color-sale		        : hsl(0, 100%, 64%) !default;
+$color-alert		      : #ff4747 !default;
+$color-success	      : #8cdecb !default;
+$color-info			      : hsl(195, 83%, 51%) !default;
+$color-note			      : hsl(47, 100%, 94%) !default;
+$color-mobile         : transparent !default;
+
+$text                 : $black !default;
+$text-light           : $grey-light !default;
+$link-text            : $black !default;
+$link-hover-text      : $grey-light !default;
+$link-primary         : $primary !default;
+$link-hover-primary   : $grey-light !default;
+$button-black         : $black !default;
+$button-primary       : $primary !default;
+$button-hover-grey    : $grey-lighter !default;
+$button-hover-yellow  : $secondary !default;
+$border               : hsla(0, 0%, 4%, 0.10) !default;
+
+$orange						    : hsl(14,  100%, 53%) !default;
+$yellow						    : hsl(48,  100%, 67%) !default;
+$green						    : hsl(141, 53%,  53%) !default;
+$turquoise				    : hsl(171, 100%, 41%) !default;
+$cyan						      : hsl(204, 71%,  53%) !default;
+$blue						      : hsl(217, 71%,  53%) !default;
+$purple					    	: hsl(271, 100%, 71%) !default;
+$red						      : hsl(348, 86%, 61%) !default;

@@ -1,0 +1,60 @@
+.note-device {
+  
+  @media #{$mobile}, #{$tablet} {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    padding-top: 9px;
+    padding-bottom: 10px;
+    background-color: $white;
+  }
+  @media #{$notebook}, #{$desktop}, #{$wide} {
+    display: none;
+  }
+
+  &.default-style {
+    background-color: $white;
+  }
+
+  &.light-style {
+    background-color: $white-dark;
+  }
+
+  &__prompt {
+    color: $text;
+    font-size: $size-small;
+    font-family: $family-primary;
+    text-align: center;
+    font-weight: $weight-medium;
+    line-height: 1.25;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    .is-secure {
+      display: block;
+      float: left;
+      width: 12px;
+      height: 12px;
+      margin-top: 2px;
+      margin-right: 3px;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-image: $icon__secure-shopping;
+    }
+
+    b,
+    strong {
+      color: $text;
+      font-weight: $weight-bold;
+    }
+    a {
+      color: $text;
+      text-decoration: none;
+      font-weight: $weight-medium;
+    }
+  }
+}
