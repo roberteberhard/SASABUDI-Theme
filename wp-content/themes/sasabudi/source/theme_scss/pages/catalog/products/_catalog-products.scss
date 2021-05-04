@@ -42,6 +42,8 @@
           &__secondary {
             opacity: 0;
             display: block;
+            width: 100%;
+            height: auto;
             overflow: hidden;
             position: absolute;
             z-index: 1;
@@ -55,6 +57,8 @@
 
           &__primary {
             display: block;
+            width: 100%;
+            height: auto;
             opacity: 0;
             background-color: $white-light;
             transition: opacity $image-transition ease-in-out 0ms;

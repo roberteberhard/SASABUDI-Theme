@@ -88,7 +88,7 @@ echo '<div class="overview-left">';
             // Build Collection Thumbnail
             echo '<li class="collection-teaser__thumbnail">';
               echo '<figure class="thumb-figure">';
-                echo '<div class="thumb-figure__image lazy-bg" style="background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)" width="100%" heigth="100%" data-src="' . $featured_img_url .  '"></div>';
+                echo '<div class="thumb-figure__image lazy-bg" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png)" width="128px" heigth="128px" data-src="' . $featured_img_url .  '"></div>';
                 echo '<a class="thumb-figure__link" href="' . esc_url( get_permalink() ) . '"></a>';
               echo '</figure>';
             echo '</li>';
@@ -233,10 +233,10 @@ echo '<div class="overview-right">';
                   echo '<div class="result-article__figure">';
                     echo $product_sale == 1 ? '<div class="result-article__sale">' . __( 'Sale', 'sasabudi' ) . '</div>' : '';
                     if ($image_secondary) {
-                      echo '<img class="result-article__figure--secondary lazy-img" id="o-' . $product_id . '" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" data-src="' . $image_secondary . '">';
+                      echo '<img class="result-article__figure--secondary lazy-img" id="o-' . $product_id . '" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" data-src="' . $image_secondary . '">';
                     }
                     if ($image_primary) {
-                      echo '<img class="result-article__figure--primary lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" data-src="' . $image_primary . '">';
+                      echo '<img class="result-article__figure--primary lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" data-src="' . $image_primary . '">';
                     } else {
                       echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img class="result-article__figure--primary lazy-fade" src="%s" alt="Sasabudi\'s image placeholder" />', wc_placeholder_img_src() ), $post->ID );     
                     }

@@ -44,7 +44,7 @@ if ( $product->is_in_stock() ) {
 					if ($attachment_ids) $second_image_alt = get_post_meta($attachment_ids[0], '_wp_attachment_image_alt', true);
 					if ($attachment_ids) $second_image = wp_get_attachment_image_src($attachment_ids[0], 'medium')[0];
 					if ( isset($second_image) && $show_two_images ) {
-						echo ent2ncr('<img id="s-' . $product_id . '" class="product-image__secondary lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $second_image_alt . '" data-src="' . $second_image . '">');
+						echo ent2ncr('<img id="s-' . $product_id . '" class="product-image__secondary lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $second_image_alt . '" data-src="' . $second_image . '">');
 					}	
 
 					// Medium size thumbnail as default image.
@@ -52,7 +52,7 @@ if ( $product->is_in_stock() ) {
 					$first_image = wp_get_attachment_image_src( $post_thumbnail_id, 'medium' );
 					$first_image_alt = get_post_meta($post_thumbnail_id, '_wp_attachment_image_alt', true);
 					if ( isset( $first_image )) {
-						echo ent2ncr('<img class="product-image__primary lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $first_image_alt . '" data-src="' . $first_image[0] . '">');
+						echo ent2ncr('<img class="product-image__primary lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $first_image_alt . '" data-src="' . $first_image[0] . '">');
 					}
 
 				} else {  

@@ -283,6 +283,8 @@
 
 					&--primary {
 						opacity: 0;
+						width: 100%;
+						height: 100%;
 						overflow: hidden;
 						background-color: $white-dark;
 						transition: opacity $image-transition ease-in-out 0ms;
@@ -294,6 +296,8 @@
 
 					&--secondary {
 						opacity: 0;
+						width: 100%;
+						height: 100%;
             overflow: hidden;
             position: absolute;
             z-index: 1;

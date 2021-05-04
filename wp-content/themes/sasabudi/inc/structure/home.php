@@ -659,7 +659,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
               echo '<figure class="showcase ig-' . $counter_d  . '">';
                 echo '<a class="showcase-link" href="' . get_post_type_archive_link('instagram') . '">';
                   echo '<div class="showcase-link__white"></div>';
-                  echo '<div class="showcase-link__image"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $image_alt_d . '" data-src="' . $image_url_d .  '"></div>';
+                  echo '<div class="showcase-link__image"><img class="lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $image_alt_d . '" data-src="' . $image_url_d .  '"></div>';
                 echo '</a>';
               echo '</figure>';
 
@@ -691,7 +691,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
                 echo '<figure class="showcase ig-' . $counter_a . '">';
                   echo '<a class="showcase-link" href="' . get_post_type_archive_link('instagram') . '">';
                     echo '<div class="showcase-link__white"></div>';
-                    echo '<div class="showcase-link__image"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $image_alt_a . '" data-src="' . $image_url_a .  '"></div>';
+                    echo '<div class="showcase-link__image"><img class="lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $image_alt_a . '" data-src="' . $image_url_a .  '"></div>';
                   echo '</a>';
                 echo '</figure>';
 
@@ -717,7 +717,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
                 echo '<figure class="showcase">';
                   echo '<a class="showcase-link" href="' . get_post_type_archive_link('instagram') . '">';
                     echo '<div class="showcase-link__white"></div>';
-                    echo '<div class="showcase-link__image"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $image_alt_b . '" data-src="' . $image_url_b .  '"></div>';
+                    echo '<div class="showcase-link__image"><img class="lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $image_alt_b . '" data-src="' . $image_url_b .  '"></div>';
                   echo '</a>';
                 echo '</figure>';
               endwhile;
@@ -742,7 +742,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
                 echo '<figure class="showcase ig-' . $counter_c . '">';
                   echo '<a class="showcase-link" href="' . get_post_type_archive_link('instagram') . '">';
                     echo '<div class="showcase-link__white"></div>';
-                    echo '<div class="showcase-link__image"><img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $image_alt_c . '" data-src="' . $image_url_c .  '"></div>';
+                    echo '<div class="showcase-link__image"><img class="lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $image_alt_c . '" data-src="' . $image_url_c .  '"></div>';
                   echo '</a>';
                 echo '</figure>';
 
