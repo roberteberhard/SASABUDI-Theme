@@ -38,7 +38,7 @@ get_header();
         echo '<header class="blog-hero">';
           echo '<figure class="blog-hero__figure">';
             echo '<div class="blog-hero__figure--white"></div>';
-            echo '<div class="blog-hero__figure--image lazy-bg" style="background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)" width="100%" heigth="100%" alt="" data-src="' . esc_url($page_header_src) . '">';
+            echo '<div class="blog-hero__figure--image lazy-bg" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png)" width="100%" heigth="100%" alt="" data-src="' . esc_url($page_header_src) . '">';
               echo '<div class="blog-hero__container">';
                 $categories = get_the_category();
                 if ( $categories ) {
@@ -102,7 +102,7 @@ get_header();
                 // Thumbnail
                 echo '<a href="' . get_permalink() . '" class="article-thumbnail">';
                   echo '<div class="article-thumbnail__white"></div>';
-                  echo '<div class="article-thumbnail__image lazy-bg" style="background-image:url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)" width="100%" heigth="100%" data-src="' . $image_url . '"></div>';
+                  echo '<div class="article-thumbnail__image lazy-bg" style="background-image:url(https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png)" width="100%" heigth="100%" data-src="' . $image_url . '"></div>';
                 echo '</a>';
                 
                 // Category

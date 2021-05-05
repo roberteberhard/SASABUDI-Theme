@@ -56,7 +56,7 @@ get_header();
 
           echo '<figure class="about-article__image">';
             echo '<div class="about-article__bkg">';
-              echo '<img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="SASABUDI - About Us" data-src="' . get_theme_file_uri("./images/sasabudi-about-us.jpg") . '">';
+              echo '<img class="lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="SASABUDI - About Us" data-src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-about-us.jpg">';
             echo '</div>';
           echo '</figure>';
 
@@ -73,7 +73,7 @@ get_header();
 
           echo '<figure class="about-article__image">';
             echo '<div class="about-article__bkg">';
-              echo '<img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="SASABUDI - Our Story" data-src="https://sasabudi.com/wp-content/uploads/2021/01/sasabudi-about-our-story.jpg">';
+              echo '<img class="lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="SASABUDI - Our Story" data-src="https://sasabudi.com/wp-content/uploads/2021/01/sasabudi-about-our-story.jpg">';
             echo '</div>';
           echo '</figure>';
 
@@ -97,7 +97,7 @@ get_header();
 
           echo '<figure class="about-article__image">';
             echo '<div class="about-article__bkg">';
-              echo '<img class="lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="SASABUDI - Our Products" data-src="https://sasabudi.com/wp-content/uploads/2021/01/sasabudi-about-our-products.gif">';
+              echo '<img class="lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="SASABUDI - Our Products" data-src="https://sasabudi.com/wp-content/uploads/2021/01/sasabudi-about-our-products.gif">';
             echo '</div>';
           echo '</figure>';
 

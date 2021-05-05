@@ -80,7 +80,7 @@ if ( ! function_exists( 'sasabudi_page_collections_archive' ) ) {
 
                 // Collection Image
                 echo '<figure class="collections-post__figure">';
-                  echo '<div class="collections-post__figure--image lazy-bg" style="background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)" width="100%" heigth="100%" alt="' . $featured_img_alt  . '" title="' . $featured_img_title . '" data-src="' . $featured_img_url .  '"></div>';
+                  echo '<div class="collections-post__figure--image lazy-bg" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png)" width="100%" heigth="100%" alt="' . $featured_img_alt  . '" title="' . $featured_img_title . '" data-src="' . $featured_img_url .  '"></div>';
                   echo '<a class="collections-post__figure--link" href="' . esc_url( get_permalink() ) . '"></a>';
                 echo '</figure>';
 
@@ -173,7 +173,7 @@ if ( ! function_exists( 'sasabudi_page_collections_archive_ajax' ) ) {
 
           // Collection Image
           echo '<figure class="collections-post__figure">';
-            echo '<div class="collections-post__figure--image lazy-bg" style="background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)" width="100%" heigth="100%" alt="' . $featured_img_alt  . '" title="' . $featured_img_title . '" data-src="' . $featured_img_url .  '"></div>';
+            echo '<div class="collections-post__figure--image lazy-bg" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png)" width="100%" heigth="100%" alt="' . $featured_img_alt  . '" title="' . $featured_img_title . '" data-src="' . $featured_img_url .  '"></div>';
             echo '<a class="collections-post__figure--link" href="' . esc_url( get_permalink() ) . '"></a>';
           echo '</figure>';
 

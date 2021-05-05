@@ -90,6 +90,8 @@
 
                 &--primary {
                   opacity: 0;
+                  width: 100%;
+                  height: auto;
                   overflow: hidden;
                   background-color: $white-light;
                   transition: opacity $image-transition ease-in-out 0ms;
@@ -101,6 +103,8 @@
 
                 &--secondary {
                   opacity: 0;
+                  width: 100%;
+                  height: auto;
                   overflow: hidden;
                   position: absolute;
                   z-index: 1;

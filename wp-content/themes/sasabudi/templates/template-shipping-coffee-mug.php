@@ -51,5 +51,5 @@ echo '<aside class="wc-tab-description">';
 echo '</aside>';
 
 echo '<aside class="wc-tab-shipping">';
-  echo '<div class="tab-shipping lazy-bg" style="background-image: url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)" width="100%" heigth="100%" alt="" data-src="https://sasabudi.com/wp-content/uploads/2021/01/sasabudi-shipping-banner.jpg"></div>';
+  echo '<div class="tab-shipping lazy-bg" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png)" width="100%" heigth="100%" alt="" data-src="https://sasabudi.com/wp-content/uploads/2021/01/sasabudi-shipping-banner.jpg"></div>';
 echo '</aside>';

@@ -326,37 +326,37 @@ if ( ! function_exists( 'sasabudi_footer_app_storeselection' ) ) {
         echo '<div class="selection-boxes">';
           // United States
           echo '<a href="#" class="place-opt" id="store_us">';
-            echo '<span class="flag" style="background-image: url(' . get_template_directory_uri() . '/images/us.png)"></span>';
+            echo '<span class="flag" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/us.png)"></span>';
             echo esc_html__('United States', 'sasabudi');
           echo '</a>';
           // Europe
           echo '<a href="#" class="place-opt" id="store_eu">';
-            echo '<span class="flag" style="background-image: url(' . get_template_directory_uri() . '/images/eu.png)"></span>';
+            echo '<span class="flag" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/eu.png)"></span>';
             echo esc_html__('Europe', 'sasabudi');
           echo '</a>';          
           // Canada
           echo '<a href="#" class="place-opt" id="store_ca">';
-            echo '<span class="flag" style="background-image: url(' . get_template_directory_uri() . '/images/ca.png)"></span>';
+            echo '<span class="flag" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/ca.png)"></span>';
             echo esc_html__('Canada', 'sasabudi');
           echo '</a>';
           // United Kingdom
           echo '<a href="#" class="place-opt" id="store_uk">';
-            echo '<span class="flag" style="background-image: url(' . get_template_directory_uri() . '/images/uk.png)"></span>';
+            echo '<span class="flag" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/uk.png)"></span>';
             echo esc_html__('United Kingdom', 'sasabudi');
           echo '</a>';
           // Australia / New Zealand
           echo '<a href="#" class="place-opt" id="store_au">';
-            echo '<span class="flag" style="background-image: url(' . get_template_directory_uri() . '/images/au.png)"></span>';
+            echo '<span class="flag" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/au.png)"></span>';
             echo esc_html__('Australia/New Zealand', 'sasabudi');
           echo '</a>';
           // Japan
           echo '<a href="#" class="place-opt" id="store_jp">';
-            echo '<span class="flag" style="background-image: url(' . get_template_directory_uri() . '/images/jp.png)"></span>';
+            echo '<span class="flag" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/jp.png)"></span>';
             echo esc_html__('Japan', 'sasabudi');
           echo '</a>';
            // World
           echo '<a href="#" class="place-opt" id="store_world">';
-            echo '<span class="flag" style="background-image: url(' . get_template_directory_uri() . '/images/world.png)"></span>';
+            echo '<span class="flag" style="background-image: url(https://sasabudi.com/wp-content/uploads/2021/05/world.png)"></span>';
             echo esc_html__('Rest of World', 'sasabudi');
           echo '</a>';
           

@@ -52,10 +52,10 @@ if ( $product->is_in_stock() ) {
 				echo '<div class="recently-article__figure">';
 					echo $product_sale == 1 ? '<div class="recently-article__sale">' . __( 'Sale', 'sasabudi' ) . '</div>' : '';
 					if ($image_secondary) {
-						echo '<img class="recently-article__figure--secondary lazy-img" id="o-' . $product_id . '" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" data-src="' . $image_secondary . '">';
+						echo '<img class="recently-article__figure--secondary lazy-img" id="o-' . $product_id . '" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" data-src="' . $image_secondary . '">';
 					}
 					if ($image_primary) {
-						echo '<img class="recently-article__figure--primary lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" data-src="' . $image_primary . '">';
+						echo '<img class="recently-article__figure--primary lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" data-src="' . $image_primary . '">';
 					} else {
 						// Image is missing, so show placeholde image
 						echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="Placeholder" />', wc_placeholder_img_src() ), $post->ID );

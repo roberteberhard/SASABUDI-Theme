@@ -448,71 +448,6 @@
       "oAP" : "\/homepage.php",
       "oF" : 0
     },
-    "\/images\/_sasabudi-avatar-roberteberhard.png" : {
-      "ft" : 32768,
-      "iS" : 69358,
-      "oA" : 1,
-      "oAP" : "\/images\/_sasabudi-avatar-roberteberhard.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/au.png" : {
-      "ft" : 32768,
-      "iS" : 4017,
-      "oA" : 0,
-      "oAP" : "\/images\/au.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/ca.png" : {
-      "ft" : 32768,
-      "iS" : 1528,
-      "oA" : 0,
-      "oAP" : "\/images\/ca.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/eu.png" : {
-      "ft" : 32768,
-      "iS" : 843,
-      "oA" : 0,
-      "oAP" : "\/images\/eu.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/jp.png" : {
-      "ft" : 32768,
-      "iS" : 967,
-      "oA" : 0,
-      "oAP" : "\/images\/jp.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
     "\/images\/payment-amex.svg" : {
       "ft" : 2097152,
       "miP" : 0,
@@ -611,19 +546,6 @@
       "oF" : 0,
       "opt" : 0,
       "ou" : "lpckwebp-none",
-      "rq" : 75
-    },
-    "\/images\/sasabudi-about-us.jpg" : {
-      "ft" : 16384,
-      "iS" : 273981,
-      "jF" : 0,
-      "oA" : 0,
-      "oAP" : "\/images\/sasabudi-about-us.jpg",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
       "rq" : 75
     },
     "\/images\/sasabudi-avatar-blue.png" : {
@@ -808,45 +730,6 @@
       "opt" : 0,
       "plM" : 3758088159,
       "prP" : 0
-    },
-    "\/images\/uk.png" : {
-      "ft" : 32768,
-      "iS" : 647,
-      "oA" : 0,
-      "oAP" : "\/images\/uk.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/us.png" : {
-      "ft" : 32768,
-      "iS" : 1920,
-      "oA" : 0,
-      "oAP" : "\/images\/us.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
-    },
-    "\/images\/world.png" : {
-      "ft" : 32768,
-      "iS" : 17298,
-      "oA" : 0,
-      "oAP" : "\/images\/world.png",
-      "oF" : 0,
-      "oIPL" : 0,
-      "opt" : 0,
-      "oT" : 1,
-      "ou" : "lpckwebp-none",
-      "q" : 100,
-      "rq" : 75
     },
     "\/inc\/login\/admin-login.php" : {
       "cB" : 0,

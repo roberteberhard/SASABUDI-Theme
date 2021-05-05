@@ -54,7 +54,7 @@ if ( ! function_exists( 'sasabudi_blog_post_section' ) ) {
               // Thumbnail
               echo '<a href="' . get_permalink() . '" class="article-thumbnail">';
                 echo '<div class="article-thumbnail__white"></div>';
-                echo '<div class="article-thumbnail__image lazy-bg" style="background-image:url(data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)" width="100%" heigth="100%" alt="' . $image_alt . '" data-src="' . $image_url . '"></div>';
+                echo '<div class="article-thumbnail__image lazy-bg" style="background-image:url(https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png)" width="100%" heigth="100%" alt="' . $image_alt . '" data-src="' . $image_url . '"></div>';
               echo '</a>';
 
               // Category

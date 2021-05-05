@@ -112,10 +112,10 @@ function sasabudi_my_account_endpoint_wishlist_content() {
 							if ($image_id) {
 								// secondary image
 								if (isset($image_secondary) AND $is_second_image) { 
-									echo ent2ncr('<img class="wishlist-item__figure--secondary lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $image_secondary_alt . '" data-src="' . $image_secondary . '">');
+									echo ent2ncr('<img class="wishlist-item__figure--secondary lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $image_secondary_alt . '" data-src="' . $image_secondary . '">');
 								}
 								// primary image
-								echo ent2ncr('<img class="wishlist-item__figure--primary lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="' . $image_primary_alt . '" data-src="' . $image_primary . '">');
+								echo ent2ncr('<img class="wishlist-item__figure--primary lazy-img" src="https://sasabudi.com/wp-content/uploads/2021/05/sasabudi-template.png" width="100%" heigth="100%" alt="' . $image_primary_alt . '" data-src="' . $image_primary . '">');
 							}
 							else {
 								echo apply_filters( 'woocommerce_single_product_image_html', sprintf( '<img src="%s" alt="Placeholder" />', wc_placeholder_img_src() ), $image_id );
