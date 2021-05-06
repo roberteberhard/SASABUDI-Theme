@@ -52,8 +52,10 @@ echo '<div class="account-order">';
   /**
    * Order Zone
    */
-  $order_id = $order->get_order_number();
-  $order    = wc_get_order($order_id);
+  $order_id               = $order->get_order_number();
+  $order                  = wc_get_order($order_id);
+  $shipping_method_title  = '';
+
   foreach( $order->get_items( 'shipping' ) as $item_id => $item ){
     // $order_item_name             = $item->get_name();
     // $order_item_type             = $item->get_type();
@@ -73,33 +75,43 @@ echo '<div class="account-order">';
       echo esc_html__( 'Cancelled by an admin or by you, the customer – no further action required.', 'sasabudi' );
     echo '</p>';
   }
-    else if ($status_state == 'Completed') {
+  else if ($status_state == 'Completed') {
+    
+    if( $shipping_method_title == 'U.S. Shipping' || $shipping_method_title == 'U.S. Free shipping') {
       echo '<p class="order-states completed">';
-      if( $shipping_method_title == 'U.S. Shipping' OR $shipping_method_title == 'U.S. Free shipping') {
         echo esc_html__( 'Good news! Your order is on its way. US orders may take 3-4 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-      else if ( $shipping_method_title == 'Canadian Shipping' OR $shipping_method_title == 'Canadian Free Shipping') {
+      echo '</p>';
+    }
+    else if ( $shipping_method_title == 'Canadian Shipping' || $shipping_method_title == 'Canadian Free Shipping') {
+      echo '<p class="order-states completed">';
         echo esc_html__( 'Good news! Your order is on its way. Orders from Canada may take 3-7 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-      else if ( $shipping_method_title == 'EU Shipping' OR $shipping_method_title == 'EU Free Shipping') {
+      echo '</p>';
+    }
+    else if ( $shipping_method_title == 'EU Shipping' || $shipping_method_title == 'EU Free Shipping') {
+      echo '<p class="order-states completed">';
         echo esc_html__( 'Good news! Your order is on its way. European orders may take 6-8 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-      else if ( $shipping_method_title == 'UK Shipping' OR $shipping_method_title == 'UK Free shipping') {
+      echo '</p>';
+    }
+    else if ( $shipping_method_title == 'UK Shipping' || $shipping_method_title == 'UK Free shipping') {
+      echo '<p class="order-states completed">';
         echo esc_html__( 'Good news! Your order is on its way. Orders from the UK may take 6-10 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-      else if ( $shipping_method_title == 'EFTA Shipping' OR $shipping_method_title == 'EFTA Free shipping') {       
+      echo '</p>';
+    }
+    else if ( $shipping_method_title == 'EFTA Shipping' || $shipping_method_title == 'EFTA Free shipping') {    
+      echo '<p class="order-states completed">';   
         echo esc_html__( 'Good news! Your order is on its way. Orders from EFTA countries may take 6-10 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-      else if ( $shipping_method_title == 'Japan Shipping' OR $shipping_method_title == 'Japan Free Shipping') {   
+      echo '</p>';
+    }
+    else if ( $shipping_method_title == 'Japan Shipping' || $shipping_method_title == 'Japan Free Shipping') {  
+      echo '<p class="order-states completed">'; 
         echo esc_html__( 'Good news! Your order is on its way. Japanese orders may take 4-8 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-      else if ( $shipping_method_title == 'Australian Shipping' OR $shipping_method_title == 'Australian Free Shipping') { 
+      echo '</p>';
+    }
+    else if ( $shipping_method_title == 'Australian Shipping' || $shipping_method_title == 'Australian Free Shipping') { 
+      echo '<p class="order-states completed">';
         echo esc_html__( 'Good news! Your order is on its way. Orders from Australia/New Zealand may take 2-14 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-      else {
-        echo esc_html__( 'Good news! Your order is on its way. International orders may take 10-20 business days to arrive. Please let us know if there are any delays in receiving your order.', 'sasabudi' );
-      }
-    echo '</p>';
+      echo '</p>';
+    }
   }
   else if ($status_state == 'Failed') {
     echo '<p class="order-states failed">';

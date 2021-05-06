@@ -24,14 +24,15 @@ if ( ! apply_filters( 'woocommerce_order_item_visible', true, $item ) ) {
 }
 
 echo '<tr class="' . esc_attr( apply_filters( 'woocommerce_order_item_class', 'woocommerce-table__line-item order_item', $item, $order ) ) . '">';
-	
 	echo '<td class="woocommerce-table__product-name product-name">';
+
+
 
 		$is_visible        	= $product && $product->is_visible();
 		$product_permalink 	= apply_filters( 'woocommerce_order_item_permalink', $is_visible ? $product->get_permalink( $item ) : '', $item, $order );
 		$qty          			= $item->get_quantity();
 		$refunded_qty 			= $order->get_qty_refunded_for_item( $item_id );
-		$product_id 				= $product->get_id();
+		$product_id 				= null;
 
 		if ( $refunded_qty ) {
 			$qty_display = '<del>' . esc_html( $qty ) . '</del> <ins>' . esc_html( $qty - ( $refunded_qty * -1 ) ) . '</ins>';
@@ -39,23 +40,29 @@ echo '<tr class="' . esc_attr( apply_filters( 'woocommerce_order_item_class', 'w
 			$qty_display = esc_html( $qty );
 		}
 
-		// Custom thumbnail
-		$image_id 			= get_post_thumbnail_id($product_id);
-		$image_alt 			= get_post_meta($image_id, '_wp_attachment_image_alt', true);
-		$image_url			= esc_url((wp_get_attachment_image_src($image_id, 'thumbnail')[0]));
-		$product_thumb	= '<img src="' . $image_url . '" alt="' . $image_alt . '" />';
+		if( $product ) {
+			// Custom thumbnail
+			$product_id			= $product->get_id();		
+			$image_id 			= get_post_thumbnail_id($product_id);
+			$image_alt 			= get_post_meta($image_id, '_wp_attachment_image_alt', true);
+			$image_url			= esc_url((wp_get_attachment_image_src($image_id, 'thumbnail')[0]));
+			$product_thumb	= '<img src="' . $image_url . '" alt="' . $image_alt . '" />';
+		}
+		else {
+			$product_thumb = '<img src="https://sasabudi.com/wp-content/uploads/2020/12/sasabudi-placehoder.png" alt="" />';
+		}
+
+
 
 		// Product thumbnail & name
 		echo '<div class="details">';
+
 			echo '<div class="details-image">' . $product_thumb . '</div>';
 			echo '<div class="details-name">';
-				echo apply_filters( 'woocommerce_order_item_name', $product_permalink ? sprintf( '<a href="%s">%s</a>', $product_permalink, $item->get_name() ) : $item->get_name(), $item, $is_visible );
+				echo wp_kses_post(apply_filters( 'woocommerce_order_item_name', $product_permalink ? sprintf( '<a href="%s">%s</a>', $product_permalink, $item->get_name() ) : $item->get_name(), $item, $is_visible ));
 			echo '</div>';
 			echo '<span class="details-quantity">' . $qty_display . '</span>';
 		echo'</div>';
-
-		// deactivate!
-		// apply_filters( 'woocommerce_order_item_quantity_html', ' <strong class="product-quantity">' . sprintf( '&times;&nbsp;%s', $qty_display ) . '</strong>', $item ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped
 
 		do_action( 'woocommerce_order_item_meta_start', $item_id, $item, $order, false );
 

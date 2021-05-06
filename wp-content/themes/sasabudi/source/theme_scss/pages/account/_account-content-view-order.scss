@@ -78,12 +78,19 @@
               font-weight: $weight-medium;
               background-color: $color-note;
             }
-            .description {
-              padding: 2px 0 3px 8px;
+            .description p {
+              padding: 3px 0 5px 8px;
               border-left: 1px dotted $black;
               color: $text;
               font-size: $size-normal;
               font-weight: $weight-normal;
+              line-height: 1.25;
+              b {
+                font-family: $family-secondary;
+                font-size: $size-medium;
+                letter-spacing: 0.5px;
+                line-height: 1.25;
+              }
               a {
                 color: $link-primary;
                 position: relative;
@@ -111,6 +118,15 @@
         h2 {
           font-size: $size-larger;
           margin-bottom: 12px;
+        }
+
+        h3 {
+          font-size: $size-large;
+          margin-bottom: 12px;
+        }
+
+        address {
+          font-size: $size-medium;
         }
 
         .customer-details {
@@ -170,7 +186,8 @@
           thead {
             tr {
               th {
-                font-size: $size-medium;
+                font-family: $family-secondary;
+                font-size: $size-large;
                 font-weight: $weight-bold;
                 letter-spacing: 0.5px;
                 padding-bottom: 10px;
@@ -207,6 +224,12 @@
                   .details-name {
                     width: calc(100% - 48px);
                     padding-left: 8px;
+                    font-size: $size-medium;
+                    font-family: $family-secondary;
+                    font-weight: $weight-bold;
+                    letter-spacing: 0.5px;
+                    text-align: left;
+                    line-height: 1; 
                     a {
                       font-size: $size-medium;
                       font-family: $family-secondary;
@@ -287,7 +310,8 @@
             li {
               &.note--name {
                 margin-bottom: 5px;
-                font-size: $size-medium;
+                font-family: $family-secondary;
+                font-size: $size-large;
                 font-weight: $weight-bold;
                 letter-spacing: 0.5px;
               }
@@ -370,10 +394,14 @@
         thead {
           tr {
             th {
-              font-size: $size-medium;
+              font-family: $family-secondary;
+              font-size: $size-large;
               font-weight: $weight-bold;
               letter-spacing: 0.5px;
               padding-bottom: 10px;
+            }
+            th.tracking-number {
+              padding: 0 12px;
             }
           }
         }
@@ -391,6 +419,9 @@
             td.tracking-number,
             td.date-shipped {
               width: 24%;
+            }
+            td.tracking-number {
+              padding: 0 12px;
             }
  
             td.order-actions {
