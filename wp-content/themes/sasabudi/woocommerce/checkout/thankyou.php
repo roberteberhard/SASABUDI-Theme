@@ -143,18 +143,25 @@ dataLayer.push({
       <?php endif; ?>
 'items': [
 <?php foreach($order->get_items() as $key => $item):
-$product = $item->get_product();
 $variant_name = ($item['variation_id']) ? wc_get_product($item['variation_id']) : '';
+$product_id = $item['product_id'];
+$terms = get_the_terms( $product_id, 'product_cat' );
+$product_cat = array();
+foreach ( $terms as $term ) {
+	$product_cat[] = $term->name;
+}
+$categroy = array_merge(array_diff($product_cat, array('New Arrivals', 'On Our Radar')));
 ?>
       {
-        'item_name': '<?php echo $item['post_title']; ?>',
+        'item_name': '<?php echo $item['name']; ?>',
         'item_id': '<?php echo $item['product_id']; ?>',
         'price': '<?php echo number_format($order->get_line_subtotal($item), 2, ".", ""); ?>',
         'item_brand': 'SASABUDI',
-        'item_category': '<?php echo strip_tags(wc_get_product_category_list($item['product_id'])); ?>',
+        'item_category': '<?php echo $categroy[0]; ?>',
         'item_variant': '<?php echo ($variant_name) ? implode("-", $variant_name->get_variation_attributes()) : ''; ?>',
         'quantity': <?php echo $item['qty']; 
 ?>
+
       },
 <?php endforeach; ?>
     ]

@@ -17,7 +17,7 @@ echo '<div class="overview-left">';
       echo '<li class="category-list">';
       echo '<h3 class="category-title">Catalog</h3>';
         echo '<ul class="category-links shop-all">';
-          echo '<li><a href="' . esc_url( home_url( '/catalog/new-arrivals/?orderby=date' ) ) .'">New Arrivals</a></li>';
+          echo '<li><a href="' . esc_url( home_url( '/catalog/?orderby=date' ) ) .'">New Arrivals</a></li>';
           echo '<li><a href="' . esc_url( home_url( '/catalog/?orderby=popularity' ) ) .'">Best Sellers</a></li>';
           echo '<li><a href="' . esc_url( home_url( '/catalog/exclusive/?orderby=date' ) ) .'">On our Radar</a></li>';
           echo '<li><a href="' . esc_url( home_url( '/collections/' ) ) .'">Collections</a></li>';
