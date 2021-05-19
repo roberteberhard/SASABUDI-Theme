@@ -119,3 +119,45 @@ else :
 endif;
 
 echo '</div>';
+
+
+/**
+ * Tag type: GA4 Event / Purchase
+ */
+
+?>
+
+<script>
+dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
+dataLayer.push({
+  'event': 'purchase',
+  'ecommerce': {
+      'transaction_id': '<?php echo $order->get_order_number(); ?>',
+      'affiliation': 'Online Store',
+      'value': '<?php echo number_format($order->get_subtotal(), 2, ".", ""); ?>',
+      'tax': '<?php echo number_format($order->get_total_tax(), 2, ".", ""); ?>',
+      'shipping': '<?php echo number_format($order->calculate_shipping(), 2, ".", ""); ?>',
+      'currency': '<?php echo get_woocommerce_currency(); ?>',
+      <?php if($order->get_coupon_codes()): ?>
+      'coupon': '<?php echo implode("-", $order->get_coupon_codes()); ?>'
+      <?php endif; ?>
+'items': [
+<?php foreach($order->get_items() as $key => $item):
+$product = $item->get_product();
+$variant_name = ($item['variation_id']) ? wc_get_product($item['variation_id']) : '';
+?>
+      {
+        'item_name': '<?php echo $item['post_title']; ?>',
+        'item_id': '<?php echo $item['product_id']; ?>',
+        'price': '<?php echo number_format($order->get_line_subtotal($item), 2, ".", ""); ?>',
+        'item_brand': 'SASABUDI',
+        'item_category': '<?php echo strip_tags(wc_get_product_category_list($item['product_id'])); ?>',
+        'item_variant': '<?php echo ($variant_name) ? implode("-", $variant_name->get_variation_attributes()) : ''; ?>',
+        'quantity': <?php echo $item['qty']; 
+?>
+      },
+<?php endforeach; ?>
+    ]
+  }
+});
+</script>

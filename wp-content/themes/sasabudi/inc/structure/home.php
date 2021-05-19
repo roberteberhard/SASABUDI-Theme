@@ -1,7 +1,7 @@
 <?php
 /**
  * The template functions used for displaying the 'home' definitions.
- * 
+ *
  * - sasabudi_home_products_banner
  * - sasabudi_home_products_statement
  * - sasabudi_home_products_categories
@@ -10,7 +10,7 @@
  * - sasabudi_home_products_trending
  * - sasabudi_home_artist_blog
  * - sasabudi_home_instagram_feed
- * 
+ *
  * @package WordPress
  * @subpackage SASABUDI
  * @since 1.0.0
@@ -59,7 +59,7 @@ if ( ! function_exists( 'sasabudi_home_products_banner' ) ) {
           $image_title   = get_the_title($image_id);
 
           // Mugs Image
-          $thumb_object     = get_field('ws_banner_excerpt'); 
+          $thumb_object     = get_field('ws_banner_excerpt');
           $thumb_size       = 'medium';
           $thumb_id         = $thumb_object['ID'];
           $thumb_alt        = get_post_meta($thumb_id, '_wp_attachment_image_alt', true);
@@ -67,7 +67,7 @@ if ( ! function_exists( 'sasabudi_home_products_banner' ) ) {
           $thumb_title      = get_the_title($thumb_id);
 
           // Avatar Image
-          $avatar_object    = get_field('ws_banner_avatar'); 
+          $avatar_object    = get_field('ws_banner_avatar');
           $avatar_size      = 'thumbnail';
           $avatar_id        = $avatar_object['ID'];
           $avatar_alt       = get_post_meta($avatar_id, '_wp_attachment_image_alt', true);
@@ -94,15 +94,15 @@ if ( ! function_exists( 'sasabudi_home_products_banner' ) ) {
 
               echo '<div class="banner-box__avatar"><img src="'. $avatar_url . '" alt="'. $avatar_alt . '" title="'. $avatar_title . '" /></div>';
               echo '<div class="banner-box__discover"><a href="' . $button_link . '">Discover</a></div>';
-              
+
             echo '</div>';
 
             // background image
             echo '<img class="banner-image device" src="' . $image_url .  '" alt="' . $image_alt  . '" title="' . $image_title . '" />';
             echo '<img class="banner-image desktop" src="' . $image_url .  '" alt="' . $image_alt  . '" title="' . $image_title . '" />';
-          
+
           echo '</div>';
-          
+
           // Build Button
           echo '<div class="banner-explore">';
             echo '<a class="banner-explore__button" href="' . $button_link . '">' . $button_title . '</a>';
@@ -112,8 +112,8 @@ if ( ! function_exists( 'sasabudi_home_products_banner' ) ) {
         $banner_count++;
 
       endwhile;
-    
-    endif; 
+
+    endif;
 
     wp_reset_postdata();
 
@@ -142,12 +142,12 @@ if ( ! function_exists( 'sasabudi_home_products_statement' ) ) {
     // Build statements slider
     echo '<div class="statements">';
       echo '<div class="is-wrapper">';
-        
+
         // Glide Slider
         echo '<div class="glide" id="glide_statements" >';
           echo '<div class="glide__track" data-glide-el="track">';
             echo '<ul class="glide__slides">';
-              
+
               // Authentic artwork
               echo '<li class="glide__slide">';
                 echo '<div class="glide__slide--artwork"></div>';
@@ -166,7 +166,7 @@ if ( ! function_exists( 'sasabudi_home_products_statement' ) ) {
               echo '<li class="glide__slide">';
                 echo '<div class="glide__slide--shipping"></div>';
                 echo '<h4>' . esc_html__('Worldwide Shipping', 'sasabudi') . '</h4>';
-                echo '<p>'; 
+                echo '<p>';
                   printf(  esc_html__('SASABUDI works with selected manufacturing partners in the USA, Europe, Japan and Australia. Please note the following %1$s for worldwide delivery.', 'sasabudi'), '<a class="primary-link" href="' . esc_url( home_url('/help/shipping/') ) . '">shipping times</a>' );
                 echo '</p>';
               echo '</li>';
@@ -182,7 +182,7 @@ if ( ! function_exists( 'sasabudi_home_products_statement' ) ) {
           echo '</div>';
 
         echo '</div>';
-        
+
       echo '</div>';
     echo '</div>';
   }
@@ -200,11 +200,11 @@ if ( ! function_exists( 'sasabudi_home_products_categories' ) ) {
       'taxonomy' => 'product_cat',
       'hide_empty' => false,
       'orderby' => 'term_group' // 'name', 'slug', 'term_group', 'term_id', 'id', 'description'
-      //'order' => 'desc' 
+      //'order' => 'desc'
     ));
     $catNum = count($catTerms);
 
-    if ( $catNum >= 1 ) {	
+    if ( $catNum >= 1 ) {
       $counter = 1;
 
       echo '<div class="categories">';
@@ -215,9 +215,9 @@ if ( ! function_exists( 'sasabudi_home_products_categories' ) ) {
             foreach($catTerms as $catTerm) :
 
               if( $counter > 0 AND $counter < 4 ) {
-                
+
                 // Settings
-                $image_id 	  = get_term_meta( $catTerm->term_id, 'thumbnail_id', true ); 
+                $image_id 	  = get_term_meta( $catTerm->term_id, 'thumbnail_id', true );
                 $image_alt    = get_post_meta($image_id, '_wp_attachment_image_alt', true);
                 $image_title  = get_the_title($image_id);
                 $image_url 	  = esc_url((wp_get_attachment_image_src( $image_id, 'medium' )[0]));
@@ -242,7 +242,7 @@ if ( ! function_exists( 'sasabudi_home_products_categories' ) ) {
 
               // Increment counter
               $counter++;
-              
+
             endforeach;
 
           echo '</div>';
@@ -272,7 +272,7 @@ if ( ! function_exists( 'sasabudi_home_products_custom_categories' ) ) {
           $category_1_title = 'We All Love Mugs';
           $category_1_name 	= 'Explore all mugs';
           $category_1_url 	= 'https://sasabudi.com/catalog/mugs/?orderby=popularity&filter_model=coffee-mug';
-          
+
           // Explore all mugs
           echo '<article class="category-article">';
             echo '<figure class="category-figure">';
@@ -293,8 +293,8 @@ if ( ! function_exists( 'sasabudi_home_products_custom_categories' ) ) {
           $image_2_title    = 'Home Sweet Home';
           $category_2_title = 'Home Sweet Home';
           $category_2_name 	= 'Shop new arrivals';
-          $category_2_url 	= 'https://sasabudi.com/catalog/new-arrivals/?orderby=date';
-          
+          $category_2_url 	= 'https://sasabudi.com/catalog/?orderby=date';
+
           // Shop new arrivals
           echo '<article class="category-article">';
             echo '<figure class="category-figure">';
@@ -367,23 +367,23 @@ if ( ! function_exists( 'sasabudi_home_products_collection' ) ) {
 
     // New instance of WP_Query
     $home_collections_query = new WP_Query( $args );
-    
+
     // If WP_Query return results
     if ($home_collections_query->have_posts()) :
 
       echo '<div class="collection is-home">';
 
         while($home_collections_query->have_posts()) : $home_collections_query->the_post();
-          
+
           // Featured Info
           $featured_theme   = get_field('ws_collection_off');
           $featured_title   = get_field('ws_collection_title');
           $featured_desc    = get_field('ws_collection_short_desc');
 
           // Featured Image
-          $image_object     = get_field('ws_collection_excerpt'); 
+          $image_object     = get_field('ws_collection_excerpt');
           $image_size       = 'large';
-          $image_id 	      = $image_object['ID']; 
+          $image_id 	      = $image_object['ID'];
           $image_alt        = get_post_meta($image_id, '_wp_attachment_image_alt', true);
           $image_url        = $image_object['sizes'][$image_size];
           $image_title      = get_the_title($image_id);
@@ -399,11 +399,11 @@ if ( ! function_exists( 'sasabudi_home_products_collection' ) ) {
 
             echo '<div class="collection-featured left">';
               echo '<div class="collection-featured__desc">';
-                
+
                 echo '<h4>' . $featured_theme . ' - </h4>';
                 echo '<h2><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $featured_title . '</a></h2>';
                 echo '<p>' . $featured_desc . '</p>';
-                
+
                 echo '<div class="collection-featured__desc--action">';
                   echo '<a href="' . esc_url( get_permalink() ) . '" class="button btn-short">' . esc_html__('Shop Now', 'sasabudi') . '</a>';
                   echo '<a href="' . esc_url( get_post_type_archive_link('collections') ) . '" class="button btn-light">' . esc_html__('Collections', 'sasabudi') . '</a>';
@@ -415,10 +415,10 @@ if ( ! function_exists( 'sasabudi_home_products_collection' ) ) {
           echo '</article>';
 
         endwhile;
-          
+
       echo '</div>';
 
-    endif; 
+    endif;
 
     wp_reset_postdata();
   }
@@ -483,7 +483,7 @@ if ( ! function_exists( 'sasabudi_home_products_trending' ) ) {
                 echo '</div>';
               echo '</li>';
             }
-            
+
           echo '</ul>';
         echo '</div>';
 
@@ -515,14 +515,14 @@ if ( ! function_exists( 'sasabudi_home_artist_blog' ) ) {
       'orderby'         => 'date',
       'order'           => 'desc'
     );
-    
+
     $the_query = new WP_Query( $args );
 
     if ( $the_query->have_posts() ) {
-	 
+
       echo '<div class="artist-blog">';
         echo '<div class="artist-blog__wrapper">';
-        
+
           while ( $the_query->have_posts() ) :
 
             $the_query->the_post();
@@ -532,14 +532,14 @@ if ( ! function_exists( 'sasabudi_home_artist_blog' ) ) {
             $leftmargin       = $counter % 3 == 1 ? ' is-start' : '';
             $middlemargin     = $counter % 3 == 2 ? ' is-middle' : '';
             $rightmargin      = $counter % 3 == 0 ? ' is-end' : '';
-            
+
             // Get the image object returned by ACF
-            $image_object = get_field('wp_excerpt_image'); 
+            $image_object = get_field('wp_excerpt_image');
             $image_size = 'medium';
             $image_url = $image_object['sizes'][$image_size];
 
             echo '<article class="artist-blog__post' . $leftmargin . '' . $middlemargin . '' . $rightmargin . '">';
-              
+
               // Thumbnail
               echo '<a href="' . get_permalink() . '" class="article-thumbnail">';
                 echo '<div class="article-thumbnail__white"></div>';
@@ -551,13 +551,13 @@ if ( ! function_exists( 'sasabudi_home_artist_blog' ) ) {
 
               // Title
               the_title( sprintf( '<h3 class="entry-title"><a href="%s" rel="bookmark">', esc_url( get_permalink() ) ), '</a></h3>' );
-              
+
               // Excerpt
               echo '<p>' . wp_trim_words(get_the_excerpt(), 15) . ' </p>';
-                
+
               // More
               echo '<p><a class="read_more primary-link" href="' . get_permalink() . '">' . esc_html__('Read More', 'roberteberhard') . '</a> <span class="post-date">' . get_the_time('m/j/y') . '</span></p>';
-         
+
             echo '</article>';
 
           endwhile;
@@ -569,7 +569,7 @@ if ( ! function_exists( 'sasabudi_home_artist_blog' ) ) {
         echo '</div>';
 
       echo '</div>';
-  
+
       wp_reset_postdata();
     }
   }
@@ -583,7 +583,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
   function sasabudi_home_instagram_feed() {
 
     // $offset = ( $page - 1 ) * $amount;
-    $args_a = array( 
+    $args_a = array(
       'post_type' => array('instagram'),
       'post_status' => 'publish',
       'orderby' => 'date',
@@ -592,7 +592,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
       'paged' =>  1,
       'offset' => 0
     );
-    $args_b = array( 
+    $args_b = array(
       'post_type' => array('instagram'),
       'post_status' => 'publish',
       'orderby' => 'date',
@@ -601,7 +601,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
       'paged' =>  5,
       'offset' => 4
     );
-    $args_c = array( 
+    $args_c = array(
       'post_type' => array('instagram'),
       'post_status' => 'publish',
       'orderby' => 'date',
@@ -610,7 +610,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
       'paged' =>  2,
       'offset' => 5
     );
-    $args_d = array( 
+    $args_d = array(
       'post_type' => array('instagram'),
       'post_status' => 'publish',
       'orderby' => 'date',
@@ -622,7 +622,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
     $instagram_query_a = new WP_Query( $args_a );
     $instagram_query_b = new WP_Query( $args_b );
     $instagram_query_c = new WP_Query( $args_c );
-    $instagram_query_d = new WP_Query( $args_d ); 
+    $instagram_query_d = new WP_Query( $args_d );
 
     echo '<div class="instagram is-home">';
       echo '<div class="is-extended">';
@@ -650,7 +650,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
               $image_alt_d  = get_post_meta($image_id_d, '_wp_attachment_image_alt', true);
 
               // Show medium and large image size
-              if($counter_d == 1) { 
+              if($counter_d == 1) {
                 $image_url_d = esc_url((wp_get_attachment_image_src($image_id_d, 'large')[0]));
               } else {
                 $image_url_d = esc_url((wp_get_attachment_image_src($image_id_d, 'medium')[0]));
@@ -670,7 +670,7 @@ if ( ! function_exists( 'sasabudi_home_instagram_feed' ) ) {
           endif;
 
         echo '</article>';
-        
+
         /**
          * Desktop Version
          */
