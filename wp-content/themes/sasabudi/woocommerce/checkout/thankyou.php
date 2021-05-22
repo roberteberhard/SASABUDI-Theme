@@ -133,7 +133,7 @@ dataLayer.push({
   'event': 'purchase',
   'ecommerce': {
       'transaction_id': '<?php echo $order->get_order_number(); ?>',
-      'affiliation': 'Online Store',
+      'affiliation': 'sasabudi online shop',
       'value': '<?php echo number_format($order->get_subtotal(), 2, ".", ""); ?>',
       'tax': '<?php echo number_format($order->get_total_tax(), 2, ".", ""); ?>',
       'shipping': '<?php echo number_format($order->calculate_shipping(), 2, ".", ""); ?>',

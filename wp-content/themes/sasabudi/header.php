@@ -53,6 +53,13 @@
 <meta name="msapplication-starturl" content="/" />
 <meta name="msapplication-window" content="width=1024;height=768" />
 <meta name="msapplication-config" content="<?php echo esc_url(site_url('/browserconfig.xml')); ?>" />
+<?php $useremail = is_user_logged_in() ? get_userdata(get_current_user_id())->user_email : ''; ?>
+<script>
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+  'email' : '<?php echo $useremail; ?>'
+});
+</script>
 </head>
 <body <?php body_class(); ?>>
 <noscript><strong>We're sorry but but sasabud.com doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>

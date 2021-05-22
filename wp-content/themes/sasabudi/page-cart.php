@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the 'policy' pages.
+ * The template for displaying the 'cart' pages.
  *
  * Template name: Page-Cart
  * 
@@ -49,7 +49,6 @@ get_header();
      * @hooked :: sasabudi_home_products_statement - 10
      */
     do_action( 'sasabudi_render_cart_page' );
-
 
   echo '</main>'; 
 

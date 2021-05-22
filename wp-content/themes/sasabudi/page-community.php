@@ -26,6 +26,13 @@ if($action) {
 
         if( $section == 'subscribed' ) {
           get_template_part( 'templates/community-subscribed', 'single' );
+          ?>
+          <script>
+            dataLayer.push({
+              'lead' : 'Newsletter'
+            });
+          </script>
+          <?php
         } 
         
         if( $section == 'unsubscribed' ) {

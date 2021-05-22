@@ -1,6 +1,6 @@
 <?php
 /**
- * The template for displaying the 'policy' pages.
+ * The template for displaying the 'checkout' pages.
  *
  * Template name: Page-Checkout
  * 
@@ -55,7 +55,7 @@ get_header('checkout');
 			endif;
 
 		echo '</div>';
-	
+
 	echo '</main>';  
 
 get_footer('checkout');
