@@ -11,7 +11,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 get_header();
 
-	echo '<main class="main" role="main">';
+	echo '<main class="main">';
 
 		echo '<div class="pagenotfound">';
 			echo '<div class="is-wrapper">';

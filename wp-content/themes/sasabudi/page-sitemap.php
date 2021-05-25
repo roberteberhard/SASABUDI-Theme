@@ -13,7 +13,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 get_header();
 
-  echo '<main class="main is-sitemap" role="main">';
+  echo '<main class="main is-sitemap">';
 
     echo '<div class="sitemap is-sitemap">';
       echo '<div class="is-wrapper">'; 

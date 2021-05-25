@@ -78,7 +78,7 @@ echo '<div id="app" class="app' . $promotion_state . ' modal-off">';
   do_action( 'sasabudi_header_desktop_note' );
 
   /** Device **/
-  echo '<header class="header-device" role="navigation">';
+  echo '<header class="header-device">';
     echo '<div class="header-device__wrapper">';
 
       /**
@@ -94,7 +94,7 @@ echo '<div id="app" class="app' . $promotion_state . ' modal-off">';
   echo '</header>';
 
   /** Desktop **/
-  echo '<header class="header-desktop" role="navigation">';
+  echo '<header class="header-desktop">';
     echo '<div class="header-desktop__wrapper">';
 
      /**

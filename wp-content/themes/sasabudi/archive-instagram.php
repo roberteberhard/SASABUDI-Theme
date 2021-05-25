@@ -11,7 +11,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 get_header();
 
-  echo '<main class="main" role="main">';
+  echo '<main class="main">';
 
     /**
      * @hooked sasabudi_page_instagram_archive - 10

@@ -35,7 +35,7 @@ get_header();
   $imprint_active = ($is_page_imprint == 1) ? ' class="policy-menu__link is-active"' : ' class="policy-menu__link"';
   $disclaimer_active = ($is_page_disclaimer == 1) ? ' class="policy-menu__link is-active"' : ' class="policy-menu__link"';
 
-  echo '<main class="main is-policy" role="main">';
+  echo '<main class="main is-policy">';
     echo '<div class="policy">';
 
       /**

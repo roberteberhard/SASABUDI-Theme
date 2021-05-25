@@ -52,7 +52,7 @@ get_header();
   $account_active = ($is_page_account == 1) ? ' class="support-menu__link is-active"' : ' class="support-menu__link"';
   $hashtag_active = ($is_page_hashtag == 1) ? ' class="support-menu__link is-active"' : ' class="support-menu__link"';
  
-  echo '<main class="main is-support" role="main">';
+  echo '<main class="main is-support">';
     echo '<div class="support">';
 
       /* Support Menu */

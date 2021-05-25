@@ -13,7 +13,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 get_header('checkout');
 
-	echo '<main class="main" role="main">';
+	echo '<main class="main">';
 		/**
 		 * Render the cart / checkout progress
 		 */

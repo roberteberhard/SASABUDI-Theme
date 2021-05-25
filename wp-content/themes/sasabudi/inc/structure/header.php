@@ -484,7 +484,7 @@ if ( ! function_exists( 'sasabudi_header_desktop_menu' ) ) {
     $is_single_blog = is_singular( 'post' ) ? ' is-blog' : '';
    
     // Build desktop menu
-    echo '<nav class="header-desktop__menu' . $is_home . '' . $is_archive_catalog . '' . $is_single_catalog . '' . $is_archive_collection . '' . $is_single_collection . '' . $is_archive_instagram . '' . $is_home_blog . '' . $is_category_blog . '' . $is_single_blog . '" id="site-navigation" role="navigation">';
+    echo '<nav class="header-desktop__menu' . $is_home . '' . $is_archive_catalog . '' . $is_single_catalog . '' . $is_archive_collection . '' . $is_single_collection . '' . $is_archive_instagram . '' . $is_home_blog . '' . $is_category_blog . '' . $is_single_blog . '" id="site-navigation">';
       if ( has_nav_menu( 'primary' ) ) :
         wp_nav_menu(
           array(

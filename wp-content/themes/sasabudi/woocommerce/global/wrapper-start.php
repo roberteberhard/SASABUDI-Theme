@@ -24,30 +24,30 @@ $template = wc_get_theme_slug_for_templates();
 
 switch ( $template ) {
   case 'binspired' :
-    echo '<main class="main" role="main">';
+    echo '<main class="main">';
     break;
   case 'sasabudi' :
-    echo '<main class="main is-statement" role="main">';
+    echo '<main class="main is-statement">';
     break;
   case 'littlerocker' :
-    echo '<main class="main" role="main">';
+    echo '<main class="main">';
     break;
   case 'robhisattwa' :
-    echo '<main class="main" role="main">';
+    echo '<main class="main">';
     break;
   case 'pokertees' :
-    echo '<main class="main" role="main">';
+    echo '<main class="main">';
     break;
   case 'nunopi' :
-    echo '<main class="main" role="main">';
+    echo '<main class="main">';
     break;
   case 'robyhard' :
-    echo '<main class="main" role="main">';
+    echo '<main class="main">';
     break;
   case 'feelbrazeel' :
-    echo '<main class="main" role="main">';
+    echo '<main class="main">';
     break;
   default :
-  echo '<main class="main" role="main">';
+  echo '<main class="main">';
     break;
 }

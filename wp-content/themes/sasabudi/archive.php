@@ -29,7 +29,7 @@ endif;
 
 get_header();
 
-  echo '<main class="main" role="main">';
+  echo '<main class="main">';
     echo '<div class="blog">';
 
       if ( have_posts() ) :

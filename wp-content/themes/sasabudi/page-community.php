@@ -22,7 +22,7 @@ if($action) {
 
     get_header();
 
-      echo '<main class="main" role="main">';
+      echo '<main class="main">';
 
         if( $section == 'subscribed' ) {
           get_template_part( 'templates/community-subscribed', 'single' );

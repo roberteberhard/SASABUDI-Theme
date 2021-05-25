@@ -21,7 +21,7 @@ if ( ! function_exists( 'sasabudi_offset_menu' ) ) {
     if ( SASABUDI_WOOCOMMERCE_IS_ACTIVE ) :
 
       // Build left offset navigation
-      echo '<nav class="offset-left__nav" role="navigation">';
+      echo '<nav class="offset-left__nav">';
       
         echo '<div class="offset-left__head">';
           
@@ -229,7 +229,7 @@ if ( ! function_exists( 'sasabudi_offset_filters' ) ) {
       $reset = strpos($url, '?');
       $shorten = $reset ? ' shorten' : '';
       
-      echo '<nav class="offset-left__filter" id="filter-menu" role="navigation">';
+      echo '<nav class="offset-left__filter" id="filter-menu">';
         
         // Head
         echo '<div class="offset-left__head">';

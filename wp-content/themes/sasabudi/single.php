@@ -32,7 +32,7 @@ endif;
 
 get_header();
 
-  echo '<main class="main" role="main">';
+  echo '<main class="main">';
     echo '<div class="post">';
 
       if ( have_posts() ) :

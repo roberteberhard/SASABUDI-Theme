@@ -13,7 +13,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 get_header();
 
-  echo '<main class="main is-about" role="main">';
+  echo '<main class="main is-about">';
 
     // Settings
     $page_id    = get_the_ID();

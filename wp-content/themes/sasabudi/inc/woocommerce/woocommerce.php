@@ -725,7 +725,7 @@ if ( ! function_exists( 'sasabudi_product_single_breadcrumb' ) ) {
 				    $product_link = get_field('next_product_link');
 
             // Build summary navigation
-            echo '<div class="summary-navigation" role="navigation">';
+            echo '<div class="summary-navigation">';
 
               if ( $product_title && $product_link ) {
                 

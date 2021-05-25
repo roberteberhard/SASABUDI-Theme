@@ -13,7 +13,7 @@ if( ! defined( 'ABSPATH' ) ) exit;
 
 get_header();
 
-  echo '<main class="main" role="main">';
+  echo '<main class="main">';
   
     /**
      * @hooked :: sasabudi_home_products_banner             - 10
