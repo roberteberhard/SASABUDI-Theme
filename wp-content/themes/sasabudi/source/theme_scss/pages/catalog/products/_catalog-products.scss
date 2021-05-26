@@ -31,7 +31,6 @@
 
       a {
         display: block;
-        overflow: hidden;
 
         .product-image {
           display: block;
@@ -42,9 +41,9 @@
           &__secondary {
             opacity: 0;
             display: block;
+            overflow: hidden;
             width: 100%;
             height: auto;
-            overflow: hidden;
             position: absolute;
             z-index: 1;
             top: 0;
@@ -56,10 +55,11 @@
           }
 
           &__primary {
+            opacity: 0;
             display: block;
+            overflow: hidden;
             width: 100%;
             height: auto;
-            opacity: 0;
             background-color: $white-light;
             transition: opacity $image-transition ease-in-out 0ms;
             -webkit-backface-visibility: hidden;

@@ -124,11 +124,14 @@ foreach ( $product_attribute as $variant) {
 ?>
 
 <script>
-dataLayer.push({ ecommerce: null });  // Clear the previous ecommerce object.
 dataLayer.push({
   'event': 'view_item',
   'ecommerce': {
     'currency': '<?php echo get_woocommerce_currency(); ?>',
+    'quantity': '1',
+    'product_id': '<?php echo $product_id; ?>',
+    'product_category': '<?php echo $categroy[0]; ?>',
+    'value': '<?php echo $product->get_price(); ?>',
     'items': [{
       'item_name': '<?php echo get_the_title(); ?>', // Name or ID is required.
       'item_id': '<?php echo $product_id; ?>',
@@ -145,20 +148,18 @@ dataLayer.push({
       'index': '',  // If associated with a list selection.
       'quantity': '1'
     }],
-		'line_items': [{ // Used for Pinterest!
+    'line_items': [{ // Used for Pinterest!
       'product_name': '<?php echo get_the_title(); ?>',
       'product_id': '<?php echo $product_id; ?>',
-			'product_category': '<?php echo $categroy[0]; ?>',
-			'product_variant': '<?php echo $product_variant[0]; ?>',
-			'product_price': '<?php echo $product->get_price(); ?>',
-			'product_quantity': '1',
+      'product_category': '<?php echo $categroy[0]; ?>',
+      'product_variant': '<?php echo $product_variant[0]; ?>',
+      'product_price': '<?php echo $product->get_price(); ?>',
+      'product_quantity': '1',
       'product_brand': 'SASABUDI'
-    }],
-    'value': '<?php echo $product->get_price(); ?>'
+    }]
   }
 });
 </script>
-
 
 <script>
 // Measure when a product is added to a shopping cart
@@ -167,24 +168,35 @@ dataLayer.push({
   'event': 'add_to_cart',
   'ecommerce': {
     'currency': '<?php echo get_woocommerce_currency(); ?>',
+    'quantity': '1',
+    'product_id': '<?php echo $product_id; ?>',
+    'product_category': '<?php echo $categroy[0]; ?>',
+    'value': '<?php echo $product->get_price(); ?>',
     'items': [{
       'item_name': '<?php echo get_the_title(); ?>', // Name or ID is required.
       'item_id': '<?php echo $product_id; ?>',
       'affiliation': 'sasabudi online shop',
       'price': '<?php echo $product->get_price(); ?>',
-      'currency': '<?php echo get_woocommerce_currency(); ?>',
       'item_brand': 'SASABUDI',
       'item_category': '<?php echo $categroy[0]; ?>',
       'item_category2': '<?php echo $attribute_name; ?>',
       'item_category3': '',
       'item_category4': '',
       'item_variant': '<?php echo $product_variant[0]; ?>',
-      'item_list_name': '',
-      'item_list_id': '',
-      'index': '',
+      'item_list_name': '',  // If associated with a list selection.
+      'item_list_id': '',  // If associated with a list selection.
+      'index': '',  // If associated with a list selection.
       'quantity': '1'
     }],
-    'value': '<?php echo $product->get_price(); ?>'
+    'line_items': [{ // Used for Pinterest!
+      'product_name': '<?php echo get_the_title(); ?>',
+      'product_id': '<?php echo $product_id; ?>',
+      'product_category': '<?php echo $categroy[0]; ?>',
+      'product_variant': '<?php echo $product_variant[0]; ?>',
+      'product_price': '<?php echo $product->get_price(); ?>',
+      'product_quantity': '1',
+      'product_brand': 'SASABUDI'
+    }]
   }
 });
 </script>

@@ -144,4 +144,26 @@ get_header();
    */
   do_action( 'woocommerce_after_main_content' );
 
+
+
+  if( is_shop() || is_product_category() ) {
+
+    /**
+     * DataLayer - Category Event
+     */
+    $title = is_product_category() ? single_cat_title() : 'All';
+    ?>
+
+    <script>
+     dataLayer.push({
+      'viewcategory' : 'Category',
+      'ecommerce': {
+        'product_category' : '<?php echo $title ?>'
+      }
+     });
+    </script>
+
+   <?php
+  }
+
 get_footer();

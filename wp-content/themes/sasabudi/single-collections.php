@@ -18,6 +18,20 @@ get_header();
      */
     do_action( 'sasabudi_render_collections_single' );
 
+    /**
+     * DataLayer - Custom Event
+     */
+    $collection_name = get_field('ws_collection_title');
+    ?>
+
+    <script>
+     dataLayer.push({
+      'custom' : 'Collection',
+      'collection_name' : '<?php echo $collection_name ?>'
+     });
+    </script>
+
+  <?php
   echo '</main>';
 
 get_footer();
