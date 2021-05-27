@@ -71,6 +71,15 @@ echo '<div class="dashboard-links">';
 		echo '</a>';
 	echo '</div>';
 echo '</div>';
+?>
+
+<script>
+dataLayer.push({
+ 'lead' : 'Dashboard'
+});
+</script>
+
+<?php
 
 /**
  * My Account dashboard.

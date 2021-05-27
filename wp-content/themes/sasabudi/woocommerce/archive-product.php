@@ -151,7 +151,8 @@ get_header();
     /**
      * DataLayer - Category Event
      */
-    $title = is_product_category() ? single_cat_title() : 'All';
+    $title = is_product_category() ? single_cat_title('', false) : 'All';
+
     ?>
 
     <script>
