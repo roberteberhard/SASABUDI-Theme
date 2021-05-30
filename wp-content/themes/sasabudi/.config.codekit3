@@ -384,6 +384,14 @@
       "oAP" : "\/functions\/wordpress\/maintenance.php",
       "oF" : 0
     },
+    "\/functions\/wordpress\/pinterest.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/functions\/wordpress\/pinterest.php",
+      "oF" : 0
+    },
     "\/functions\/wordpress\/post-types.php" : {
       "cB" : 0,
       "ft" : 8192,

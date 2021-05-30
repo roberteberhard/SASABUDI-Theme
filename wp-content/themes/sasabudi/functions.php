@@ -19,6 +19,7 @@ include_once( get_template_directory() . '/functions/wordpress/sendy-form.php' )
 include_once( get_template_directory() . '/functions/wordpress/post-types.php' );
 include_once( get_template_directory() . '/functions/wordpress/walker.php' );
 include_once( get_template_directory() . '/functions/wordpress/maintenance.php' );
+include_once( get_template_directory() . '/functions/wordpress/pinterest.php' );
 
 // WooCommerce
 if( SASABUDI_WOOCOMMERCE_IS_ACTIVE ) {

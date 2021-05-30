@@ -7,7 +7,7 @@
  * @since 1.0.0
  */
  
-  if( ! defined( 'ABSPATH' ) ) exit;
+if( ! defined( 'ABSPATH' ) ) exit;
 ?>
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>

@@ -94,10 +94,9 @@ export const AppSearch = () => {
 
           if(results.products.length > 0) {
             clearTimeout(elements.resultTimeout)
-
             const resultAmount = `<p class="found-products">We found <strong>${results.products.length}</strong> products for <strong>"${typingVal}"</strong></p>`
             const resultProducts = `
-              ${results.products.length ? '<div class="app-search__wrapper"><ul class="results">' : ''}
+              ${results.products.length ? `<div id="ajaxsearchresults" data-search="${typingVal}" class="app-search__wrapper"><ul class="results">` : ''}
                 ${results.products.map(item => `<li class="result-item" data-id="${item.id}"><article class="result-article"><a href="${item.permalink}" tabindex="0"><div class="result-article__figure"><img class="result-article__figure--secondary lazy-img" id="r-${item.id}" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="${item.alt}" data-src="${item.secondary}"><img class="result-article__figure--primary lazy-img" src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="100%" heigth="100%" alt="${item.alt}" data-src="${item.primary}"></div>${item.sale == 1 ? '<div class="result-article__sale">Sale</div>' : ''}<div class="result-article__desc"><div class="item-box"><div class="item-box__model">${item.title}</div><div class="item-box__price">${item.price}</div><div class="item-box__color">${item.colors}</div></div></div></a></article></li>`).join('')}
               ${results.products.length ? '</ul></div>' : ''}`  
             searchResults.innerHTML = resultAmount
