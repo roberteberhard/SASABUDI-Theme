@@ -26,6 +26,17 @@ get_header();
      */
     do_action( 'sasabudi_render_homepage_sections_custom_categories' ); 
 
+    /**
+     * DataLayer - Viewcontent :: Home
+     */
+    ?>
+    <script>
+      dataLayer.push({
+        'viewcontent' : 'Home'
+      });
+    </script>
+    <?php
+
   echo '</main>';
 
 get_footer();

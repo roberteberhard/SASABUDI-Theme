@@ -26,6 +26,10 @@ if($action) {
 
         if( $section == 'subscribed' ) {
           get_template_part( 'templates/community-subscribed', 'single' );
+
+          /**
+           * DataLayer - Lead :: Newsletter
+           */
           ?>
           <script>
             dataLayer.push({

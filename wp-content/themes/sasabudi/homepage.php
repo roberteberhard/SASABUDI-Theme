@@ -24,7 +24,18 @@ get_header();
      * @hooked :: sasabudi_home_artist_blog         - 60
      * @hooked :: sasabudi_home_instagram_feed      - 70
      */
-    do_action( 'sasabudi_render_homepage_sections' ); 
+    do_action( 'sasabudi_render_homepage_sections' );
+    
+    /**
+     * DataLayer - Viewcontent :: Home
+     */
+    ?>
+    <script>
+      dataLayer.push({
+        'viewcontent' : 'Home'
+      });
+    </script>
+    <?php
 
   echo '</main>';
 

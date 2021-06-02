@@ -19,7 +19,7 @@ get_header();
     do_action( 'sasabudi_render_collections_single' );
 
     /**
-     * DataLayer - Custom Event
+     * DataLayer - Custom :: Collection
      */
     $collection_name = get_field('ws_collection_title');
     ?>
@@ -32,6 +32,7 @@ get_header();
     </script>
 
   <?php
+  
   echo '</main>';
 
 get_footer();

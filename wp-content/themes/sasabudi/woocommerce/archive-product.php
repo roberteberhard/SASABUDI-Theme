@@ -144,12 +144,10 @@ get_header();
    */
   do_action( 'woocommerce_after_main_content' );
 
-
-
   if( is_shop() || is_product_category() ) {
 
     /**
-     * DataLayer - Category Event
+     * DataLayer - Viewcategory :: Category
      */
     $title = is_product_category() ? single_cat_title('', false) : 'All';
 

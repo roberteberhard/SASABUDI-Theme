@@ -71,6 +71,10 @@ echo '<div class="dashboard-links">';
 		echo '</a>';
 	echo '</div>';
 echo '</div>';
+
+/**
+ * DataLayer - Dashboard
+ */
 ?>
 
 <script>
