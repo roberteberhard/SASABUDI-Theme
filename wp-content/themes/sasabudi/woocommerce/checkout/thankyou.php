@@ -185,7 +185,16 @@ $categroy = array_merge(array_diff($product_cat, array('New Arrivals', 'On Our R
       'product_price': '<?php echo number_format($order->get_line_subtotal($item), 2, ".", ""); ?>',
       'product_quantity': '<?php echo $item['qty']; ?>',
       'product_brand': 'SASABUDI'
-     }
+     },
+<?php endforeach; ?>
+    ],
+    'contents': [ // Used for Facebook!
+<?php foreach($order->get_items() as $key => $item): ?>
+      { 
+        'id': '<?php echo $item['product_id']; ?>',
+        'product': '<?php echo $item['name']; ?>',
+        'quantity': '<?php echo $item['qty']; ?>'
+      },
 <?php endforeach; ?>
     ],
     'order_quantity' : '<?php echo $quantity; ?>'

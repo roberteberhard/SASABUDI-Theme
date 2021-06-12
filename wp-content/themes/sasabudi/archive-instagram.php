@@ -18,6 +18,17 @@ get_header();
      */
     do_action( 'sasabudi_render_instagram_archive' );
 
+    /**
+     * DataLayer - Viewcontent :: Instagram
+     */
+    ?>
+    <script>
+      dataLayer.push({
+        'viewcontent' : 'Instagram'
+      });
+    </script>
+    <?php
+
   echo '</main>';
 
 get_footer();

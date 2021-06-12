@@ -132,6 +132,7 @@ dataLayer.push({
     'product_id': '<?php echo $product_id; ?>',
     'product_category': '<?php echo $categroy[0]; ?>',
     'value': '<?php echo $product->get_price(); ?>',
+    'item_name': '<?php echo get_the_title(); ?>',
     'items': [{
       'item_name': '<?php echo get_the_title(); ?>', // Name or ID is required.
       'item_id': '<?php echo $product_id; ?>',
@@ -156,6 +157,10 @@ dataLayer.push({
       'product_price': '<?php echo $product->get_price(); ?>',
       'product_quantity': '1',
       'product_brand': 'SASABUDI'
+    }],
+    'contents': [{ // Used for Facebook!
+      'id': '<?php echo $product_id; ?>',
+      'quantity': 1
     }]
   }
 });
@@ -172,6 +177,7 @@ dataLayer.push({
     'product_id': '<?php echo $product_id; ?>',
     'product_category': '<?php echo $categroy[0]; ?>',
     'value': '<?php echo $product->get_price(); ?>',
+    'item_name': '<?php echo get_the_title(); ?>',
     'items': [{
       'item_name': '<?php echo get_the_title(); ?>', // Name or ID is required.
       'item_id': '<?php echo $product_id; ?>',
@@ -196,6 +202,10 @@ dataLayer.push({
       'product_price': '<?php echo $product->get_price(); ?>',
       'product_quantity': '1',
       'product_brand': 'SASABUDI'
+    }],
+    'contents': [{ // Used for Facebook!
+      'id': '<?php echo $product_id; ?>',
+      'quantity': 1
     }]
   }
 });

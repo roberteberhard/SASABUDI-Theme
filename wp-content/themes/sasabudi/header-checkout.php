@@ -18,9 +18,9 @@
 <?php wp_head(); ?>
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/barlow-semi-condensed/barlow-semi-condensed-v6-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/barlow-semi-condensed/barlow-semi-condensed-v6-latin-500.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/barlow-semi-condensed/barlow-semi-condensed-v6-latin-700.woff2" as="font" type="font/woff2" crossorigin">
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/barlow-condensed/barlow-condensed-v5-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/barlow-condensed/barlow-condensed-v5-latin-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="<?php echo get_template_directory_uri(); ?>/fonts/serif/pt-serif-v12-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="logo" type="image/png" href="<?php echo esc_url(site_url('/wp-data/icons/sasabudi.png')); ?>" />
 <link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php echo esc_url(site_url('/wp-data/icons/apple-touch-icon-57x57.png')); ?>" />
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="<?php echo esc_url(site_url('/wp-data/icons/apple-touch-icon-114x114.png')); ?>" />

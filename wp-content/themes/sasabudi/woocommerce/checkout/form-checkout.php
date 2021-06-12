@@ -102,3 +102,22 @@ echo '</form>';
  * Hook :: After Checkout Form
  */
 echo do_action( 'woocommerce_after_checkout_form', $checkout );
+
+
+/**
+ * Tag type: FB Event / initiateCheckout
+ */
+?>
+
+<script>
+dataLayer.push({
+  'event': 'initiateCheckout',
+  'contents': [ // Used for Facebook!
+    { 
+      'id': 'a',
+      'product': 'b',
+      'quantity': 'c'
+    }
+  ]
+});
+</script>

@@ -16,7 +16,18 @@ get_header();
     /**   
      * @hooked sasabudi_page_collections_archive - 10
      */
-    do_action( 'sasabudi_render_collections_archive' );	
+    do_action( 'sasabudi_render_collections_archive' );
+
+    /**
+     * DataLayer - Viewcontent :: Collections
+     */
+    ?>
+    <script>
+      dataLayer.push({
+        'viewcontent' : 'Collections'
+      });
+    </script>
+    <?php
 
   echo '</main>';
 
