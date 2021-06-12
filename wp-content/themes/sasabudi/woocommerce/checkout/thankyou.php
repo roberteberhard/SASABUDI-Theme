@@ -192,7 +192,7 @@ $categroy = array_merge(array_diff($product_cat, array('New Arrivals', 'On Our R
 <?php foreach($order->get_items() as $key => $item): ?>
       { 
         'id': '<?php echo $item['product_id']; ?>',
-        'product': '<?php echo $item['name']; ?>',
+        'product': '<?php echo esc_html(get_the_title($item['product_id'])); ?>',
         'quantity': '<?php echo $item['qty']; ?>'
       },
 <?php endforeach; ?>

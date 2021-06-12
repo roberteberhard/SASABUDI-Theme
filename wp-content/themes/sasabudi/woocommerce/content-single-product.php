@@ -160,6 +160,7 @@ dataLayer.push({
     }],
     'contents': [{ // Used for Facebook!
       'id': '<?php echo $product_id; ?>',
+      'product': '<?php echo get_the_title(); ?>',
       'quantity': 1
     }]
   }
@@ -205,6 +206,7 @@ dataLayer.push({
     }],
     'contents': [{ // Used for Facebook!
       'id': '<?php echo $product_id; ?>',
+      'product': '<?php echo get_the_title(); ?>',
       'quantity': 1
     }]
   }

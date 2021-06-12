@@ -107,17 +107,21 @@ echo do_action( 'woocommerce_after_checkout_form', $checkout );
 /**
  * Tag type: FB Event / initiateCheckout
  */
+$cart_item_count = WC()->cart->get_cart_contents_count();
 ?>
 
 <script>
 dataLayer.push({
   'event': 'initiateCheckout',
   'contents': [ // Used for Facebook!
-    { 
-      'id': 'a',
-      'product': 'b',
-      'quantity': 'c'
-    }
-  ]
+<?php foreach ( WC()->cart->get_cart() as $cart_item_key => $cart_item ) : ?> 
+  {
+    'id': '<?php echo $cart_item['product_id']; ?>',
+    'product': '<?php echo esc_html(get_the_title($cart_item['product_id'])); ?>',
+    'quantity': '<?php echo $cart_item['quantity']; ?>'
+  }
+<?php endforeach; ?>
+  ],
+	'order_quantity' : '<?php echo $cart_item_count; ?>'
 });
 </script>
