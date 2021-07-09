@@ -40,7 +40,7 @@ function sasabudi_create_pinterest_sitemap() {
     $product_attribute = '';
     if ($product_category == 'Mugs') {
       $attribute = $product->get_attribute( 'pa_model' );
-      $product_attribute = $attribute == 'Coffee Mug' ? ' > Coffee Mug' : '';
+      $product_attribute = $attribute == 'Coffee Mug' ? ' &gt; Coffee Mug' : '';
     }
 
     // product image
