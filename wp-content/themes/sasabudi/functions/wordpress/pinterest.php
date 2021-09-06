@@ -39,8 +39,9 @@ function sasabudi_create_pinterest_sitemap() {
     // product attribute
     $product_attribute = '';
     if ($product_category == 'Mugs') {
-      $attribute = $product->get_attribute( 'pa_model' );
-      $product_attribute = $attribute == 'Coffee Mug' ? ' &gt; Coffee Mug' : '';
+      $google_product_category = 'Home &amp; Garden &gt; Decor';
+      // $attribute = $product->get_attribute( 'pa_model' );
+      // $product_attribute = $attribute == 'Coffee Mug' ? ' &gt; Coffee Mug' : '';
     }
 
     // product image
@@ -59,7 +60,7 @@ function sasabudi_create_pinterest_sitemap() {
     $sitemap .= "\n" . '<title>' . $product_title . '</title>';
     $sitemap .= "\n" . '<description>' . strip_tags_content($product_description) . '</description>';
     $sitemap .= "\n" . '<g:product_type>' . $product_category . '</g:product_type>';
-    $sitemap .= "\n" . '<g:google_product_category>' . $product_category . $product_attribute . '</g:google_product_category>';
+    $sitemap .= "\n" . '<g:google_product_category>' . $google_product_category . '</g:google_product_category>';
     $sitemap .= "\n" . '<link>' . $product_link . '</link>';
     $sitemap .= "\n" . '<g:image_link>' . $product_imagelink . '</g:image_link>';
     $sitemap .= "\n" . '<g:price>' . $product_price . ' ' . $product_currency . '</g:price>';
