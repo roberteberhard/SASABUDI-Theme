@@ -3586,6 +3586,14 @@
       "oAP" : "\/woocommerce\/notices\/success.php",
       "oF" : 0
     },
+    "\/woocommerce\/order\/order-details-customer Kopie.php" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/woocommerce\/order\/order-details-customer Kopie.php",
+      "oF" : 0
+    },
     "\/woocommerce\/order\/order-details-customer.php" : {
       "cB" : 0,
       "ft" : 8192,

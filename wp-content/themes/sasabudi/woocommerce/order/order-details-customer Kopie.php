@@ -21,7 +21,7 @@ defined( 'ABSPATH' ) || exit;
 $show_shipping = ! wc_ship_to_billing_address_only() && $order->needs_shipping_address();
 
 echo '<section class="woocommerce-customer-details">';
- 
+
 	// Customer details
 	echo '<section class="woocommerce-columns">';
 		
@@ -50,7 +50,7 @@ echo '<section class="woocommerce-customer-details">';
 	endif;
 
 	// h3
-	echo '<h3 class="woocommerce-column__title">' . esc_html__( 'Billing address', 'sasabudi' ) . '</h3>';
+	echo '<h3 class="woocommerce-column__title">' . esc_html_e( 'Billing address', 'sasabudi' ) . '</h3>';
 
 	echo '<address>';
 		echo wp_kses_post( $order->get_formatted_billing_address( esc_html__( 'N/A', 'sasabudi' ) ) );
