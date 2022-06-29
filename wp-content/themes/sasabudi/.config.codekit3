@@ -7,7 +7,7 @@
       "uuidString" : "2EA33F9A-128B-402A-B440-FF309013A0B7"
     }
   ],
-  "creatorBuild" : "34127",
+  "creatorBuild" : "34214",
   "files" : {
     "\/404.php" : {
       "cB" : 0,
@@ -867,7 +867,7 @@
       "oA" : 0,
       "oAP" : "\/js\/scripts.min.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/languages\/de_DE.mo" : {
@@ -1068,6 +1068,7 @@
     "\/source\/node_modules\/@glidejs\/glide\/src\/assets\/sass\/_variables.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1082,6 +1083,7 @@
     "\/source\/node_modules\/@glidejs\/glide\/src\/assets\/sass\/glide.core.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1096,6 +1098,7 @@
     "\/source\/node_modules\/@glidejs\/glide\/src\/assets\/sass\/glide.theme.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1115,7 +1118,7 @@
       "oA" : 1,
       "oAP" : "\/source\/node_modules\/jump.js\/dist\/jump.module.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/package-lock.json" : {
@@ -1148,6 +1151,7 @@
     "\/source\/sasabudi.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1167,7 +1171,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/base\/app-banner.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/base\/app-faq.js" : {
@@ -1178,7 +1182,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/base\/app-faq.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/base\/app-modal.js" : {
@@ -1200,7 +1204,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/base\/app-observer.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/base\/app-search.js" : {
@@ -1211,7 +1215,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/base\/app-search.js",
       "oF" : 1,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/base\/app-sticky.js" : {
@@ -1222,7 +1226,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/base\/app-sticky.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/base\/app-swipers.js" : {
@@ -1233,7 +1237,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/base\/app-swipers.js",
       "oF" : 1,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/catalog\/catalog-bestseller.js" : {
@@ -1244,7 +1248,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/catalog\/catalog-bestseller.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/catalog\/catalog-featuring.js" : {
@@ -1255,7 +1259,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/catalog\/catalog-featuring.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/footer\/footer-menu.js" : {
@@ -1266,7 +1270,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/footer\/footer-menu.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/footer\/footer-scroll.js" : {
@@ -1277,7 +1281,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/footer\/footer-scroll.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/footer\/footer-signup.js" : {
@@ -1288,7 +1292,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/footer\/footer-signup.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/offset\/left\/offset-menu.js" : {
@@ -1299,7 +1303,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/offset\/left\/offset-menu.js",
       "oF" : 1,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/shop\/shop-notice.js" : {
@@ -1310,7 +1314,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/shop\/shop-notice.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/store\/store-selection.js" : {
@@ -1321,7 +1325,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/store\/store-selection.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/components\/wishlist\/app-wishlist.js" : {
@@ -1332,7 +1336,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/components\/wishlist\/app-wishlist.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/account\/app-account.js" : {
@@ -1343,7 +1347,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/account\/app-account.js",
       "oF" : 1,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/blog\/app-blog.js" : {
@@ -1354,7 +1358,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/blog\/app-blog.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/cart\/app-cart.js" : {
@@ -1365,7 +1369,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/cart\/app-cart.js",
       "oF" : 1,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/catalog\/app-swatches.js" : {
@@ -1376,7 +1380,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/catalog\/app-swatches.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/collections\/archive-collections.js" : {
@@ -1387,7 +1391,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/collections\/archive-collections.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/instagram\/archive-instagram.js" : {
@@ -1398,7 +1402,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/instagram\/archive-instagram.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/policy\/app-policy.js" : {
@@ -1409,7 +1413,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/policy\/app-policy.js",
       "oF" : 1,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/support\/app-support.js" : {
@@ -1420,7 +1424,7 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/support\/app-support.js",
       "oF" : 1,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_js\/pages\/support\/contact-form.js" : {
@@ -1431,12 +1435,13 @@
       "oA" : 1,
       "oAP" : "\/source\/theme_js\/pages\/support\/contact-form.js",
       "oF" : 0,
-      "sC" : 1,
+      "sC" : 3,
       "tS" : 0
     },
     "\/source\/theme_scss\/base\/_animations.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1451,6 +1456,7 @@
     "\/source\/theme_scss\/base\/_app.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1465,6 +1471,7 @@
     "\/source\/theme_scss\/base\/_button.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1479,6 +1486,7 @@
     "\/source\/theme_scss\/base\/_checkbox.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1493,6 +1501,7 @@
     "\/source\/theme_scss\/base\/_complianz.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1507,6 +1516,7 @@
     "\/source\/theme_scss\/base\/_fonts.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1521,6 +1531,7 @@
     "\/source\/theme_scss\/base\/_forms.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1535,6 +1546,7 @@
     "\/source\/theme_scss\/base\/_generic.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1549,6 +1561,7 @@
     "\/source\/theme_scss\/base\/_mixins.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1563,6 +1576,7 @@
     "\/source\/theme_scss\/base\/_radio.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1577,6 +1591,7 @@
     "\/source\/theme_scss\/base\/_reset.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1591,6 +1606,7 @@
     "\/source\/theme_scss\/base\/_select2.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1605,6 +1621,7 @@
     "\/source\/theme_scss\/base\/_svg.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1619,6 +1636,7 @@
     "\/source\/theme_scss\/base\/_typography.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1633,6 +1651,7 @@
     "\/source\/theme_scss\/base\/_variables.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1647,6 +1666,7 @@
     "\/source\/theme_scss\/components\/catalog\/_catalog-bestseller.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1661,6 +1681,7 @@
     "\/source\/theme_scss\/components\/catalog\/_catalog-featuring.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1675,6 +1696,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer-bottom.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1689,6 +1711,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer-middle.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1703,6 +1726,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer-notice.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1717,6 +1741,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer-signup.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1731,6 +1756,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer-subscription.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1745,6 +1771,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer-top.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1759,6 +1786,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer-wishlist.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1773,6 +1801,7 @@
     "\/source\/theme_scss\/components\/footer\/_footer.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1787,6 +1816,7 @@
     "\/source\/theme_scss\/components\/header\/_header-desktop.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1801,6 +1831,7 @@
     "\/source\/theme_scss\/components\/header\/_header-device.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1815,6 +1846,7 @@
     "\/source\/theme_scss\/components\/header\/_header-promo.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1829,6 +1861,7 @@
     "\/source\/theme_scss\/components\/header\/_note-desktop.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1843,6 +1876,7 @@
     "\/source\/theme_scss\/components\/header\/_note-device.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1857,6 +1891,7 @@
     "\/source\/theme_scss\/components\/offset\/left\/_offset-filter.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1871,6 +1906,7 @@
     "\/source\/theme_scss\/components\/offset\/left\/_offset-left.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1885,6 +1921,7 @@
     "\/source\/theme_scss\/components\/offset\/left\/_offset-menu.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1899,6 +1936,7 @@
     "\/source\/theme_scss\/components\/offset\/right\/_offset-cart.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1913,6 +1951,7 @@
     "\/source\/theme_scss\/components\/offset\/right\/_offset-right.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1927,6 +1966,7 @@
     "\/source\/theme_scss\/components\/search\/_app-search.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1941,6 +1981,7 @@
     "\/source\/theme_scss\/components\/shop\/_app-notice-classic.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1955,6 +1996,7 @@
     "\/source\/theme_scss\/components\/shop\/_app-notice-custom.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1969,6 +2011,7 @@
     "\/source\/theme_scss\/components\/shop\/_app-shop.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1983,6 +2026,7 @@
     "\/source\/theme_scss\/components\/stores\/_storeselection.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -1997,6 +2041,7 @@
     "\/source\/theme_scss\/pages\/about\/_single-about.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2011,6 +2056,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-address.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2025,6 +2071,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-downloads.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2039,6 +2086,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-menu.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2053,6 +2101,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-orders.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2067,6 +2116,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-payment.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2081,6 +2131,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-settings.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2095,6 +2146,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-view-order.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2109,6 +2161,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content-wishlist.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2123,6 +2176,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-content.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2137,6 +2191,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-login-aside.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2151,6 +2206,7 @@
     "\/source\/theme_scss\/pages\/account\/_account-login.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2165,6 +2221,7 @@
     "\/source\/theme_scss\/pages\/blog\/_archive-blog.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2179,6 +2236,7 @@
     "\/source\/theme_scss\/pages\/blog\/_single-blog.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2193,6 +2251,7 @@
     "\/source\/theme_scss\/pages\/cart\/_cart_cart.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2207,6 +2266,7 @@
     "\/source\/theme_scss\/pages\/cart\/_cart-collaterals.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2221,6 +2281,7 @@
     "\/source\/theme_scss\/pages\/cart\/_cart-empty.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2235,6 +2296,7 @@
     "\/source\/theme_scss\/pages\/cart\/_cart-free-shipping.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2249,6 +2311,7 @@
     "\/source\/theme_scss\/pages\/cart\/_cart-listing.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2263,6 +2326,7 @@
     "\/source\/theme_scss\/pages\/cart\/_cart.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2277,6 +2341,7 @@
     "\/source\/theme_scss\/pages\/catalog\/archive\/_catalog-archive.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2291,6 +2356,7 @@
     "\/source\/theme_scss\/pages\/catalog\/archive\/_catalog-header.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2305,6 +2371,7 @@
     "\/source\/theme_scss\/pages\/catalog\/archive\/_catalog-pagination.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2319,6 +2386,7 @@
     "\/source\/theme_scss\/pages\/catalog\/products\/_catalog-products.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2333,6 +2401,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-entry.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2347,6 +2416,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-gallery.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2361,6 +2431,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-recently.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2375,6 +2446,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-related.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2389,6 +2461,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-summary.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2403,6 +2476,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-swipe.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2417,6 +2491,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-tabs.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2431,6 +2506,7 @@
     "\/source\/theme_scss\/pages\/catalog\/single\/_catalog-tagged.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2445,6 +2521,7 @@
     "\/source\/theme_scss\/pages\/checkout\/_checkout-collateral-payment.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2459,6 +2536,7 @@
     "\/source\/theme_scss\/pages\/checkout\/_checkout-collateral.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2473,6 +2551,7 @@
     "\/source\/theme_scss\/pages\/checkout\/_checkout-listing.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2487,6 +2566,7 @@
     "\/source\/theme_scss\/pages\/checkout\/_checkout-pay.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2501,6 +2581,7 @@
     "\/source\/theme_scss\/pages\/checkout\/_checkout-thankyou.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2515,6 +2596,7 @@
     "\/source\/theme_scss\/pages\/checkout\/_checkout.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2529,6 +2611,7 @@
     "\/source\/theme_scss\/pages\/collections\/_archive-collections.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2543,6 +2626,7 @@
     "\/source\/theme_scss\/pages\/collections\/_single-collections.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2557,6 +2641,7 @@
     "\/source\/theme_scss\/pages\/community\/_single-community.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2571,6 +2656,7 @@
     "\/source\/theme_scss\/pages\/error\/_single-error.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2585,6 +2671,7 @@
     "\/source\/theme_scss\/pages\/home\/_banner.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2599,6 +2686,7 @@
     "\/source\/theme_scss\/pages\/home\/_blog.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2613,6 +2701,7 @@
     "\/source\/theme_scss\/pages\/home\/_categories.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2627,6 +2716,7 @@
     "\/source\/theme_scss\/pages\/home\/_collections.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2641,6 +2731,7 @@
     "\/source\/theme_scss\/pages\/home\/_instagram.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2655,6 +2746,7 @@
     "\/source\/theme_scss\/pages\/home\/_statements.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2669,6 +2761,7 @@
     "\/source\/theme_scss\/pages\/home\/_trending.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2683,6 +2776,7 @@
     "\/source\/theme_scss\/pages\/instagram\/_archive-instagram.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2697,6 +2791,7 @@
     "\/source\/theme_scss\/pages\/maintenance\/maintenance.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2711,6 +2806,7 @@
     "\/source\/theme_scss\/pages\/policy\/_policy-content.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2725,6 +2821,7 @@
     "\/source\/theme_scss\/pages\/policy\/_policy-menu.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2739,6 +2836,7 @@
     "\/source\/theme_scss\/pages\/sitemap\/_sitemap.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2753,6 +2851,7 @@
     "\/source\/theme_scss\/pages\/support\/_support-contact.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2767,6 +2866,7 @@
     "\/source\/theme_scss\/pages\/support\/_support-content.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2781,6 +2881,7 @@
     "\/source\/theme_scss\/pages\/support\/_support-faq.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -2795,6 +2896,7 @@
     "\/source\/theme_scss\/pages\/support\/_support-menu.scss" : {
       "aP" : 1,
       "bl" : 1,
+      "co" : 0,
       "dP" : 10,
       "ec" : 1,
       "ft" : 4,
@@ -3584,14 +3686,6 @@
       "hM" : 0,
       "oA" : 0,
       "oAP" : "\/woocommerce\/notices\/success.php",
-      "oF" : 0
-    },
-    "\/woocommerce\/order\/order-details-customer Kopie.php" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/woocommerce\/order\/order-details-customer Kopie.php",
       "oF" : 0
     },
     "\/woocommerce\/order\/order-details-customer.php" : {
@@ -4637,7 +4731,8 @@
         "optionString" : ""
       },
       "no-multi-assign" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'ignoreNonDeclaration': false}"
       },
       "no-multi-spaces" : {
         "active" : 0,
@@ -4760,7 +4855,8 @@
         "active" : 0
       },
       "no-sequences" : {
-        "active" : 0
+        "active" : 0,
+        "optionString" : "{'allowInParentheses': true}"
       },
       "no-setter-return" : {
         "active" : 1
@@ -5124,354 +5220,6 @@
     "gitIgnoreBuildFolder" : 1,
     "hideConfigFile" : 1,
     "jsCheckerReservedNamesString" : "sasabudi_scripts_vars, grecaptcha",
-    "jsHintFlags2" : {
-      "asi" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "bitwise" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "boss" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "browserify" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "camelcase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "curly" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "debug" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "dojo" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "elision" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqeqeq" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "eqnull" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es3" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "esnext" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "evil" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "expr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "forin" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "freeze" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "funcscope" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "futurehostile" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "globalstrict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "immed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "indent" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "iterator" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jasmine" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "jquery" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "lastsemic" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "latedef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "laxbreak" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "laxcomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "loopfunc" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxcomplexity" : {
-        "active" : 0,
-        "flagValue" : 10
-      },
-      "maxdepth" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "maxparams" : {
-        "active" : 0,
-        "flagValue" : 3
-      },
-      "maxstatements" : {
-        "active" : 0,
-        "flagValue" : 4
-      },
-      "mocha" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "mootools" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "moz" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "multistr" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "newcap" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noarg" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nocomma" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "noempty" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonbsp" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "nonew" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "nonstandard" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "notypeof" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "noyield" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "onecase" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "phantom" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "plusplus" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "proto" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "prototypejs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "qunit" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "regexp" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "rhino" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "scripturl" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shadow" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "shelljs" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "singleGroups" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "strict" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "sub" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "supernew" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "typed" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "undef" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "unused" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "varstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "withstmt" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "worker" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "wsh" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "yui" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
-    "jsLintFlags2" : {
-      "bitwise" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "browser" : {
-        "active" : 1,
-        "flagValue" : -1
-      },
-      "couch" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "devel" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "es6" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "eval" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "for" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "maxlen" : {
-        "active" : 0,
-        "flagValue" : 150
-      },
-      "node" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "this" : {
-        "active" : 0,
-        "flagValue" : -1
-      },
-      "white" : {
-        "active" : 0,
-        "flagValue" : -1
-      }
-    },
     "languageDefaultsCOFFEE" : {
       "autoOutputAction" : 0,
       "autoOutputPathFilenamePattern" : "*.js",
@@ -5547,7 +5295,7 @@
       "bundleFormat" : 0,
       "minifierStyle" : 1,
       "sourceMapStyle" : 0,
-      "syntaxCheckerStyle" : 1,
+      "syntaxCheckerStyle" : 3,
       "transpilerStyle" : 0
     },
     "languageDefaultsJSON" : {
@@ -5780,6 +5528,7 @@
     "tsEmitBOM" : 0,
     "tsEmitDecoratorMetadata" : 0,
     "tsESModuleInterop" : 0,
+    "tsExactOptionalPropertyTypes" : 0,
     "tsForceConsistentCasingInFileNames" : 0,
     "tsImportHelpers" : 0,
     "tsIsolatedModules" : 0,
@@ -5788,6 +5537,7 @@
     "tsNoEmitHelpers" : 0,
     "tsNoFallthroughCasesInSwitch" : 0,
     "tsNoImplicitAny" : 0,
+    "tsNoImplicitOverride" : 0,
     "tsNoImplicitReturns" : 0,
     "tsNoImplicitThis" : 0,
     "tsNoImplicitUseStrict" : 0,
@@ -5808,6 +5558,7 @@
     "tsStripInternal" : 0,
     "tsSuppressExcessPropertyErrors" : 0,
     "tsSuppressImplicitAnyIndexErrors" : 0,
+    "tsUseUnknownInCatchVariables" : 0,
     "uglifyDefinesString" : "",
     "uglifyFlags2" : {
       "arguments" : {

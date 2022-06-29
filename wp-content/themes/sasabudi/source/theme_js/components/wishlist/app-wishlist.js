@@ -147,9 +147,7 @@ export const AppWishlist = () => {
       if ( event.target.matches('.product-wishlist__icon') || event.target.matches('.options-wishlist__save')) {
         event.preventDefault()
 
-        const productId = event.target.dataset.item
-        const wishlistId = event.target.dataset.saved
-        
+
         if (event.target.dataset.exists === 'signin') {
           showSignInModal()
         }
